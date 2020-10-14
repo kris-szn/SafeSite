@@ -1,0 +1,8 @@
+{
+    "ExtensionName" : {
+        "message" : "Safe Site"
+    },
+    "ExtensionDescription" : {
+        "message" : "Safe Site extension supports browsing in the security critical areas like banking: indicates whether it is really a banking site."
+    }
+}

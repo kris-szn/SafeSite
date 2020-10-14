@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "__MSG_ExtensionName__",
+    "version": "0.1",
+    "description": "__MSG_ExtensionDescription__",
+    "content_security_policy": "default-src 'self'",
+    "default_locale": "en",
+    "page_action": {
+        "default_title": "Safe Site",
+        "default_icon": "img/safeSite48.png",
+        "default_popup": "popup.html"
+    }
+}
