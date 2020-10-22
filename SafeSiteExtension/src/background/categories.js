@@ -9,5 +9,6 @@ class Category
 
 var categories = 
 {
-    bank: new Category("bank", "/img/category/bank/default.png")
+    bank: new Category("bank", "/img/category/bank/default.png"),
+    payment: new Category("payment", "/img/category/payment/default.png"),
 };
