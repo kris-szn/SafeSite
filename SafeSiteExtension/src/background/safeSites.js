@@ -16,8 +16,13 @@ var safeSites =
     new SafeSite(groups.AarealBank, "aareal.com"),
 
     new SafeSite(groups.AliorBank, "aliorbank.pl"),
+    new SafeSite(groups.AliorBank, "t-mobilebankowe.pl"),
+
+    new SafeSite(groups.BankBPH, "bph.pl"),
 
     new SafeSite(groups.BankMillenium, "bankmillennium.pl"),
+
+    new SafeSite(groups.BankNowyBGF, "pbsbank.pl"),
 
     new SafeSite(groups.BankOfChina, "bankofchina.com"),
 
@@ -25,10 +30,14 @@ var safeSites =
     new SafeSite(groups.BankPekao, "pekao24.pl"),
     new SafeSite(groups.BankPekao, "pekaobiznes24.pl"),
     new SafeSite(groups.BankPekao, "cdm24.pl", "Bank Pekao CDM24"),
+    new SafeSite(groups.BankPekao, "pekaobh.pl"),
 
     new SafeSite(groups.BankPocztowy, "pocztowy.pl"),
     new SafeSite(groups.BankPocztowy, "pocztowy24.pl"),
     new SafeSite(groups.BankPocztowy, "envelobank.pl", "Bank Pocztowy - EnveloBank"),
+
+    new SafeSite(groups.BGK, "bgk.pl"),
+    new SafeSite(groups.BGK, "bgk24.pl"),
 
     new SafeSite(groups.BOSBank, "bosbank.pl"),
     new SafeSite(groups.BOSBank, "bosbank24.pl"),
@@ -460,6 +469,7 @@ var safeSites =
 
     new SafeSite(groups.IngBankSlaski, "ing.pl"),
     new SafeSite(groups.IngBankSlaski, "ingbank.pl"),
+    new SafeSite(groups.IngBankSlaski, "inghipoteczny.pl"),
 
     new SafeSite(groups.IntesaSanpaolo, "intesasanpaolo.com"),
     new SafeSite(groups.IntesaSanpaolo, "banca5.com"),
@@ -508,6 +518,11 @@ var safeSites =
     new SafeSite(groups.JPMorgan, "paymentech.net"),
 
     new SafeSite(groups.MBank, "mbank.pl"),
+    new SafeSite(groups.MBank, "mhipoteczny.pl"),
+    new SafeSite(groups.MBank, "kompaktfinanse.pl"),
+
+    new SafeSite(groups.MercedesBenzBank, "mercedes-benz.pl"),
+    new SafeSite(groups.MercedesBenzBank, "mercedes-benz.com"),
 
     new SafeSite(groups.MUFGBank, "bankmufg.pl"),
     new SafeSite(groups.MUFGBank, "mufg.jp"),
@@ -524,6 +539,8 @@ var safeSites =
 
     new SafeSite(groups.PKOBP, "pkobp.pl"),
     new SafeSite(groups.PKOBP, "ipko.pl"),
+    new SafeSite(groups.PKOBP, "pkobh.pl"),
+    new SafeSite(groups.PKOBP, "inteligo.pl"),
     
     new SafeSite(groups.PlusBank, "plusbank.pl"),
     new SafeSite(groups.PlusBank, "plusbank24.pl"),
@@ -790,7 +807,17 @@ var safeSites =
     new SafeSite(groups.TFBank, "tfbankgroup.com"),
     new SafeSite(groups.TFBank, "tfbank.fi"),
 
+    new SafeSite(groups.ToyotaBank, "toyotabank.pl"),
+    new SafeSite(groups.ToyotaBank, "toyotaleasing.pl"),
+    new SafeSite(groups.ToyotaBank, "toyotabank.pl"),
+
     new SafeSite(groups.UBS, "ubs.com"),
+
+    new SafeSite(groups.VWBank, "vwbank.pl"),
+    new SafeSite(groups.VWBank, "vwfs.pl"),
+    new SafeSite(groups.VWBank, "vwleasing.pl"),
+    new SafeSite(groups.VWBank, "autoaukcja.com"),
+    new SafeSite(groups.VWBank, "vwbank.pl"),
  
     new SafeSite(groups.WesternUnion, "westernunion.com"),
 ]
