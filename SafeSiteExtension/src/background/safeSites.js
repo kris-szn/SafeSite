@@ -1,823 +1,1517 @@
-class SafeSite
-{
-    constructor(group, domain, name, domain_std, icon)
-    {
-        this.group = group;
-        this.domain = domain;
-        this.name = name === undefined ? group.name : name;
-        this.domain_std = domain_std === undefined ? domain : domain_std;
-        this.icon = icon === undefined ? group.icon : icon;
-    }
-}
-
-var safeSites = 
+var categories = 
 [
-    new SafeSite(groups.AarealBank, "aareal-bank.com"),
-    new SafeSite(groups.AarealBank, "aareal.com"),
-
-    new SafeSite(groups.AliorBank, "aliorbank.pl"),
-    new SafeSite(groups.AliorBank, "t-mobilebankowe.pl"),
-
-    new SafeSite(groups.BankBPH, "bph.pl"),
-
-    new SafeSite(groups.BankMillenium, "bankmillennium.pl"),
-
-    new SafeSite(groups.BankNowyBGF, "pbsbank.pl"),
-
-    new SafeSite(groups.BankOfChina, "bankofchina.com"),
-
-    new SafeSite(groups.BankPekao, "pekao.com.pl"),
-    new SafeSite(groups.BankPekao, "pekao24.pl"),
-    new SafeSite(groups.BankPekao, "pekaobiznes24.pl"),
-    new SafeSite(groups.BankPekao, "cdm24.pl", "Bank Pekao CDM24"),
-    new SafeSite(groups.BankPekao, "pekaobh.pl"),
-
-    new SafeSite(groups.BankPocztowy, "pocztowy.pl"),
-    new SafeSite(groups.BankPocztowy, "pocztowy24.pl"),
-    new SafeSite(groups.BankPocztowy, "envelobank.pl", "Bank Pocztowy - EnveloBank"),
-
-    new SafeSite(groups.BGK, "bgk.pl"),
-    new SafeSite(groups.BGK, "bgk24.pl"),
-
-    new SafeSite(groups.BOSBank, "bosbank.pl"),
-    new SafeSite(groups.BOSBank, "bosbank24.pl"),
-    new SafeSite(groups.BOSBank, "iboss24.pl"),
-
-    new SafeSite(groups.BNPParibas, "bnpparibas.com"),
-    new SafeSite(groups.BNPParibas, "group.bnpparibas"),
-    new SafeSite(groups.BNPParibas, "bnpparibas.pl"),
-    new SafeSite(groups.BNPParibas, "webmakler.pl", "BNP PARIBAS Biuro Maklerskie"),
-
-    new SafeSite(groups.CaixaBank, "caixabank.pl"),
-    new SafeSite(groups.CaixaBank, "lacaixa.pl"),
-
-    new SafeSite(groups.ChinaConstructionBank, "ccb.com"),
-
-    new SafeSite(groups.Citibank, "citi.com"),
-    new SafeSite(groups.Citibank, "citibank.co.uk"),
-    new SafeSite(groups.Citibank, "citi.eu"),
-    new SafeSite(groups.Citibank, "citigroup.com"),
-    new SafeSite(groups.Citibank, "citibank.com"),
-
-    new SafeSite(groups.CitiHandlowy, "citibank.pl"),
-    new SafeSite(groups.CitiHandlowy, "citibankonline.pl"),
-    new SafeSite(groups.CitiHandlowy, "dmbh.pl", "Dom Maklerski Citi Handlowy"),
-    new SafeSite(groups.CitiHandlowy, "citidirect.com", "CitiDirect BE®"),
-
-    new SafeSite(groups.CreditAgricole, "credit-agricole.pl"),
-
-    new SafeSite(groups.DanskeBank, "danskebank.pl"),
-    new SafeSite(groups.DanskeBank, "danskebank.com"),
-    new SafeSite(groups.DanskeBank, "danskebank.dk"),
-    new SafeSite(groups.DanskeBank, "danskebank.fi"),
-    new SafeSite(groups.DanskeBank, "danskebank.no"),
-    new SafeSite(groups.DanskeBank, "danskebank.se"),
-    new SafeSite(groups.DanskeBank, "danskebank.co.uk"),
-    new SafeSite(groups.DanskeBank, "danskebank.ie"),
-    new SafeSite(groups.DanskeBank, "danskeci.com"),
-    new SafeSite(groups.DanskeBank, "bv-corporatebanking.de"),
-    
-    new SafeSite(groups.DeutscheBank, "db.com"),
-    new SafeSite(groups.DeutscheBank, "deutschebank.com"),
-
-    new SafeSite(groups.DNBBankPolska, "dnb.pl"),
-    new SafeSite(groups.DNBBankPolska, "dnbon.pl"),
-
-    new SafeSite(groups.Euroclear, "euroclear.com"),
-
-    new SafeSite(groups.ElavonPayment, "elavon.pl"),
-    new SafeSite(groups.ElavonPayment, "elavonconnect.com"),
-    new SafeSite(groups.ElavonPayment, "elavonpayment.com"),
-
-    new SafeSite(groups.FCABank, "fcabank.pl"),
-    new SafeSite(groups.FCABank, "fcabank.it"),
-    new SafeSite(groups.FCABank, "fcabankgroup.com"),
-    new SafeSite(groups.FCABank, "fcagroup.com"),
-    new SafeSite(groups.FCABank, "fcacapital.fr"),
-    new SafeSite(groups.FCABank, "fcabank.de"),
-    new SafeSite(groups.FCABank, "leasys.com", "FCA Bank - LEASYS"),
-    new SafeSite(groups.FCABank, "fcaautomotiveservices.co.uk"),
-    new SafeSite(groups.FCABank, "fcacapital.ch"),
-    new SafeSite(groups.FCABank, "fcacapital.es"),
-    new SafeSite(groups.FCABank, "fcacapital.pt"),
-    new SafeSite(groups.FCABank, "fcacapital.nl"),
-    new SafeSite(groups.FCABank, "fcabank.gr"),
-    new SafeSite(groups.FCABank, "fcacapital.dk"),
-    new SafeSite(groups.FCABank, "fcabank.be"),
-    new SafeSite(groups.FCABank, "fcabank.at"),
-
-    new SafeSite(groups.FCEBank, "fcebank.pl"),
-    new SafeSite(groups.FCEBank, "ford.pl"),
-    new SafeSite(groups.FCEBank, "fcebank.com"),
-
-    new SafeSite(groups.GetinBank, "getinbank.pl"),
-    new SafeSite(groups.GetinBank, "gnb.pl", "Getin Noble Bank"),
-
-    new SafeSite(groups.GrupaBPS, "bankbps.pl"),
-    new SafeSite(groups.GrupaBPS, "e25.pl"),
-    new SafeSite(groups.GrupaBPS, "bsadamow.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-aleksandrow.pl"),
-    new SafeSite(groups.GrupaBPS, "kartosfera.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-andrespol.pl"),
-    new SafeSite(groups.GrupaBPS, "absbank.pl"),
-    new SafeSite(groups.GrupaBPS, "absbank24.pl"),
-    new SafeSite(groups.GrupaBPS, "augustow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbarcin.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbarglow.pl"),
-    new SafeSite(groups.GrupaBPS, "gbsbank.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbartoszyce.com.pl"),
-    new SafeSite(groups.GrupaBPS, "cui.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbialapodlaska.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbr.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbiala.pl"),
-    new SafeSite(groups.GrupaBPS, "bankbialopole.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbiecz.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbiecz24.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbielsk.pl"),
-    new SafeSite(groups.GrupaBPS, "bankbbs.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbilgoraj.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbiszcza.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-blazowa.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbransk.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbrzeg.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-brzesko.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbrzeznica.pl"),
-    new SafeSite(groups.GrupaBPS, "tatrzanskibs.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbuskozdroj.pl"),
-    new SafeSite(groups.GrupaBPS, "rbsbychawa.pl"),
-    new SafeSite(groups.GrupaBPS, "bschmielnik.pl"),
-    new SafeSite(groups.GrupaBPS, "bschojnice.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-chojnow.pl"),
-    new SafeSite(groups.GrupaBPS, "bschrzanow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsciechanowiec.pl"),
-    new SafeSite(groups.GrupaBPS, "bs.cieszyn.pl"),
-    new SafeSite(groups.GrupaBPS, "bscycow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsczarnydunajec.pl"),
-    new SafeSite(groups.GrupaBPS, "bsczechowice.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bsczyzew.pl"),
-    new SafeSite(groups.GrupaBPS, "bsdaleszyce-gorno.pl"),
-    new SafeSite(groups.GrupaBPS, "ebo24.pl"),
-    new SafeSite(groups.GrupaBPS, "bsdabrowatarnowska.pl"),
-    new SafeSite(groups.GrupaBPS, "bsdobczyce.pl"),
-    new SafeSite(groups.GrupaBPS, "bsdobrzen.pl"),
-    new SafeSite(groups.GrupaBPS, "pbs.zamosc.pl"),
-    new SafeSite(groups.GrupaBPS, "bsdynow.pl"),
-    new SafeSite(groups.GrupaBPS, "bselk.pl"),
-    new SafeSite(groups.GrupaBPS, "bsframpol.pl"),
-    new SafeSite(groups.GrupaBPS, "bsgarwolin.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-gilowice.pl"),
-    new SafeSite(groups.GrupaBPS, "mbsgizycko.pl"),
-    new SafeSite(groups.GrupaBPS, "bsgliwice.pl"),
-    new SafeSite(groups.GrupaBPS, "bsgliwice24.pl"),
-    new SafeSite(groups.GrupaBPS, "bsglogowmlp.pl"),
-    new SafeSite(groups.GrupaBPS, "bsglogow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsgogolin.pl"),
-    new SafeSite(groups.GrupaBPS, "bsgogolin.online"),
-    new SafeSite(groups.GrupaBPS, "bs.gorlice.pl"),
-    new SafeSite(groups.GrupaBPS, "bsgostynin.pl"),
-    new SafeSite(groups.GrupaBPS, "bsgoworowo.pl"),
-    new SafeSite(groups.GrupaBPS, "mazoviabank.pl"),
-    new SafeSite(groups.GrupaBPS, "bsgrodkow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsgrybow.pl"),
-    new SafeSite(groups.GrupaBPS, "bshajnowka.pl"),
-    new SafeSite(groups.GrupaBPS, "bankbsilawa.pl"),
-    new SafeSite(groups.GrupaBPS, "ebankbsilawa.pl"),
-    new SafeSite(groups.GrupaBPS, "bsilowa.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjelesnia.pl"),
-    new SafeSite(groups.GrupaBPS, "wbs-jonkowo.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjordanow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjozefow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjuchnowiec.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjablonka.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjaroslaw.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjasienica.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjasieniec.pl"),
-    new SafeSite(groups.GrupaBPS, "bsj24.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjasionka.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjastrzebie.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-jawor.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjawor.pl"),
-    new SafeSite(groups.GrupaBPS, "banksp.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjaworzno.pl"),
-    new SafeSite(groups.GrupaBPS, "bsjedwabne.pl"),
-    new SafeSite(groups.GrupaBPS, "bskadzidlo.pl"),
-    new SafeSite(groups.GrupaBPS, "bskaluszyn.pl"),
-    new SafeSite(groups.GrupaBPS, "bskamgora.pl"),
-    new SafeSite(groups.GrupaBPS, "bskamien.pl"),
-    new SafeSite(groups.GrupaBPS, "bskarczew.pl"),
-    new SafeSite(groups.GrupaBPS, "silesiabank.pl"),
-    new SafeSite(groups.GrupaBPS, "bskazimierzdolny.pl"),
-    new SafeSite(groups.GrupaBPS, "ebskazimierzdolny.pl"),
-    new SafeSite(groups.GrupaBPS, "bskw.pl"),
-    new SafeSite(groups.GrupaBPS, "pbskkozle.pl"),
-    new SafeSite(groups.GrupaBPS, "bskielce.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bsklobuck.pl"),
-    new SafeSite(groups.GrupaBPS, "bsklodzko.pl"),
-    new SafeSite(groups.GrupaBPS, "okbank.pl"),
-    new SafeSite(groups.GrupaBPS, "pbsknyszyn.pl"),
-    new SafeSite(groups.GrupaBPS, "bskock.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-kolbuszowa.pl"),
-    new SafeSite(groups.GrupaBPS, "bskolno.pl"),
-    new SafeSite(groups.GrupaBPS, "bskolaczyce.pl"),
-    new SafeSite(groups.GrupaBPS, "bank-konopiska.pl"),
-    new SafeSite(groups.GrupaBPS, "bskonopiska.pl"),
-    new SafeSite(groups.GrupaBPS, "lubelskibs.pl"),
-    new SafeSite(groups.GrupaBPS, "bskonskowola.pl"),
-    new SafeSite(groups.GrupaBPS, "bskornica.pl"),
-    new SafeSite(groups.GrupaBPS, "bskorycin.pl"),
-    new SafeSite(groups.GrupaBPS, "bskoszecin.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bskoszecin.pl"),
-    new SafeSite(groups.GrupaBPS, "bskozuchow.pl"),
-    new SafeSite(groups.GrupaBPS, "e-bskozuchow.pl"),
-    new SafeSite(groups.GrupaBPS, "bskrapkowice.pl"),
-    new SafeSite(groups.GrupaBPS, "bskrasnystaw.pl"),
-    new SafeSite(groups.GrupaBPS, "bskrasnik.pl"),
-    new SafeSite(groups.GrupaBPS, "bsbank.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-krzeszowice.pl"),
-    new SafeSite(groups.GrupaBPS, "bskrzyzanowice.pl"),
-    new SafeSite(groups.GrupaBPS, "bsksiezpol.pl"),
-    new SafeSite(groups.GrupaBPS, "powislanski.pl"),
-    new SafeSite(groups.GrupaBPS, "bslegionowo.pl"),
-    new SafeSite(groups.GrupaBPS, "bslegnica.pl"),
-    new SafeSite(groups.GrupaBPS, "bslesniowice.pl"),
-    new SafeSite(groups.GrupaBPS, "bslezajsk.pl"),
-    new SafeSite(groups.GrupaBPS, "bs.limanowa.pl"),
-    new SafeSite(groups.GrupaBPS, "bslubaczow.pl"),
-    new SafeSite(groups.GrupaBPS, "banklbs.pl"),
-    new SafeSite(groups.GrupaBPS, "bslubartow.pl"),
-    new SafeSite(groups.GrupaBPS, "bslubawa.pl"),
-    new SafeSite(groups.GrupaBPS, "bslubenia.pl"),
-    new SafeSite(groups.GrupaBPS, "bslancut.pl"),
-    new SafeSite(groups.GrupaBPS, "bslapy.pl"),
-    new SafeSite(groups.GrupaBPS, "bslaszczow.pl"),
-    new SafeSite(groups.GrupaBPS, "bslacko.pl"),
-    new SafeSite(groups.GrupaBPS, "bsleczna.pl"),
-    new SafeSite(groups.GrupaBPS, "bslochow.pl"),
-    new SafeSite(groups.GrupaBPS, "bslomazy.pl"),
-    new SafeSite(groups.GrupaBPS, "mbsbank.pl"),
-    new SafeSite(groups.GrupaBPS, "lomianki.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bslomza.pl"),
-    new SafeSite(groups.GrupaBPS, "bslopuszno.pl"),
-    new SafeSite(groups.GrupaBPS, "bslosice.pl"),
-    new SafeSite(groups.GrupaBPS, "bslososinadolna.pl"),
-    new SafeSite(groups.GrupaBPS, "bslubniany.pl"),
-    new SafeSite(groups.GrupaBPS, "bslukow.pl"),
-    new SafeSite(groups.GrupaBPS, "bskrasnosielc.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmalawies.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmiedzyrzec.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmiedzna.pl"),
-    new SafeSite(groups.GrupaBPS, "bankmbs.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmilicz.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bsminskmaz.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmonki.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmragowo.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmrozy.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmstow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmszana.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmuszyna.pl"),
-    new SafeSite(groups.GrupaBPS, "tatrzanskibs.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmykanow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsmyszkow.pl"),
-    new SafeSite(groups.GrupaBPS, "kbsmyszyniec.pl"),
-    new SafeSite(groups.GrupaBPS, "bsnaleczow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsnamyslow.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bsnarew.pl"),
-    new SafeSite(groups.GrupaBPS, "bsnarol.pl"),
-    new SafeSite(groups.GrupaBPS, "bsniechobrz.pl"),
-    new SafeSite(groups.GrupaBPS, "bsniedrzwicaduza.pl"),
-    new SafeSite(groups.GrupaBPS, "bsnielisz.pl"),
-    new SafeSite(groups.GrupaBPS, "bsniemce.pl"),
-    new SafeSite(groups.GrupaBPS, "gbsradkow.pl"),
-    new SafeSite(groups.GrupaBPS, "e-gbsradkow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsnowasol.pl"),
-    new SafeSite(groups.GrupaBPS, "bsndm.pl"),
-    new SafeSite(groups.GrupaBPS, "bsnowysacz.pl"),
-    new SafeSite(groups.GrupaBPS, "bsnowytarg.pl"),
-    new SafeSite(groups.GrupaBPS, "bsobsza.pl"),
-    new SafeSite(groups.GrupaBPS, "bsolecko.pl"),
-    new SafeSite(groups.GrupaBPS, "bsolesnica.pl"),
-    new SafeSite(groups.GrupaBPS, "bsolesnica.net"),
-    new SafeSite(groups.GrupaBPS, "bsolsztynek.pl"),
-    new SafeSite(groups.GrupaBPS, "pbsopolelubelskie.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-opole.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-opole.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bs.ostrowiec.pl"),
-    new SafeSite(groups.GrupaBPS, "bsostrowmaz.pl"),
-    new SafeSite(groups.GrupaBPS, "bsotmuchow.pl"),
-    new SafeSite(groups.GrupaBPS, "bsotwock.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-ozorkow.pl"),
-    new SafeSite(groups.GrupaBPS, "bspajeczno.pl"),
-    new SafeSite(groups.GrupaBPS, "bspawlowice.pl"),
-    new SafeSite(groups.GrupaBPS, "psbank.pl"),
-    new SafeSite(groups.GrupaBPS, "bspiaseczno.pl"),
-    new SafeSite(groups.GrupaBPS, "sbppiaski.pl"),
-    new SafeSite(groups.GrupaBPS, "hexabank.pl"),
-    new SafeSite(groups.GrupaBPS, "bspiensk.pl"),
-    new SafeSite(groups.GrupaBPS, "bspilzno.pl"),
-    new SafeSite(groups.GrupaBPS, "bspinczow.pl"),
-    new SafeSite(groups.GrupaBPS, "wmbs.pl"),
-    new SafeSite(groups.GrupaBPS, "bs.piwniczna.pl"),
-    new SafeSite(groups.GrupaBPS, "bsplonsk.pl"),
-    new SafeSite(groups.GrupaBPS, "bspoczesna.pl"),
-    new SafeSite(groups.GrupaBPS, "bspoddebice.pl"),
-    new SafeSite(groups.GrupaBPS, "bspodegrodzie.pl"),
-    new SafeSite(groups.GrupaBPS, "bspolaniec.pl"),
-    new SafeSite(groups.GrupaBPS, "bsponiatowa.pl"),
-    new SafeSite(groups.GrupaBPS, "bsporabka.pl"),
-    new SafeSite(groups.GrupaBPS, "bsproszowice.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bsprudnik.pl"),
-    new SafeSite(groups.GrupaBPS, "bsprzasnysz.pl"),
-    new SafeSite(groups.GrupaBPS, "bspszczyna.pl"),
-    new SafeSite(groups.GrupaBPS, "e-bspszczyna.pl"),
-    new SafeSite(groups.GrupaBPS, "nbspulawy.pl"),
-    new SafeSite(groups.GrupaBPS, "bskonskowola.pl"),
-    new SafeSite(groups.GrupaBPS, "bsradom.pl"),
-    new SafeSite(groups.GrupaBPS, "bsradom.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bsradomyslwielki.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bsradomyslwielki.pl"),
-    new SafeSite(groups.GrupaBPS, "etnobank.pl"),
-    new SafeSite(groups.GrupaBPS, "bsradzyn.pl"),
-    new SafeSite(groups.GrupaBPS, "bsradzyn24.pl"),
-    new SafeSite(groups.GrupaBPS, "bsrajcza.pl"),
-    new SafeSite(groups.GrupaBPS, "bsraszyn.pl"),
-    new SafeSite(groups.GrupaBPS, "bsropczyce.pl"),
-    new SafeSite(groups.GrupaBPS, "bsrozan.pl"),
-    new SafeSite(groups.GrupaBPS, "rbsrybnik.pl"),
-    new SafeSite(groups.GrupaBPS, "bankmbs.pl"),
-    new SafeSite(groups.GrupaBPS, "bsryki.pl"),
-    new SafeSite(groups.GrupaBPS, "bsryki24.pl"),
-    new SafeSite(groups.GrupaBPS, "bsrymanow.pl"),
-    new SafeSite(groups.GrupaBPS, "bs.rzeszow.pl"),
-    new SafeSite(groups.GrupaBPS, "bssejny.pl"),
-    new SafeSite(groups.GrupaBPS, "bssedziszow.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-sedziszow.pl"),
-    new SafeSite(groups.GrupaBPS, "bssiedlce.pl"),
-    new SafeSite(groups.GrupaBPS, "bssiemiatycze.pl"),
-    new SafeSite(groups.GrupaBPS, "bsskierniewice.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-slomniki.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bssobieniejeziory.pl"),
-    new SafeSite(groups.GrupaBPS, "bssobienie.pl"),
-    new SafeSite(groups.GrupaBPS, "bssochaczew.pl"),
-    new SafeSite(groups.GrupaBPS, "bssokolow.pl"),
-    new SafeSite(groups.GrupaBPS, "pbssokolow.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-sokolka.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-sokolka.pl"),
-    new SafeSite(groups.GrupaBPS, "nbsbank.pl"),
-    new SafeSite(groups.GrupaBPS, "nbs24.pl"),
-    new SafeSite(groups.GrupaBPS, "nbscorponet.pl"),
-    new SafeSite(groups.GrupaBPS, "sanbank.pl"),
-    new SafeSite(groups.GrupaBPS, "bs.stalowa-wola.pl"),
-    new SafeSite(groups.GrupaBPS, "bsstarachowice.pl"),
-    new SafeSite(groups.GrupaBPS, "bsstarozreby.pl"),
-    new SafeSite(groups.GrupaBPS, "bs.stary.sacz.pl"),
-    new SafeSite(groups.GrupaBPS, "bsstarysacz.pl"),
-    new SafeSite(groups.GrupaBPS, "bslesnica.pl"),
-    new SafeSite(groups.GrupaBPS, "bsstrzyzow.pl"),
-    new SafeSite(groups.GrupaBPS, "bssucha.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-suchedniow.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bssuwalki.pl"),
-    new SafeSite(groups.GrupaBPS, "bsszczekociny.pl"),
-    new SafeSite(groups.GrupaBPS, "bsszczucin.malopolska.info"),
-    new SafeSite(groups.GrupaBPS, "bsszczucin.pl"),
-    new SafeSite(groups.GrupaBPS, "bsszczuczyn.pl"),
-    new SafeSite(groups.GrupaBPS, "bsszczytno.pl"),
-    new SafeSite(groups.GrupaBPS, "sbrbank.pl"),
-    new SafeSite(groups.GrupaBPS, "bssrodasl.pl"),
-    new SafeSite(groups.GrupaBPS, "bsswidnica.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-swierklaniec.pl"),
-    new SafeSite(groups.GrupaBPS, "bstarczyn.pl"),
-    new SafeSite(groups.GrupaBPS, "bstarnobrzeg.pl"),
-    new SafeSite(groups.GrupaBPS, "bstarnogrod.pl"),
-    new SafeSite(groups.GrupaBPS, "bstg.pl"),
-    new SafeSite(groups.GrupaBPS, "bstomaszowl.pl"),
-    new SafeSite(groups.GrupaBPS, "bstrzebnica.pl"),
-    new SafeSite(groups.GrupaBPS, "bstworog.pl"),
-    new SafeSite(groups.GrupaBPS, "bstychy.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bstyczyn.pl"),
-    new SafeSite(groups.GrupaBPS, "bs.ustron.pl"),
-    new SafeSite(groups.GrupaBPS, "loginbsustron.pl"),
-    new SafeSite(groups.GrupaBPS, "bbsustrzyki.pl"),
-    new SafeSite(groups.GrupaBPS, "bank-wbs.pl"),
-    new SafeSite(groups.GrupaBPS, "wbs-bank.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-warta.pl"),
-    new SafeSite(groups.GrupaBPS, "bswachock.pl"),
-    new SafeSite(groups.GrupaBPS, "dmbps.pl"),
-    new SafeSite(groups.GrupaBPS, "bswasewo.pl"),
-    new SafeSite(groups.GrupaBPS, "bs.wegierskagorka.pl"),
-    new SafeSite(groups.GrupaBPS, "pbswegrow.pl"),
-    new SafeSite(groups.GrupaBPS, "mbsw.pl"),
-    new SafeSite(groups.GrupaBPS, "e-bsw.pl"),
-    new SafeSite(groups.GrupaBPS, "bswielopole.pl"),
-    new SafeSite(groups.GrupaBPS, "bswilamowice.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-wloszczowa.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-wolbrom.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-wolbrom.com.pl"),
-    new SafeSite(groups.GrupaBPS, "pmbank.pl"),
-    new SafeSite(groups.GrupaBPS, "bszakopane.pl"),
-    new SafeSite(groups.GrupaBPS, "bszambrow.pl"),
-    new SafeSite(groups.GrupaBPS, "ebankbszam.pl"),
-    new SafeSite(groups.GrupaBPS, "pbs.zamosc.pl"),
-    new SafeSite(groups.GrupaBPS, "bspopow.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-zawadzkie.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-zabkowicesl.pl"),
-    new SafeSite(groups.GrupaBPS, "ebs-zabkowicesl.pl"),
-    new SafeSite(groups.GrupaBPS, "bszbuczyn.pl"),
-    new SafeSite(groups.GrupaBPS, "bszgierz.pl"),
-    new SafeSite(groups.GrupaBPS, "pbszlotoryja.pl"),
-    new SafeSite(groups.GrupaBPS, "bszagan.pl"),
-    new SafeSite(groups.GrupaBPS, "bstrzebiel.pl"),
-    new SafeSite(groups.GrupaBPS, "bszmigrod.com.pl"),
-    new SafeSite(groups.GrupaBPS, "bszolynia.pl"),
-    new SafeSite(groups.GrupaBPS, "bszory.pl"),
-    new SafeSite(groups.GrupaBPS, "bszyrakow.pl"),
-    new SafeSite(groups.GrupaBPS, "bs-zywiec.pl"),
-    
-    new SafeSite(groups.Haitong, "haitongib.com"),
- 
-    new SafeSite(groups.HSBC, "hsbc.co.uk"),
-    new SafeSite(groups.HSBC, "hsbc.pl"),
-    new SafeSite(groups.HSBC, "hsbc.com"),
-    new SafeSite(groups.HSBC, "hsbcnet.com"),
-
-    new SafeSite(groups.ICBC, "icbc-ltd.com"),
-    new SafeSite(groups.ICBC, "icbc.com.cn"),
-
-    new SafeSite(groups.IdeaBank, "ideabank.pl"),
-
-    new SafeSite(groups.Inbank, "inbankpolska.pl"),
-
-    new SafeSite(groups.IkanoBank, "bank.ikano"),
-    new SafeSite(groups.IkanoBank, "ikano-storeportal.pl"),
-    new SafeSite(groups.IkanoBank, "ikanobank.at"),
-    new SafeSite(groups.IkanoBank, "ikano-storeportal.de"),
-    new SafeSite(groups.IkanoBank, "ikanobank.dk"),
-    new SafeSite(groups.IkanoBank, "ikano.dk"),
-    new SafeSite(groups.IkanoBank, "portalbank.dk"),
-    new SafeSite(groups.IkanoBank, "ikanobank.fi"),
-    new SafeSite(groups.IkanoBank, "ikanobank.de"),
-    new SafeSite(groups.IkanoBank, "onlinebanking-ikanobank.de"),
-    new SafeSite(groups.IkanoBank, "onlinebanking.ikea-kreditkarte.de"),
-    new SafeSite(groups.IkanoBank, "ikanobank.no"),
-    new SafeSite(groups.IkanoBank, "ikano.no"),
-    new SafeSite(groups.IkanoBank, "my.ikano"),
-    new SafeSite(groups.IkanoBank, "ikanobank.ru"),
-    new SafeSite(groups.IkanoBank, "ikanobank.se"),
-    new SafeSite(groups.IkanoBank, "ikano.co.uk"),
-    new SafeSite(groups.IkanoBank, "ikano.co.uk"),
-    new SafeSite(groups.IkanoBank, "ikano.co.uk"),
-    new SafeSite(groups.IkanoBank, "ikano.co.uk"),
-
-    new SafeSite(groups.IngBankSlaski, "ing.pl"),
-    new SafeSite(groups.IngBankSlaski, "ingbank.pl"),
-    new SafeSite(groups.IngBankSlaski, "inghipoteczny.pl"),
-
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolo.com"),
-    new SafeSite(groups.IntesaSanpaolo, "banca5.com"),
-    new SafeSite(groups.IntesaSanpaolo, "bancaintesa.ru"),
-    new SafeSite(groups.IntesaSanpaolo, "bancaintesa.rs"),
-    new SafeSite(groups.IntesaSanpaolo, "alexbank.com"),
-    new SafeSite(groups.IntesaSanpaolo, "cib.hu"),
-    new SafeSite(groups.IntesaSanpaolo, "epsilonsgr.it"),
-    new SafeSite(groups.IntesaSanpaolo, "eurizoncapital.com"),
-    new SafeSite(groups.IntesaSanpaolo, "eurizoncapital.it"),
-    new SafeSite(groups.IntesaSanpaolo, "eurizonslovakia.com"),
-    new SafeSite(groups.IntesaSanpaolo, "vub.sk"),
-    new SafeSite(groups.IntesaSanpaolo, "eximbank.md"),
-    new SafeSite(groups.IntesaSanpaolo, "eximbank.com"),
-    new SafeSite(groups.IntesaSanpaolo, "fideuram.it"),
-    new SafeSite(groups.IntesaSanpaolo, "fideuramonline.it"),
-    new SafeSite(groups.IntesaSanpaolo, "fideuramireland.ie"),
-    new SafeSite(groups.IntesaSanpaolo, "fideuramgestions.lu"),
-    new SafeSite(groups.IntesaSanpaolo, "fideuramvita.it"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaoloassicura.com"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolovita.it"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolobank.si"),
-    new SafeSite(groups.IntesaSanpaolo, "bankain.si"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolobank.al"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolobankireland.ie"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolobankluxembourg.lu"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolobank.ro"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolobanka.ba"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolobrasil.com.br"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaoloprivatebanking.it"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaoloprivatebanking.com"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolopbmorval.ch"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaoloprivatebanksuisse.ch"),
-    new SafeSite(groups.IntesaSanpaolo, "intesasanpaolovita.it"),
-    new SafeSite(groups.IntesaSanpaolo, "pravex.com.ua"),
-    new SafeSite(groups.IntesaSanpaolo, "pravex.ua"),
-    new SafeSite(groups.IntesaSanpaolo, "pbz.hr"),
-    new SafeSite(groups.IntesaSanpaolo, "sirefiduciaria.it"),
-    new SafeSite(groups.IntesaSanpaolo, "vub.sk"),
-
-    new SafeSite(groups.JohnDeereBank, "deere.pl"),
-    new SafeSite(groups.JohnDeereBank, "deere.com"),
-
-    new SafeSite(groups.JPMorgan, "jpmorgan.com"),
-    new SafeSite(groups.JPMorgan, "chase.com"),
-    new SafeSite(groups.JPMorgan, "paymentech.net"),
-
-    new SafeSite(groups.MBank, "mbank.pl"),
-    new SafeSite(groups.MBank, "mhipoteczny.pl"),
-    new SafeSite(groups.MBank, "kompaktfinanse.pl"),
-
-    new SafeSite(groups.MercedesBenzBank, "mercedes-benz.pl"),
-    new SafeSite(groups.MercedesBenzBank, "mercedes-benz.com"),
-
-    new SafeSite(groups.MUFGBank, "bankmufg.pl"),
-    new SafeSite(groups.MUFGBank, "mufg.jp"),
-
-    new SafeSite(groups.NestBank, "nestbank.pl"),
-
-    new SafeSite(groups.NobleBank, "noblebank.pl"),
-    new SafeSite(groups.NobleBank, "noblesecurities.pl", "Noble Securities Dom Maklerski"),
-
-    new SafeSite(groups.Nordea, "nordea.com"),
-
-    new SafeSite(groups.Nykredit, "nykredit.dk"),
-    new SafeSite(groups.Nykredit, "nykredit.com"),
-
-    new SafeSite(groups.PKOBP, "pkobp.pl"),
-    new SafeSite(groups.PKOBP, "ipko.pl"),
-    new SafeSite(groups.PKOBP, "pkobh.pl"),
-    new SafeSite(groups.PKOBP, "inteligo.pl"),
-    
-    new SafeSite(groups.PlusBank, "plusbank.pl"),
-    new SafeSite(groups.PlusBank, "plusbank24.pl"),
-
-    new SafeSite(groups.BankPSAFinance, "e-psafinance.pl"),
-
-    new SafeSite(groups.RaiffeisenBank, "rbinternational.com.pl"),
-
-    new SafeSite(groups.RCIBanque, "rcibanque.com"),
-    new SafeSite(groups.RCIBanque, "rcibanque.com.pl"),
-    new SafeSite(groups.RCIBanque, "renaultfinansowanie.pl"),
-    new SafeSite(groups.RCIBanque, "daciafinansowanie.pl"),
-    new SafeSite(groups.RCIBanque, "nissanfinance.pl"),
-    new SafeSite(groups.RCIBanque, "rcibs.com"),
-
-    new SafeSite(groups.Santander, "santander.pl"),
-    new SafeSite(groups.Santander, "centrum24.pl"),
-    new SafeSite(groups.Santander, "ibiznes24.pl"),
-    new SafeSite(groups.Santander, "inwestoronline.pl", "Santander Biuro Maklerskie"),
-    new SafeSite(groups.Santander, "santanderconsumer.pl", "Santander Consumer Bank"),
- 
-    new SafeSite(groups.SEB, "sebgroup.com"),
-    new SafeSite(groups.SEB, "seb.se"),
-    new SafeSite(groups.SEB, "seb.de"),
-    new SafeSite(groups.SEB, "sebank.se"),
-    new SafeSite(groups.SEB, "seb.ee"),
-    new SafeSite(groups.SEB, "seb.lt"),
-    new SafeSite(groups.SEB, "seb.lv"),
-    new SafeSite(groups.SEB, "seb.pl"),
-
-    new SafeSite(groups.SGBBank, "sgb.pl"),
-    new SafeSite(groups.SGBBank, "sgb24.pl"),
-    new SafeSite(groups.SGBBank, "kbs-bank.pl"),
-    new SafeSite(groups.SGBBank, "bs-belchatow.com.pl"),
-    new SafeSite(groups.SGBBank, "bsbd.pl"),
-    new SafeSite(groups.SGBBank, "bsbd24.pl"),
-    new SafeSite(groups.SGBBank, "bsstarabiala.pl"),
-    new SafeSite(groups.SGBBank, "bszw.pl"),
-    new SafeSite(groups.SGBBank, "bsbiala.com.pl"),
-    new SafeSite(groups.SGBBank, "bsbialobrzegi.pl"),
-    new SafeSite(groups.SGBBank, "bsbialogard.pl"),
-    new SafeSite(groups.SGBBank, "nadnoteckibank.pl"),
-    new SafeSite(groups.SGBBank, "bs.bialystok.pl"),
-    new SafeSite(groups.SGBBank, "bsbiezun.pl"),
-    new SafeSite(groups.SGBBank, "bankblaszki.pl"),
-    new SafeSite(groups.SGBBank, "bsbytow.com.pl"),
-    new SafeSite(groups.SGBBank, "bschodziez.pl"),
-    new SafeSite(groups.SGBBank, "bschojna.pl"),
-    new SafeSite(groups.SGBBank, "gbschoszczno.pl"),
-    new SafeSite(groups.SGBBank, "bschynow.pl"),
-    new SafeSite(groups.SGBBank, "bsczarnkow.pl"),
-    new SafeSite(groups.SGBBank, "bsczersk.pl"),
-    new SafeSite(groups.SGBBank, "bsczluchow.pl"),
-    new SafeSite(groups.SGBBank, "bbs-bank.pl"),
-    new SafeSite(groups.SGBBank, "bsdobrzyca.pl"),
-    new SafeSite(groups.SGBBank, "lwbsdrezdenko.pl"),
-    new SafeSite(groups.SGBBank, "nbsdzialoszyn.pl"),
-    new SafeSite(groups.SGBBank, "bsdzierzgon.pl"),
-    new SafeSite(groups.SGBBank, "bsdzierzoniow.pl"),
-    new SafeSite(groups.SGBBank, "bsgabin.pl"),
-    new SafeSite(groups.SGBBank, "bsglinojeck.pl"),
-    new SafeSite(groups.SGBBank, "bsglowaczow.pl"),
-    new SafeSite(groups.SGBBank, "bs-glowno.com.pl"),
-    new SafeSite(groups.SGBBank, "bs-glowno.pl"),
-    new SafeSite(groups.SGBBank, "bs-glowno.eu"),
-    new SafeSite(groups.SGBBank, "bsgniew.pl"),
-    new SafeSite(groups.SGBBank, "bs.gniezno.pl"),
-    new SafeSite(groups.SGBBank, "bs24gniezno.pl"),
-    new SafeSite(groups.SGBBank, "bsgoleniow.pl"),
-    new SafeSite(groups.SGBBank, "bsgolubdobrzyn.pl"),
-    new SafeSite(groups.SGBBank, "bsgolub24.pl"),
-    new SafeSite(groups.SGBBank, "bsgora.pl"),
-    new SafeSite(groups.SGBBank, "gbs.net.pl"),
-    new SafeSite(groups.SGBBank, "k-gbs.pl"),
-    new SafeSite(groups.SGBBank, "pbsgostyn.pl"),
-    new SafeSite(groups.SGBBank, "bsgrabow.pl"),
-    new SafeSite(groups.SGBBank, "bsgrebocin.pl"),
-    new SafeSite(groups.SGBBank, "bsgrodzisk.pl"),
-    new SafeSite(groups.SGBBank, "bsgrojec.pl"),
-    new SafeSite(groups.SGBBank, "bsgrudusk.pl"),
-    new SafeSite(groups.SGBBank, "bsgryfice.pl"),
-    new SafeSite(groups.SGBBank, "bsgryfino.pl"),
-    new SafeSite(groups.SGBBank, "bshalinow.pl"),
-    new SafeSite(groups.SGBBank, "bsilow.pl"),
-    new SafeSite(groups.SGBBank, "bsinowroclaw.pl"),
-    new SafeSite(groups.SGBBank, "inobanknet.pl"),
-    new SafeSite(groups.SGBBank, "piastowskibs.com.pl"),
-    new SafeSite(groups.SGBBank, "bsjarocin.pl"),
-    new SafeSite(groups.SGBBank, "bsjastrowie.pl"),
-    new SafeSite(groups.SGBBank, "bsjedlinsk.pl"),
-    new SafeSite(groups.SGBBank, "bsjutrosin.pl"),
-    new SafeSite(groups.SGBBank, "bskaliszpom.pl"),
-    new SafeSite(groups.SGBBank, "bskcynia.pl"),
-    new SafeSite(groups.SGBBank, "sblkepno.pl"),
-    new SafeSite(groups.SGBBank, "bskleszczow.pl"),
-    new SafeSite(groups.SGBBank, "bsklodawa.eu"),
-    new SafeSite(groups.SGBBank, "bskobierzyce.pl"),
-    new SafeSite(groups.SGBBank, "bskonin.pl"),
-    new SafeSite(groups.SGBBank, "bskoronowo.com.pl"),
-    new SafeSite(groups.SGBBank, "bskoscian.pl"),
-    new SafeSite(groups.SGBBank, "bskoscierzyna.pl"),
-    new SafeSite(groups.SGBBank, "bskostrzyn.pl"),
-    new SafeSite(groups.SGBBank, "bskowal.pl"),
-    new SafeSite(groups.SGBBank, "bskowalewo.pl"),
-    new SafeSite(groups.SGBBank, "bsziemikal.pl"),
-    new SafeSite(groups.SGBBank, "bskrokowa.pl"),
-    new SafeSite(groups.SGBBank, "bskrosniewice.com.pl"),
-    new SafeSite(groups.SGBBank, "bskrosno.pl"),
-    new SafeSite(groups.SGBBank, "bskrotoszyn.pl"),
-    new SafeSite(groups.SGBBank, "bskruszwica.pl"),
-    new SafeSite(groups.SGBBank, "bskutno.pl"),
-    new SafeSite(groups.SGBBank, "bslasin.pl"),
-    new SafeSite(groups.SGBBank, "bsleba.pl"),
-    new SafeSite(groups.SGBBank, "bsleczyca.pl"),
-    new SafeSite(groups.SGBBank, "bsdzialdowo.pl"),
-    new SafeSite(groups.SGBBank, "bslipka.pl"),
-    new SafeSite(groups.SGBBank, "bslipno.pl"),
-    new SafeSite(groups.SGBBank, "bslipsko.pl"),
-    new SafeSite(groups.SGBBank, "lodzkibs.pl"),
-    new SafeSite(groups.SGBBank, "bsrz.pl"),
-    new SafeSite(groups.SGBBank, "bszl.com.pl"),
-    new SafeSite(groups.SGBBank, "bszl.pl"),
-    new SafeSite(groups.SGBBank, "bslubichowo.com"),
-    new SafeSite(groups.SGBBank, "bslubraniec.pl"),
-    new SafeSite(groups.SGBBank, "bslubycza.pl"),
-    new SafeSite(groups.SGBBank, "rbs.lututow.pl"),
-    new SafeSite(groups.SGBBank, "bslwowekslaski.pl"),
-    new SafeSite(groups.SGBBank, "bs-malbork.pl"),
-    new SafeSite(groups.SGBBank, "bs-malbork.com.pl"),
-    new SafeSite(groups.SGBBank, "lubuskibs.pl"),
-    new SafeSite(groups.SGBBank, "bssantok.pl"),
-    new SafeSite(groups.SGBBank, "bsmlawa.pl"),
-    new SafeSite(groups.SGBBank, "gbsmosina.pl"),
-    new SafeSite(groups.SGBBank, "bsmszczonow.pl"),
-    new SafeSite(groups.SGBBank, "bsnaklo.pl"),
-    new SafeSite(groups.SGBBank, "bsnasielsk.pl"),
-    new SafeSite(groups.SGBBank, "bsnowe.com.pl"),
-    new SafeSite(groups.SGBBank, "zulawskibs.pl"),
-    new SafeSite(groups.SGBBank, "bsnowystaw.pl"),
-    new SafeSite(groups.SGBBank, "naszbank.pl"),
-    new SafeSite(groups.SGBBank, "bsnowytomysl.pl"),
-    new SafeSite(groups.SGBBank, "lbsoborniki.pl"),
-    new SafeSite(groups.SGBBank, "bs.olawa.pl"),
-    new SafeSite(groups.SGBBank, "bsopoczno.pl"),
-    new SafeSite(groups.SGBBank, "bsosie.pl"),
-    new SafeSite(groups.SGBBank, "bsosno.pl"),
-    new SafeSite(groups.SGBBank, "bsozarow.pl"),
-    new SafeSite(groups.SGBBank, "pacobank.pl"),
-    new SafeSite(groups.SGBBank, "bspaslek.pl"),
-    new SafeSite(groups.SGBBank, "bspionki.pl"),
-    new SafeSite(groups.SGBBank, "bspk.pl"),
-    new SafeSite(groups.SGBBank, "bszp.pl"),
-    new SafeSite(groups.SGBBank, "bspleszew.pl"),
-    new SafeSite(groups.SGBBank, "bsmazowsze.pl"),
-    new SafeSite(groups.SGBBank, "bspolczyn.pl"),
-    new SafeSite(groups.SGBBank, "bsponiec.pl"),
-    new SafeSite(groups.SGBBank, "pbs.poznan.pl"),
-    new SafeSite(groups.SGBBank, "bsprabuty.pl"),
-    new SafeSite(groups.SGBBank, "bspruszcz.pl"),
-    new SafeSite(groups.SGBBank, "bspruszczgd.pl"),
-    new SafeSite(groups.SGBBank, "bsprzedborz.pl"),
-    new SafeSite(groups.SGBBank, "bsprzysucha.pl"),
-    new SafeSite(groups.SGBBank, "bspszczolki.pl"),
-    new SafeSite(groups.SGBBank, "bspuck.pl"),
-    new SafeSite(groups.SGBBank, "bspultusk.pl"),
-    new SafeSite(groups.SGBBank, "psbspyrzyce.pl"),
-    new SafeSite(groups.SGBBank, "bsraciaz.pl"),
-    new SafeSite(groups.SGBBank, "nbs-rakoniewice.pl"),
-    new SafeSite(groups.SGBBank, "nbsrakoniewice.pl"),
-    new SafeSite(groups.SGBBank, "bsraszkow.pl"),
-    new SafeSite(groups.SGBBank, "bsraszkow.com.pl"),
-    new SafeSite(groups.SGBBank, "bankrumia.pl"),
-    new SafeSite(groups.SGBBank, "bsrusiec.pl"),
-    new SafeSite(groups.SGBBank, "bsrzepin.pl"),
-    new SafeSite(groups.SGBBank, "expressbank.pl"),
-    new SafeSite(groups.SGBBank, "bswierzbinek.com.pl"),
-    new SafeSite(groups.SGBBank, "bswierzbinek.pl"),
-    new SafeSite(groups.SGBBank, "bssandomierz.com.pl"),
-    new SafeSite(groups.SGBBank, "bswiecbork.pl"),
-    new SafeSite(groups.SGBBank, "banksiedlec.pl"),
-    new SafeSite(groups.SGBBank, "bssieradz.pl"),
-    new SafeSite(groups.SGBBank, "bssierakow.pl"),
-    new SafeSite(groups.SGBBank, "bssierakowice.pl"),
-    new SafeSite(groups.SGBBank, "sblskalmierzyce.pl"),
-    new SafeSite(groups.SGBBank, "sblskalmierzyce.com.pl"),
-    new SafeSite(groups.SGBBank, "bsskaryszew.pl"),
-    new SafeSite(groups.SGBBank, "bsslawno.pl"),
-    new SafeSite(groups.SGBBank, "bsslesin.pl"),
-    new SafeSite(groups.SGBBank, "bsslupca.pl"),
-    new SafeSite(groups.SGBBank, "bs24slupca.pl"),
-    new SafeSite(groups.SGBBank, "bssmigiel.pl"),
-    new SafeSite(groups.SGBBank, "bssokoly.pl"),
-    new SafeSite(groups.SGBBank, "sblsrem.pl"),
-    new SafeSite(groups.SGBBank, "bssrodawlkp.pl"),
-    new SafeSite(groups.SGBBank, "bs-starogard.pl"),
-    new SafeSite(groups.SGBBank, "bsstegna.pl"),
-    new SafeSite(groups.SGBBank, "bsstrykow.pl"),
-    new SafeSite(groups.SGBBank, "lbsstrzalkowo.pl"),
-    new SafeSite(groups.SGBBank, "bsstrzegowo.pl"),
-    new SafeSite(groups.SGBBank, "gbsstrzelin.pl"),
-    new SafeSite(groups.SGBBank, "bssusz.pl"),
-    new SafeSite(groups.SGBBank, "pomorski-bs.pl"),
-    new SafeSite(groups.SGBBank, "bs-swiecie.pl"),
-    new SafeSite(groups.SGBBank, "bsszadek.pl"),
-    new SafeSite(groups.SGBBank, "bsduszniki.pl"),
-    new SafeSite(groups.SGBBank, "ebsd.pl"),
-    new SafeSite(groups.SGBBank, "bssztum.pl"),
-    new SafeSite(groups.SGBBank, "bsszubin.pl"),
-    new SafeSite(groups.SGBBank, "bstczew.pl"),
-    new SafeSite(groups.SGBBank, "bsteresin.pl"),
-    new SafeSite(groups.SGBBank, "pbstom.com.pl"),
-    new SafeSite(groups.SGBBank, "bstorun.pl"),
-    new SafeSite(groups.SGBBank, "bstorun24.pl"),
-    new SafeSite(groups.SGBBank, "nicolausbank24.pl"),
-    new SafeSite(groups.SGBBank, "bstuchola.pl"),
-    new SafeSite(groups.SGBBank, "esbank.pl"),
-    new SafeSite(groups.SGBBank, "bsustka.pl"),
-    new SafeSite(groups.SGBBank, "paluckibs.pl"),
-    new SafeSite(groups.SGBBank, "bswarka.pl"),
-    new SafeSite(groups.SGBBank, "bswarka.com.pl"),
-    new SafeSite(groups.SGBBank, "bswartkowice.pl"),
-    new SafeSite(groups.SGBBank, "bank-kaszubski.pl"),
-    new SafeSite(groups.SGBBank, "bswielen.pl"),
-    new SafeSite(groups.SGBBank, "bswiskitki.pl"),
-    new SafeSite(groups.SGBBank, "bswitkowo.pl"),
-    new SafeSite(groups.SGBBank, "kdbs.com.pl"),
-    new SafeSite(groups.SGBBank, "bswloszakowice.pl"),
-    new SafeSite(groups.SGBBank, "bswolczyn.pl"),
-    new SafeSite(groups.SGBBank, "bswolczyn24.pl"),
-    new SafeSite(groups.SGBBank, "bswolin.pl"),
-    new SafeSite(groups.SGBBank, "bswronki.pl"),
-    new SafeSite(groups.SGBBank, "pbswrzesnia.com.pl"),
-    new SafeSite(groups.SGBBank, "pbswrzesnia.pl"),
-    new SafeSite(groups.SGBBank, "bswschowa.pl"),
-    new SafeSite(groups.SGBBank, "bswschowa24.pl"),
-    new SafeSite(groups.SGBBank, "net-bank.com.pl"),
-    new SafeSite(groups.SGBBank, "sblzakrzewo.pl"),
-    new SafeSite(groups.SGBBank, "lbszdwola.pl"),
-    new SafeSite(groups.SGBBank, "sblzlotow.com.pl"),
-    new SafeSite(groups.SGBBank, "bs-zwolen.com.pl"),
-    new SafeSite(groups.SGBBank, "bspaluki.pl"),
-    new SafeSite(groups.SGBBank, "bszuromin.pl"),
-
-    new SafeSite(groups.SocieteGenerale, "societegenerale.pl"),
-    new SafeSite(groups.SocieteGenerale, "societegenerale.com"),
-    new SafeSite(groups.SocieteGenerale, "societegenerale.fr"),
-    new SafeSite(groups.SocieteGenerale, "sgbt.lu"),
-    new SafeSite(groups.SocieteGenerale, "societegenerale.mc"),
-    new SafeSite(groups.SocieteGenerale, "societegenerale.ch"),
-    new SafeSite(groups.SocieteGenerale, "kleinworthambros.com"),
-    new SafeSite(groups.SocieteGenerale, "sgmarkets.com"),
-
-    new SafeSite(groups.SvenskaHandelsbanken, "handelsbanken.com"),
-    new SafeSite(groups.SvenskaHandelsbanken, "handelsbanken.dk"),
-    new SafeSite(groups.SvenskaHandelsbanken, "shb.dk"),
-    new SafeSite(groups.SvenskaHandelsbanken, "handelsbanken.fi"),
-    new SafeSite(groups.SvenskaHandelsbanken, "handelsbanken.se"),
-    new SafeSite(groups.SvenskaHandelsbanken, "handelsbanken.nl"),
-    new SafeSite(groups.SvenskaHandelsbanken, "handelsbanken.no"),
-    new SafeSite(groups.SvenskaHandelsbanken, "edb.com"),
-    new SafeSite(groups.SvenskaHandelsbanken, "nets.no"),
-
-    new SafeSite(groups.TFBank, "tfbank.pl"),
-    new SafeSite(groups.TFBank, "tfbankgroup.com"),
-    new SafeSite(groups.TFBank, "tfbank.fi"),
-
-    new SafeSite(groups.ToyotaBank, "toyotabank.pl"),
-    new SafeSite(groups.ToyotaBank, "toyotaleasing.pl"),
-    new SafeSite(groups.ToyotaBank, "toyotabank.pl"),
-
-    new SafeSite(groups.UBS, "ubs.com"),
-
-    new SafeSite(groups.VWBank, "vwbank.pl"),
-    new SafeSite(groups.VWBank, "vwfs.pl"),
-    new SafeSite(groups.VWBank, "vwleasing.pl"),
-    new SafeSite(groups.VWBank, "autoaukcja.com"),
-    new SafeSite(groups.VWBank, "vwbank.pl"),
- 
-    new SafeSite(groups.WesternUnion, "westernunion.com"),
-]
+    {
+        name: "bank", 
+        icon: "/img/category/bank/default.png",
+        groups: 
+        [
+            {
+                name: "Aareal Bank",
+                domains: 
+                [
+                    "aareal.com",                
+                    "aareal-bank.com",
+                ]
+            },
+            {
+                name: "ABI Bank",
+                domains:
+                [
+                    "abi.al",
+                ]
+            },
+            {
+                name: "Alior Bank",
+                domains:
+                [
+                    "aliorbank.pl",
+                    "t-mobilebankowe.pl",
+                ]
+            },
+            {
+                name: "Allianz",
+                domains:
+                [
+                    "allianzinvest.at",
+                ]
+            },
+            {
+                name: "AlpenBank",
+                domains:
+                [
+                    "alpenbank.com",
+                ]
+            },
+            {
+                name: "ALPHA BANK",
+                domains:
+                [
+                    "alphabank.al",
+                ]
+            },
+            {
+                name: "Ameriabank",
+                domains:
+                [
+                    "ameriabank.am",
+                ]
+            },
+            {
+                name: "American Express",
+                domains:
+                [
+                    "americanexpress.com",
+                ]
+            },
+            {
+                name: "Andbank",
+                domains:
+                [
+                    "andbank.com",
+                    "andbank.com.br",
+                    "inversis.com",
+                ]
+            },
+            {
+                name: "APO - Österreichische Ärzte & Apotheker Bank AG",
+                domains:
+                [
+                    "apobank.at",
+                ]
+            },
+            {
+                name: "Araratbank",
+                domains:
+                [
+                    "araratbank.am",
+                ]
+            },
+            {
+                name: "Ardshinbank",
+                domains:
+                [
+                    "ardshinbank.am",
+                ]
+            },
+            {
+                name: "Armbusinessbank",
+                domains:
+                [
+                    "armbusinessbank.am",
+                ]
+            },
+            {
+                name: "Armeconombank",
+                domains:
+                [
+                    "aeb.am",
+                ]
+            },
+            {
+                name: "ArmSwissbank",
+                domains:
+                [
+                    "armswissbank.am",
+                ]
+            },
+            {
+                name: "Artsakhbank",
+                domains:
+                [
+                    "artsakhbank.am",
+                    "artsakhbank.com",
+                ]
+            },
+            {
+                name: "AWS - Austria Wirtschaftsservice",
+                domains:
+                [
+                    "aws.at",
+                ]
+            },
+            {
+                name: "Bank Austria",
+                domains:
+                [
+                    "bankaustria.at",
+                ]
+            },
+            {
+                name: "Banking Austria",
+                domains:
+                [
+                    "banking.co.at",
+                ]
+            },
+            {
+                name: "Bank BPH",
+                domains:
+                [
+                    "bph.pl",
+                ]
+            },
+            {
+                name: "Bank Gutmann",
+                domains:
+                [
+                    "gutmann.at",
+                ]
+            },
+            {
+                name: "Bankhaus Krentschker & Co. AG",
+                domains:
+                [
+                    "krentschker.at",
+                ]
+            },
+            {
+                name: "Bankhaus Schelhammer & Schattera",
+                domains:
+                [
+                    "schelhammer.at",
+                ]
+            },
+            {
+                name: "Bankhaus Spängler",
+                domains:
+                [
+                    "spaengler.at",
+                ]
+            },
+            {
+                name: "bank mellat",
+                domains:
+                [
+                    "bankmellat.ir",
+                ]
+            },
+            {
+                name: "Bank Millenium",
+                domains:
+                [
+                    "bankmillennium.pl",
+                ]
+            },
+            {
+                name: "Bank Nowy BGF S.A.",
+                domains:
+                [
+                    "pbsbank.pl",
+                ]
+            },
+            {
+                name: "Banco do Brasil",
+                domains:
+                [
+                    "bancobrasil.com.br",
+                    "bb.com.br",
+                ]
+            },
+            {
+                name: "BancSabadell d'Andorra",
+                domains:
+                [
+                    "bsandorra.com",
+                ]
+            },
+            {
+                name: "BANK OF CHINA",
+                domains:
+                [
+                    "bankofchina.com",
+                ]
+            },
+            {
+                name: "Bank Pekao",
+                domains:
+                [
+                    "cdm24.pl",
+                    "pekao.com.pl",
+                    "pekao24.pl",
+                    "pekaobiznes24.pl",
+                    "pekaobh.pl",
+                ]
+            },
+            {
+                name: "Bank Pocztowy",
+                domains:
+                [
+                    "envelobank.pl",
+                    "pocztowy.pl",
+                    "pocztowy24.pl",
+                ]
+            },
+            {
+                name: "Bank Winter",
+                domains:
+                [
+                    "bankwinter.com",
+                ]
+            },
+            {
+                name: "BAWAG P.S.K.",
+                domains:
+                [
+                    "bawagpsk.com",
+                ]
+            },
+            {
+                name: "BGK",
+                domains:
+                [
+                    "bgk.pl",
+                    "bgk24.pl",
+                ]
+            },
+            {
+                name: "BKS Bank",
+                domains:
+                [
+                    "bks.at",
+                    "bksbank-online.at",
+                ]
+            },
+            {
+                name: "BKT",
+                domains:
+                [
+                    "bkt.com.al",
+                ]
+            },
+            {
+                name: "BNP PARIBAS",
+                domains:
+                [
+                    "bnpparibas.com",
+                    "bnpparibas.pl",
+                    "group.bnpparibas",
+                    "webmakler.pl",
+                ]
+            },
+            {
+                name: "BOŚ Bank",
+                domains:
+                [
+                    "bosbank.pl",
+                    "bosbank24.pl",
+                    "iboss24.pl",
+                ]
+            },
+            {
+                name: "BPA - Banca Privada d'Andorra",
+                domains:
+                [
+                    "bpa.ad",
+                ]
+            },
+            {
+                name: "BTV - Bank für Tirol und Vorarlberg",
+                domains:
+                [
+                    "btv.at",
+                    "btv-bank.ch",
+                    "btv-bank.de",
+                    "btv3banken.ch",
+                    "meinebtv.at",
+                ]
+            },
+            {
+                name: "Byblos Bank",
+                domains:
+                [
+                    "byblosbankarmenia.am",
+                ]
+            },
+            {
+                name: "CaixaBank",
+                domains:
+                [
+                    "caixabank.pl",
+                    "lacaixa.pl",
+                ]
+            },
+            {
+                name: "China Construction Bank",
+                domains:
+                [
+                    "ccb.com",
+                ]
+            },
+            {
+                name: "Citibank",
+                domains:
+                [
+                    "citi.com",
+                    "citi.eu",
+                    "citibank.co.uk",
+                    "citibank.com",
+                    "citigroup.com",
+                ]
+            },
+            {
+                name: "Citi Handlowy",
+                domains:
+                [
+                    "citibank.pl",
+                    "citibankonline.pl",
+                    "citidirect.com",
+                    "dmbh.pl",
+                ]
+            },
+            {
+                name: "ConverseBank",
+                domains:
+                [
+                    "conversebank.am",
+                ]
+            },
+            {
+                name: "Credins Bank",
+                domains:
+                [
+                    "bankacredins.com",
+                ]
+            },
+            {
+                name: "CREDIT BANK OF ALBANIA",
+                domains:
+                [
+                    "creditbankofalbania.al",
+                ]
+            },
+            {
+                name: "Crédit Agricole",
+                domains:
+                [
+                    "acba.am",
+                    "acbadigital.am",
+                    "credit-agricole.pl",
+                ]
+            },
+            {
+                name: "Crédit Andorra",
+                domains:
+                [
+                    "e-credit.ad",
+                ]
+            },
+            {
+                name: "Danske Bank",
+                domains:
+                [
+                    "bv-corporatebanking.de",
+                    "danskebank.co.uk",
+                    "danskebank.com",
+                    "danskebank.dk",
+                    "danskebank.fi",
+                    "danskebank.ie",
+                    "danskebank.no",
+                    "danskebank.pl",
+                    "danskebank.se",
+                    "danskeci.com",
+                ]
+            },
+            {
+                name: "Deutsche Bank",
+                domains:
+                [
+                    "db.com",
+                    "deutsche-oppenheim.de",
+                    "deutschebank.com",
+                    "oppenheim.de",
+                    "oppenheimbank.com",
+                ]
+            },
+            {
+                name: "DNB Bank Polska S.A.",
+                domains:
+                [
+                    "dnb.pl",
+                    "dnbon.pl",
+                ]
+            },
+            {
+                name: "Euroclear",
+                domains:
+                [
+                    "euroclear.com",
+                ]
+            },
+            {
+                name: "evocaBank",
+                domains:
+                [
+                    "evocabank.am",
+                ]
+            },
+            {
+                name: "FCA Bank",
+                domains:
+                [
+                    "fcaautomotiveservices.co.uk",
+                    "fcabank.at",
+                    "fcabank.be",
+                    "fcabank.de",
+                    "fcabank.gr",
+                    "fcabank.it",
+                    "fcabank.pl",
+                    "fcabankgroup.com",
+                    "fcacapital.ch",
+                    "fcacapital.dk",
+                    "fcacapital.es",
+                    "fcacapital.fr",
+                    "fcacapital.nl",
+                    "fcacapital.pt",
+                    "fcagroup.com",
+                    "leasys.com",
+                ]
+            },
+            {
+                name: "FCE Bank - Ford Credit",
+                domains:
+                [
+                    "fcebank.com",
+                    "fcebank.pl",
+                    "ford.pl",
+                ]
+            },
+            {
+                name: "Fibank - Cilësia  vjen e para",
+                domains:
+                [
+                    "fibank.al",
+                ]
+            },
+            {
+                name: "Getin Bank",
+                domains:
+                [
+                    "getinbank.pl",
+                    "gnb.pl",
+                ]
+            },
+            {
+                name: "Grupa BPS",
+                domains:
+                [
+                    "absbank.pl",
+                    "absbank24.pl",
+                    "augustow.pl",
+                    "bank-konopiska.pl",
+                    "bank-wbs.pl",
+                    "bankbbs.pl",
+                    "bankbialopole.pl",
+                    "bankbps.pl",
+                    "bankbsilawa.pl",
+                    "banklbs.pl",
+                    "bankmbs.pl",
+                    "banksp.pl",
+                    "bbsustrzyki.pl",
+                    "bs.cieszyn.pl",
+                    "bs.gorlice.pl",
+                    "bs.limanowa.pl",
+                    "bs.ostrowiec.pl",
+                    "bs.piwniczna.pl",
+                    "bs.rzeszow.pl",
+                    "bs.stalowa-wola.pl",
+                    "bs.stary.sacz.pl",
+                    "bs.ustron.pl",
+                    "bs.wegierskagorka.pl",
+                    "bs-aleksandrow.pl",
+                    "bs-andrespol.pl",
+                    "bs-blazowa.pl",
+                    "bs-brzesko.pl",
+                    "bs-chojnow.pl",
+                    "bs-gilowice.pl",
+                    "bs-jawor.pl",
+                    "bs-kolbuszowa.pl",
+                    "bs-krzeszowice.pl",
+                    "bs-opole.com.pl",
+                    "bs-opole.pl",
+                    "bs-ozorkow.pl",
+                    "bs-sedziszow.pl",
+                    "bs-slomniki.com.pl",
+                    "bs-sokolka.pl",
+                    "bs-suchedniow.com.pl",
+                    "bs-swierklaniec.pl",
+                    "bs-warta.pl",
+                    "bs-wloszczowa.com.pl",
+                    "bs-wolbrom.com.pl",
+                    "bs-wolbrom.pl",
+                    "bs-zabkowicesl.pl",
+                    "bs-zawadzkie.pl",
+                    "bs-zywiec.pl",
+                    "bsadamow.pl",                   
+                    "bsbank.com.pl",
+                    "bsbarcin.pl",
+                    "bsbarglow.pl",
+                    "bsbartoszyce.com.pl",
+                    "bsbiala.pl",
+                    "bsbialapodlaska.pl",
+                    "bsbiecz.pl",
+                    "bsbiecz24.pl",
+                    "bsbielsk.pl",
+                    "bsbilgoraj.pl",
+                    "bsbiszcza.pl",
+                    "bsbr.pl",
+                    "bsbransk.pl",
+                    "bsbrzeg.pl",
+                    "bsbrzeznica.pl",
+                    "bsbuskozdroj.pl",
+                    "bschmielnik.pl",
+                    "bschojnice.pl",
+                    "bschrzanow.pl",
+                    "bsciechanowiec.pl",
+                    "bscycow.pl",
+                    "bsczarnydunajec.pl",
+                    "bsczechowice.com.pl",
+                    "bsczyzew.pl",
+                    "bsdabrowatarnowska.pl",
+                    "bsdaleszyce-gorno.pl",
+                    "bsdobczyce.pl",
+                    "bsdobrzen.pl",
+                    "bsdynow.pl",
+                    "bselk.pl",
+                    "bsframpol.pl",
+                    "bsgarwolin.com.pl",
+                    "bsgliwice.pl",
+                    "bsgliwice24.pl",
+                    "bsglogow.pl",
+                    "bsglogowmlp.pl",
+                    "bsgogolin.online",
+                    "bsgogolin.pl",
+                    "bsgostynin.pl",
+                    "bsgoworowo.pl",
+                    "bsgrodkow.pl",
+                    "bsgrybow.pl",
+                    "bshajnowka.pl",
+                    "bsilowa.pl",
+                    "bsj24.pl",
+                    "bsjablonka.pl",
+                    "bsjaroslaw.pl",
+                    "bsjasienica.pl",
+                    "bsjasieniec.pl",
+                    "bsjasionka.pl",
+                    "bsjastrzebie.pl",
+                    "bsjawor.pl",
+                    "bsjaworzno.pl",
+                    "bsjedwabne.pl",
+                    "bsjelesnia.pl",
+                    "bsjordanow.pl",
+                    "bsjozefow.pl",
+                    "bsjuchnowiec.pl",
+                    "bskadzidlo.pl",
+                    "bskaluszyn.pl",
+                    "bskamgora.pl",
+                    "bskamien.pl",
+                    "bskarczew.pl",
+                    "bskazimierzdolny.pl",
+                    "bskielce.com.pl",
+                    "bsklobuck.pl",
+                    "bsklodzko.pl",
+                    "bskock.pl",
+                    "bskolaczyce.pl",
+                    "bskolno.pl",
+                    "bskonopiska.pl",
+                    "bskonskowola.pl",
+                    "bskornica.pl",
+                    "bskorycin.pl",
+                    "bskoszecin.com.pl",
+                    "bskoszecin.pl",
+                    "bskozuchow.pl",
+                    "bskrapkowice.pl",
+                    "bskrasnik.pl",
+                    "bskrasnosielc.pl",
+                    "bskrasnystaw.pl",
+                    "bskrzyzanowice.pl",
+                    "bsksiezpol.pl",
+                    "bskw.pl",
+                    "bslacko.pl",
+                    "bslancut.pl",
+                    "bslapy.pl",
+                    "bslaszczow.pl",
+                    "bsleczna.pl",
+                    "bslegionowo.pl",
+                    "bslegnica.pl",
+                    "bslesnica.pl",
+                    "bslesniowice.pl",
+                    "bslezajsk.pl",
+                    "bslochow.pl",
+                    "bslomazy.pl",
+                    "bslomza.pl",
+                    "bslopuszno.pl",
+                    "bslosice.pl",
+                    "bslososinadolna.pl",
+                    "bslubaczow.pl",
+                    "bslubartow.pl",
+                    "bslubawa.pl",
+                    "bslubenia.pl",
+                    "bslubniany.pl",
+                    "bslukow.pl",
+                    "bsmalawies.pl",
+                    "bsmiedzna.pl",
+                    "bsmiedzyrzec.pl",
+                    "bsmilicz.com.pl",
+                    "bsminskmaz.pl",
+                    "bsmonki.pl",
+                    "bsmragowo.pl",
+                    "bsmrozy.pl",
+                    "bsmstow.pl",
+                    "bsmszana.pl",
+                    "bsmuszyna.pl",
+                    "bsmykanow.pl",
+                    "bsmyszkow.pl",
+                    "bsnaleczow.pl",
+                    "bsnamyslow.com.pl",
+                    "bsnarew.pl",
+                    "bsnarol.pl",
+                    "bsndm.pl",
+                    "bsniechobrz.pl",
+                    "bsniedrzwicaduza.pl",
+                    "bsnielisz.pl",
+                    "bsniemce.pl",
+                    "bsnowasol.pl",
+                    "bsnowysacz.pl",
+                    "bsnowytarg.pl",
+                    "bsobsza.pl",
+                    "bsolecko.pl",
+                    "bsolesnica.net",
+                    "bsolesnica.pl",
+                    "bsolsztynek.pl",
+                    "bsostrowmaz.pl",
+                    "bsotmuchow.pl",
+                    "bsotwock.pl",
+                    "bspajeczno.pl",
+                    "bspawlowice.pl",
+                    "bspiaseczno.pl",
+                    "bspiensk.pl",
+                    "bspilzno.pl",
+                    "bspinczow.pl",
+                    "bsplonsk.pl",
+                    "bspoczesna.pl",
+                    "bspoddebice.pl",
+                    "bspodegrodzie.pl",
+                    "bspolaniec.pl",
+                    "bsponiatowa.pl",
+                    "bspopow.pl",
+                    "bsporabka.pl",
+                    "bsproszowice.com.pl",
+                    "bsprudnik.pl",
+                    "bsprzasnysz.pl",
+                    "bspszczyna.pl",
+                    "bsradom.com.pl",
+                    "bsradom.pl",
+                    "bsradomyslwielki.com.pl",
+                    "bsradomyslwielki.pl",
+                    "bsradzyn.pl",
+                    "bsradzyn24.pl",
+                    "bsrajcza.pl",
+                    "bsraszyn.pl",
+                    "bsropczyce.pl",
+                    "bsrozan.pl",
+                    "bsryki.pl",
+                    "bsryki24.pl",
+                    "bsrymanow.pl",
+                    "bssedziszow.pl",
+                    "bssejny.pl",
+                    "bssiedlce.pl",
+                    "bssiemiatycze.pl",
+                    "bsskierniewice.pl",
+                    "bssobienie.pl",
+                    "bssobieniejeziory.pl",
+                    "bssochaczew.pl",
+                    "bssokolow.pl",
+                    "bssrodasl.pl",
+                    "bsstarachowice.pl",
+                    "bsstarozreby.pl",
+                    "bsstarysacz.pl",
+                    "bsstrzyzow.pl",
+                    "bssucha.pl",
+                    "bssuwalki.pl",
+                    "bsswidnica.pl",
+                    "bsszczekociny.pl",
+                    "bsszczucin.malopolska.info",
+                    "bsszczucin.pl",
+                    "bsszczuczyn.pl",
+                    "bsszczytno.pl",
+                    "bstarczyn.pl",
+                    "bstarnobrzeg.pl",
+                    "bstarnogrod.pl",
+                    "bstg.pl",
+                    "bstomaszowl.pl",
+                    "bstrzebiel.pl",
+                    "bstrzebnica.pl",
+                    "bstworog.pl",
+                    "bstychy.com.pl",
+                    "bstyczyn.pl",
+                    "bswachock.pl",
+                    "bswasewo.pl",
+                    "bswielopole.pl",
+                    "bswilamowice.pl",
+                    "bszagan.pl",
+                    "bszakopane.pl",
+                    "bszambrow.pl",
+                    "bszbuczyn.pl",
+                    "bszgierz.pl",
+                    "bszmigrod.com.pl",
+                    "bszolynia.pl",
+                    "bszory.pl",
+                    "bszyrakow.pl",
+                    "cui.pl",
+                    "dmbps.pl",
+                    "e-bskozuchow.pl",
+                    "e-bspszczyna.pl",
+                    "e-bsw.pl",
+                    "e-gbsradkow.pl",
+                    "e25.pl",
+                    "ebankbsilawa.pl",
+                    "ebankbszam.pl",
+                    "ebo24.pl",
+                    "ebs-zabkowicesl.pl",
+                    "ebskazimierzdolny.pl",
+                    "etnobank.pl",
+                    "gbsbank.pl",
+                    "gbsradkow.pl",
+                    "hexabank.pl",
+                    "kartosfera.pl",
+                    "kbsmyszyniec.pl",
+                    "loginbsustron.pl",
+                    "lomianki.com.pl",
+                    "lubelskibs.pl",
+                    "mazoviabank.pl",
+                    "mbsbank.pl",
+                    "mbsgizycko.pl",
+                    "mbsw.pl",
+                    "nbs24.pl",
+                    "nbsbank.pl",
+                    "nbscorponet.pl",
+                    "nbspulawy.pl",
+                    "okbank.pl",
+                    "pbs.zamosc.pl",
+                    "pbskkozle.pl",
+                    "pbsknyszyn.pl",
+                    "pbsopolelubelskie.pl",
+                    "pbssokolow.pl",
+                    "pbswegrow.pl",
+                    "pbszlotoryja.pl",
+                    "pmbank.pl",
+                    "powislanski.pl",
+                    "psbank.pl",
+                    "rbsbychawa.pl",
+                    "rbsrybnik.pl",
+                    "sanbank.pl",
+                    "sbppiaski.pl",
+                    "sbrbank.pl",
+                    "silesiabank.pl",
+                    "tatrzanskibs.pl",
+                    "wbs-bank.pl",
+                    "wbs-jonkowo.pl",
+                    "wmbs.pl",
+                ]
+            },
+            {
+                name: "Haitong",
+                domains:
+                [
+                    "haitongib.com",
+                ]
+            },
+            {
+                name: "HSBC",
+                domains:
+                [
+                    "hangseng.com",
+                    "hsbc.ae",
+                    "hsbc.am",
+                    "hsbc.bm",
+                    "hsbc.ca",
+                    "hsbc.ch",
+                    "hsbc.cl",
+                    "hsbc.co.id",
+                    "hsbc.co.il",
+                    "hsbc.co.in",
+                    "hsbc.co.jp",
+                    "hsbc.co.kr",
+                    "hsbc.co.mu",
+                    "hsbc.co.nz",
+                    "hsbc.co.om",
+                    "hsbc.co.th",
+                    "hsbc.co.uk",
+                    "hsbc.co.za",
+                    "hsbc.com",
+                    "hsbc.com.ar",
+                    "hsbc.com.au",
+                    "hsbc.com.bd",
+                    "hsbc.com.bh",
+                    "hsbc.com.bn",
+                    "hsbc.com.cn",
+                    "hsbc.com.eg",
+                    "hsbc.com.hk",
+                    "hsbc.com.kw",
+                    "hsbc.com.lb",
+                    "hsbc.com.mo",
+                    "hsbc.com.mt",
+                    "hsbc.com.mx",
+                    "hsbc.com.my",
+                    "hsbc.com.ph",
+                    "hsbc.com.qa",
+                    "hsbc.com.sg",
+                    "hsbc.com.tr",
+                    "hsbc.com.tw",
+                    "hsbc.com.uy",
+                    "hsbc.com.vn",
+                    "hsbc.cz",
+                    "hsbc.de",
+                    "hsbc.es",
+                    "hsbc.fr",
+                    "hsbc.gr",
+                    "hsbc.jo",
+                    "hsbc.ie",
+                    "hsbc.lk",
+                    "hsbc.pl",
+                    "hsbcnet.com",
+                    "hsbcprivatebank.com",
+                    "hsbcsaudi.com",
+                    "sabb.com",
+                    "sabbnet.com",
+                ]
+            },
+            {
+                name: "ICBC - Industrial and Commercial Bank of China",
+                domains:
+                [
+                    "icbc.com.cn",
+                    "icbc-ltd.com",
+                ]
+            },
+            {
+                name: "IDBank",
+                domains:
+                [
+                    "idbank.am",
+                ]
+            },
+            {
+                name: "Idea Bank",
+                domains:
+                [
+                    "ideabank.pl",
+                ]
+            },
+            {
+                name: "Ikano Bank",
+                domains:
+                [
+                    "bank.ikano",
+                    "ikano.co.uk",
+                    "ikano.dk",
+                    "ikano.no",
+                    "ikano-storeportal.de",
+                    "ikano-storeportal.pl",
+                    "ikanobank.at",
+                    "ikanobank.de",
+                    "ikanobank.dk",
+                    "ikanobank.fi",
+                    "ikanobank.no",
+                    "ikanobank.ru",
+                    "ikanobank.se",
+                    "my.ikano",
+                    "onlinebanking.ikea-kreditkarte.de",
+                    "onlinebanking-ikanobank.de",
+                    "portalbank.dk",
+                ]
+            },
+            {
+                name: "Inbank",
+                domains:
+                [
+                    "inbankpolska.pl",
+                ]
+            },
+            {
+                name: "INECOBANK",
+                domains:
+                [
+                    "inecobank.am",
+                ]
+            },
+            {
+                name: "ING Bank Śląski",
+                domains:
+                [
+                    "ing.pl",
+                    "ingbank.pl",
+                    "inghipoteczny.pl",
+                ]
+            },
+            {
+                name: "Intesa Sanpaolo",
+                domains:
+                [
+                    "alexbank.com",
+                    "banca5.com",
+                    "bankain.si",
+                    "bancaintesa.rs",
+                    "bancaintesa.ru",
+                    "cib.hu",
+                    "epsilonsgr.it",
+                    "eurizoncapital.com",
+                    "eurizoncapital.it",
+                    "eurizonslovakia.com",
+                    "eximbank.com",
+                    "eximbank.md",
+                    "fideuram.it",
+                    "fideuramgestions.lu",
+                    "fideuramireland.ie",
+                    "fideuramonline.it",
+                    "fideuramvita.it",
+                    "intesasanpaolo.com",
+                    "intesasanpaoloassicura.com",
+                    "intesasanpaolobank.al",
+                    "intesasanpaolobank.ro",
+                    "intesasanpaolobank.si",
+                    "intesasanpaolobanka.ba",
+                    "intesasanpaolobankireland.ie",
+                    "intesasanpaolobankluxembourg.lu",
+                    "intesasanpaolobrasil.com.br",
+                    "intesasanpaolopbmorval.ch",
+                    "intesasanpaoloprivatebanking.com",
+                    "intesasanpaoloprivatebanking.it",
+                    "intesasanpaoloprivatebanksuisse.ch",
+                    "intesasanpaolovita.it",
+                    "pbz.hr",
+                    "pravex.com.ua",
+                    "pravex.ua",
+                    "sirefiduciaria.it",
+                    "vub.sk",
+                ]
+            },
+            {
+                name: "John Deere Bank",
+                domains:
+                [
+                    "deere.com",
+                    "deere.pl",
+                ]
+            },
+            {
+                name: "J.P. Morgan",
+                domains:
+                [
+                    "chase.com",
+                    "jpmorgan.com",
+                    "paymentech.net",
+                ]
+            },
+            {
+                name: "mBank",
+                domains:
+                [
+                    "kompaktfinanse.pl",
+                    "mbank.pl",
+                    "mhipoteczny.pl",
+                ]
+            },
+            {
+                name: "Mercedes-Benz Bank",
+                domains:
+                [
+                    "mercedes-benz.com",
+                    "mercedes-benz.pl",
+                ]
+            },
+            {
+                name: "MORABANC",
+                domains:
+                [
+                    "morabanc.ad",
+                ]
+            },
+            {
+                name: "MUFG Bank",
+                domains:
+                [
+                    "bankmufg.pl",
+                    "mufg.jp",
+                ]
+            },
+            {
+                name: "ΕΤΕ - Αρχική Σελίδα",
+                domains:
+                [
+                    "nbg.gr",
+                ]
+            },
+            {
+                name: "Nest Bank",
+                domains:
+                [
+                    "nestbank.pl",
+                ]
+            },
+            {
+                name: "Noble Bank",
+                domains:
+                [
+                    "noblebank.pl",
+                    "noblesecurities.pl",
+                ]
+            },
+            {
+                name: "Nordea",
+                domains:
+                [
+                    "nordea.com",
+                ]
+            },
+            {
+                name: "Nykredit",
+                domains:
+                [
+                    "nykredit.com",
+                    "nykredit.dk",
+                ]
+            },
+            {
+                name: "PKO Bank Polski S.A.",
+                domains:
+                [
+                    "inteligo.pl",
+                    "ipko.pl",
+                    "pkobh.pl",
+                    "pkobp.pl",
+                ]
+            },
+            {
+                name: "Plus Bank",
+                domains:
+                [
+                    "plusbank.pl",
+                    "plusbank24.pl",
+                ]
+            },
+            {
+                name: "ProCredit Bank",
+                domains:
+                [
+                    "procreditbank.com.al",
+                ]
+            },
+            {
+                name: "BANQUE PSA FINANCE S.A.",
+                domains:
+                [
+                    "e-psafinance.pl",
+                ]
+            },
+            {
+                name: "Raiffeisen Bank International",
+                domains:
+                [
+                    "raiffeisen.al",
+                    "raiffeisen.it",
+                    "rbinternational.com.pl",
+                ]
+            },
+            {
+                name: "RCI Banque S.A.",
+                domains:
+                [
+                    "daciafinansowanie.pl",
+                    "nissanfinance.pl",
+                    "rcibanque.com",
+                    "rcibanque.com.pl",
+                    "rcibs.com",
+                    "renaultfinansowanie.pl",
+                ]
+            },
+            {
+                name: "Santander",
+                domains:
+                [
+                    "centrum24.pl",
+                    "ibiznes24.pl",
+                    "inwestoronline.pl",
+                    "santander.pl",
+                    "santanderconsumer.pl",
+                ]
+            },
+            {
+                name: "S|E|B",
+                domains:
+                [
+                    "seb.de",
+                    "seb.ee",
+                    "seb.lt",
+                    "seb.lv",
+                    "seb.pl",
+                    "seb.se",
+                    "sebank.se",
+                    "sebgroup.com",
+                ]
+            },
+            {
+                name: "SGB Bank S.A.",
+                domains:
+                [
+                    "bank-kaszubski.pl",
+                    "bankblaszki.pl",
+                    "bankrumia.pl",
+                    "banksiedlec.pl",
+                    "bbs-bank.pl",
+                    "bs.bialystok.pl",
+                    "bs.gniezno.pl",
+                    "bs.olawa.pl",
+                    "bs-belchatow.com.pl",
+                    "bs-glowno.com.pl",
+                    "bs-glowno.eu",
+                    "bs-glowno.pl",
+                    "bs-malbork.com.pl",
+                    "bs-malbork.pl",
+                    "bs-starogard.pl",
+                    "bs-swiecie.pl",
+                    "bs-zwolen.com.pl",
+                    "bs24gniezno.pl",
+                    "bs24slupca.pl",
+                    "bsbd.pl",
+                    "bsbd24.pl",
+                    "bsbiala.com.pl",
+                    "bsbialobrzegi.pl",
+                    "bsbialogard.pl",
+                    "bsbiezun.pl",
+                    "bsbytow.com.pl",
+                    "bschodziez.pl",
+                    "bschojna.pl",
+                    "bschynow.pl",
+                    "bsczarnkow.pl",
+                    "bsczersk.pl",
+                    "bsczluchow.pl",
+                    "bsdobrzyca.pl",
+                    "bsduszniki.pl",
+                    "bsdzialdowo.pl",
+                    "bsdzierzgon.pl",
+                    "bsdzierzoniow.pl",
+                    "bsgabin.pl",
+                    "bsglinojeck.pl",
+                    "bsglowaczow.pl",
+                    "bsgniew.pl",
+                    "bsgoleniow.pl",
+                    "bsgolub24.pl",
+                    "bsgolubdobrzyn.pl",
+                    "bsgora.pl",
+                    "bsgrabow.pl",
+                    "bsgrebocin.pl",
+                    "bsgrodzisk.pl",
+                    "bsgrojec.pl",
+                    "bsgrudusk.pl",
+                    "bsgryfice.pl",
+                    "bsgryfino.pl",
+                    "bshalinow.pl",
+                    "bsilow.pl",
+                    "bsinowroclaw.pl",
+                    "bsjarocin.pl",
+                    "bsjastrowie.pl",
+                    "bsjedlinsk.pl",
+                    "bsjutrosin.pl",
+                    "bskaliszpom.pl",
+                    "bskcynia.pl",
+                    "bskleszczow.pl",
+                    "bsklodawa.eu",
+                    "bskobierzyce.pl",
+                    "bskonin.pl",
+                    "bskoronowo.com.pl",
+                    "bskoscian.pl",
+                    "bskoscierzyna.pl",
+                    "bskostrzyn.pl",
+                    "bskowal.pl",
+                    "bskowalewo.pl",
+                    "bskrokowa.pl",
+                    "bskrosniewice.com.pl",
+                    "bskrosno.pl",
+                    "bskrotoszyn.pl",
+                    "bskruszwica.pl",
+                    "bskutno.pl",
+                    "bslasin.pl",
+                    "bsleba.pl",
+                    "bsleczyca.pl",
+                    "bslipka.pl",
+                    "bslipno.pl",
+                    "bslipsko.pl",
+                    "bslubichowo.com",
+                    "bslubraniec.pl",
+                    "bslubycza.pl",
+                    "bslwowekslaski.pl",
+                    "bsmazowsze.pl",
+                    "bsmlawa.pl",
+                    "bsmszczonow.pl",
+                    "bsnaklo.pl",
+                    "bsnasielsk.pl",
+                    "bsnowe.com.pl",
+                    "bsnowystaw.pl",
+                    "bsnowytomysl.pl",
+                    "bsopoczno.pl",
+                    "bsosie.pl",
+                    "bsosno.pl",
+                    "bsozarow.pl",
+                    "bspaluki.pl",
+                    "bspaslek.pl",
+                    "bspionki.pl",
+                    "bspk.pl",
+                    "bspleszew.pl",
+                    "bspolczyn.pl",
+                    "bsponiec.pl",
+                    "bsprabuty.pl",
+                    "bspruszcz.pl",
+                    "bspruszczgd.pl",
+                    "bsprzedborz.pl",
+                    "bsprzysucha.pl",
+                    "bspszczolki.pl",
+                    "bspuck.pl",
+                    "bspultusk.pl",
+                    "bsraciaz.pl",
+                    "bsraszkow.com.pl",
+                    "bsraszkow.pl",
+                    "bsrusiec.pl",
+                    "bsrz.pl",
+                    "bsrzepin.pl",
+                    "bssandomierz.com.pl",
+                    "bssantok.pl",
+                    "bssieradz.pl",
+                    "bssierakow.pl",
+                    "bssierakowice.pl",
+                    "bsskaryszew.pl",
+                    "bsslawno.pl",
+                    "bsslesin.pl",
+                    "bsslupca.pl",
+                    "bssmigiel.pl",
+                    "bssokoly.pl",
+                    "bssrodawlkp.pl",
+                    "bsstarabiala.pl",
+                    "bsstegna.pl",
+                    "bsstrykow.pl",
+                    "bsstrzegowo.pl",
+                    "bssusz.pl",
+                    "bsszadek.pl",
+                    "bssztum.pl",
+                    "bsszubin.pl",
+                    "bstczew.pl",
+                    "bsteresin.pl",
+                    "bstorun.pl",
+                    "bstorun24.pl",
+                    "bstuchola.pl",
+                    "bsustka.pl",                    
+                    "bswarka.com.pl",
+                    "bswarka.pl",
+                    "bswartkowice.pl",
+                    "bswiecbork.pl",
+                    "bswielen.pl",
+                    "bswierzbinek.com.pl",
+                    "bswierzbinek.pl",
+                    "bswiskitki.pl",
+                    "bswitkowo.pl",
+                    "bswloszakowice.pl",
+                    "bswolczyn.pl",
+                    "bswolczyn24.pl",
+                    "bswolin.pl",
+                    "bswronki.pl",
+                    "bswschowa.pl",
+                    "bswschowa24.pl",
+                    "bsziemikal.pl",
+                    "bszl.com.pl",
+                    "bszl.pl",
+                    "bszp.pl",
+                    "bszuromin.pl",
+                    "bszw.pl",                    
+                    "ebsd.pl",
+                    "esbank.pl",
+                    "expressbank.pl",
+                    "gbs.net.pl",
+                    "gbschoszczno.pl",
+                    "gbsmosina.pl",
+                    "gbsstrzelin.pl",
+                    "inobanknet.pl",
+                    "k-gbs.pl",
+                    "kbs-bank.pl",
+                    "kdbs.com.pl",
+                    "lbsoborniki.pl",
+                    "lbsstrzalkowo.pl",
+                    "lbszdwola.pl",
+                    "lodzkibs.pl",
+                    "lubuskibs.pl",
+                    "lwbsdrezdenko.pl",
+                    "nadnoteckibank.pl",
+                    "naszbank.pl",
+                    "nbs-rakoniewice.pl",
+                    "nbsdzialoszyn.pl",
+                    "nbsrakoniewice.pl",
+                    "net-bank.com.pl",
+                    "nicolausbank24.pl",
+                    "pacobank.pl",
+                    "paluckibs.pl",                 
+                    "pbs.poznan.pl",
+                    "pbsgostyn.pl",
+                    "pbstom.com.pl",
+                    "pbswrzesnia.com.pl",
+                    "pbswrzesnia.pl",
+                    "piastowskibs.com.pl",
+                    "pomorski-bs.pl",
+                    "psbspyrzyce.pl",
+                    "rbs.lututow.pl",
+                    "sblkepno.pl",
+                    "sblskalmierzyce.com.pl",
+                    "sblskalmierzyce.pl",
+                    "sblsrem.pl",
+                    "sblzakrzewo.pl",
+                    "sblzlotow.com.pl",
+                    "sgb.pl",
+                    "sgb24.pl",
+                    "zulawskibs.pl",
+                ]
+            },
+            {
+                name: "Société Générale",
+                domains:
+                [
+                    "kleinworthambros.com",
+                    "sgbt.lu",
+                    "societegenerale.al",
+                    "societegenerale.ch",
+                    "societegenerale.com",
+                    "societegenerale.fr",
+                    "societegenerale.mc",
+                    "societegenerale.pl",
+                    "sgmarkets.com",
+                ]
+            },
+            {
+                name: "Svenska Handelsbanken AB",
+                domains:
+                [
+                    "edb.com",
+                    "handelsbanken.com",
+                    "handelsbanken.dk",
+                    "handelsbanken.fi",
+                    "handelsbanken.nl",
+                    "handelsbanken.no",
+                    "handelsbanken.se",
+                    "nets.no",
+                    "shb.dk",
+                ]
+            },
+            {
+                name: "TF Bank",
+                domains:
+                [
+                    "tfbank.fi",
+                    "tfbank.pl",
+                    "tfbankgroup.com",
+                ]
+            },
+            {
+                name: "Tirana Bank",
+                domains:
+                [
+                    "tiranabank.al",
+                ]
+            },
+            {
+                name: "Toyota Bank",
+                domains:
+                [
+                    "toyotabank.pl",
+                    "toyotaleasing.pl",
+                ]
+            },
+            {
+                name: "United Bank of Albania",
+                domains:
+                [
+                    "uba.com.al",
+                ]
+            },
+            {
+                name: "UBS Group AG",
+                domains:
+                [
+                    "ubs.com",
+                ]
+            },
+            {
+                name: "UNIBANK",
+                domains:
+                [
+                    "unibank.am",
+                    "unibank.az",
+                    "unibank.com",
+                ]
+            },
+            {
+                name: "UNIONBANK",
+                domains:
+                [
+                    "unionbank.al",
+                ]
+            },
+            {
+                name: "Vallback",
+                domains:
+                [
+                    "vallbanc.ad",
+                ]
+            },
+            {
+                name: "Vontobel",
+                domains:
+                [
+                    "deritrade.com",
+                    "vontobel.com",
+                ]
+            },
+            {
+                name: "VTB",
+                domains:
+                [
+                    "vtb.am",
+                    "vtb.com",
+                    "vtb.ru",
+                    "vtbcapital.com",
+                    "vtbcapital.ru",
+                ]
+            },
+            {
+                name: "Volkswagen Bank",
+                domains:
+                [
+                    "autoaukcja.com",
+                    "vwbank.pl",
+                    "vwfs.pl",
+                    "vwleasing.pl",
+                ]
+            },
+        
+        ]
+    },
+    {
+        name: "payment", 
+        icon: "/img/category/payment/default.png",
+        groups: 
+        [
+            {
+                name: "Elavon",
+                domains:
+                [
+                    "elavon.pl",
+                    "elavonconnect.com",
+                    "elavonpayment.com",                
+                ]
+            },
+            {
+                name: "Western Union",
+                domains:
+                [
+                    "westernunion.com",
+                ]
+            },
+        ]
+    },
+];
