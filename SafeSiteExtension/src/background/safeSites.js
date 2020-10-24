@@ -21,6 +21,21 @@ var categories =
                 ]
             },
             {
+                name: "AccessBank",
+                domains:
+                [
+                    "accessbank.az",
+                    "myaccess.az",
+                ]
+            },
+            {
+                name: "AFB Bank ASC",
+                domains:
+                [
+                    "afb.az",
+                ]
+            },
+            {
                 name: "Alior Bank",
                 domains:
                 [
@@ -108,6 +123,13 @@ var categories =
                 ]
             },
             {
+                name: "ArmedForcesBank",
+                domains:
+                [
+                    "afbank.com",
+                ]
+            },
+            {
                 name: "ArmSwissbank",
                 domains:
                 [
@@ -120,6 +142,21 @@ var categories =
                 [
                     "artsakhbank.am",
                     "artsakhbank.com",
+                ]
+            },
+            {
+                name: "ASB Bank",
+                domains:
+                [
+                    "asb.az",
+                    "asb.co.nz",
+                ]
+            },
+            {
+                name: "AtaBank",
+                domains:
+                [
+                    "atabank.com",
                 ]
             },
             {
@@ -137,10 +174,31 @@ var categories =
                 ]
             },
             {
+                name: "Azərbaycan Beynəlxalq Bankı",
+                domains:
+                [
+                    "ibar.az",
+                ]
+            },
+            {
+                name: "AZkreditbank",
+                domains:
+                [
+                    "azkreditbank.com",
+                ]
+            },
+            {
                 name: "Banking Austria",
                 domains:
                 [
                     "banking.co.at",
+                ]
+            },
+            {
+                name: "Bank Avrasiya",
+                domains:
+                [
+                    "bankavrasiya.az",
                 ]
             },
             {
@@ -183,6 +241,13 @@ var categories =
                 domains:
                 [
                     "bankmellat.ir",
+                ]
+            },
+            {
+                name: "Bank Melli Iran",
+                domains:
+                [
+                    "bmi.ir",
                 ]
             },
             {
@@ -443,6 +508,13 @@ var categories =
                 ]
             },
             {
+                name: "DemirBank",
+                domains:
+                [
+                    "demirbank.kg",
+                ]
+            },
+            {
                 name: "DenizBank",
                 domains:
                 [
@@ -528,6 +600,14 @@ var categories =
                 domains:
                 [
                     "evocabank.am",
+                ]
+            },
+            {
+                name: "Expressbank",
+                domains:
+                [
+                    "express24.az",
+                    "expressbank.az",
                 ]
             },
             {
@@ -910,6 +990,14 @@ var categories =
                 ]
             },
             {
+                name: "GünayBank",
+                domains:
+                [
+                    "gunaybank.com",
+                    "gunaybank.az",
+                ]
+            },
+            {
                 name: "Haitong",
                 domains:
                 [
@@ -1126,6 +1214,13 @@ var categories =
                 ]
             },
             {
+                name: "KredoBank",
+                domains:
+                [
+                    "kredobank.com.ua",
+                ]
+            },
+            {
                 name: "LGT - Private Banking and Asset Management",
                 domains:
                 [
@@ -1186,6 +1281,25 @@ var categories =
                 ]
             },
             {
+                name: "MuganBank",
+                domains:
+                [
+                    "muganbank.az",
+                ]
+            },
+            {
+                name: "NBC",
+                domains:
+                [
+                    "bnc.ca",
+                    "nbc.bank",
+                    "nbc.ca",
+                    "secure-nbcok.com",
+                    "secureinternetbank.com",
+                    "thenbcbank.com",
+                ]
+            },
+            {
                 name: "Nest Bank",
                 domains:
                 [
@@ -1224,6 +1338,22 @@ var categories =
                 ]
             },
             {
+                name: "Parabokt",
+                domains:
+                [
+                    "parabank.az",
+                    "parabokt.az",
+                ]
+            },
+            {
+                name: "PASHA Bank",
+                domains:
+                [
+                    "pashabank.az",
+                    "pashabank.digital",
+                ]
+            },
+            {
                 name: "PKO Bank Polski S.A.",
                 domains:
                 [
@@ -1239,6 +1369,13 @@ var categories =
                 [
                     "plusbank.pl",
                     "plusbank24.pl",
+                ]
+            },
+            {
+                name: "Premium Bank",
+                domains:
+                [
+                    "premiumbank.az",
                 ]
             },
             {
@@ -1596,6 +1733,13 @@ var categories =
                 ]
             },
             {
+                name: "Texnikabank",
+                domains:
+                [
+                    "texnikabank.com",
+                ]
+            },
+            {
                 name: "TF Bank",
                 domains:
                 [
@@ -1620,10 +1764,17 @@ var categories =
                 ]
             },
             {
-                name: "United Bank of Albania",
+                name: "Turan Bank",
                 domains:
                 [
-                    "uba.com.al",
+                    "turanbank.az",
+                ]
+            },
+            {
+                name: "Turon Bank",
+                domains:
+                [
+                    "turonbank.uz",
                 ]
             },
             {
@@ -1634,7 +1785,7 @@ var categories =
                 ]
             },
             {
-                name: "UNIBANK",
+                name: "Unibank",
                 domains:
                 [
                     "unibank.am",
@@ -1666,6 +1817,13 @@ var categories =
                 domains:
                 [
                     "unionbank.al",
+                ]
+            },
+            {
+                name: "United Bank of Albania",
+                domains:
+                [
+                    "uba.com.al",
                 ]
             },
             {
@@ -1735,6 +1893,28 @@ var categories =
                 [
                     "fundmanager-pro.com",
                     "wienerprivatbank.com",
+                ]
+            },
+            {
+                name: "Xalq Bank",
+                domains:
+                [
+                    "xalqbank.az",
+                    "xalqonline.az",
+                ]
+            },
+            {
+                name: "Yapi Kredi Bank Azərbaycan",
+                domains:
+                [
+                    "yapikredi.com.az",
+                ]
+            },
+            {
+                name: "Yelo Bank",
+                domains:
+                [
+                    "yelo.az",
                 ]
             },
             {
