@@ -123,17 +123,17 @@ var categories =
                 ]
             },
             {
+                name: "Austrian Anadi Bank AG",
+                domains:
+                [
+                    "anadibank.com",
+                ]
+            },
+            {
                 name: "AWS - Austria Wirtschaftsservice",
                 domains:
                 [
                     "aws.at",
-                ]
-            },
-            {
-                name: "Bank Austria",
-                domains:
-                [
-                    "bankaustria.at",
                 ]
             },
             {
@@ -331,6 +331,13 @@ var categories =
                 ]
             },
             {
+                name: "Capital Bank - GRAWE Gruppe AG",
+                domains:
+                [
+                    "capitalbank.at",
+                ]
+            },
+            {
                 name: "China Construction Bank",
                 domains:
                 [
@@ -356,6 +363,30 @@ var categories =
                     "citibankonline.pl",
                     "citidirect.com",
                     "dmbh.pl",
+                ]
+            },
+            {
+                name: "Commerzbank AG",
+                domains:
+                [
+                    "commerzbank.ae",
+                    "commerzbank.at",
+                    "commerzbank.be",
+                    "commerzbank.ch",
+                    "commerzbank.cn",
+                    "commerzbank.co.uk",
+                    "commerzbank.com",
+                    "commerzbank.com.br",
+                    "commerzbank.cz",
+                    "commerzbank.es",
+                    "commerzbank.fr",
+                    "commerzbank.hu",
+                    "commerzbank.it",
+                    "commerzbank.jp",
+                    "commerzbank.nl",
+                    "commerzbank.ru",
+                    "commerzbank.sk",
+                    "commerzbank.us",
                 ]
             },
             {
@@ -412,6 +443,13 @@ var categories =
                 ]
             },
             {
+                name: "DenizBank",
+                domains:
+                [
+                    "denizbank.com",
+                ]
+            },
+            {
                 name: "Deutsche Bank",
                 domains:
                 [
@@ -431,6 +469,54 @@ var categories =
                 ]
             },
             {
+                name: "easybank",
+                domains:
+                [
+                    "easybank.at",
+                ]
+            },
+            {
+                name: "ERSTE Group",
+                domains:
+                [
+                    "24banking.md",
+                    "24banking.ro",
+                    "bcr.md",
+                    "bcr.ro",
+                    "business24.cz",
+                    "csas.cz",
+                    "ebb4all.com",
+                    "erstebank.hr",
+                    "erstebank.hu",
+                    "erstebank.me",
+                    "erstebank.rs",
+                    "erstegroup.com",
+                    "ersteinvestment.hu",
+                    "ersteprivatebanking.at",
+                    "ersteprivatebanking.com",
+                    "ersteprivatebanking.cz",
+                    "ersteprivatebanking.hr",
+                    "ersteprivatebanking.hu",
+                    "ersteprivatebanking.ro",
+                    "ersteprivatebanking.sk",
+                    "infocont.md",
+                    "netbanking.mk",
+                    "servis24.cz",
+                    "slsp.sk",
+                    "sparkasse.at",
+                    "sparkasse.ba",
+                    "sparkasse.mk",
+                    "sparkasse.si",
+                ]
+            },
+            {
+                name: "ΕΤΕ - Αρχική Σελίδα",
+                domains:
+                [
+                    "nbg.gr",
+                ]
+            },
+            {
                 name: "Euroclear",
                 domains:
                 [
@@ -442,6 +528,13 @@ var categories =
                 domains:
                 [
                     "evocabank.am",
+                ]
+            },
+            {
+                name: "FactorBank",
+                domains:
+                [
+                    "factorbank.com",
                 ]
             },
             {
@@ -480,6 +573,13 @@ var categories =
                 domains:
                 [
                     "fibank.al",
+                ]
+            },
+            {
+                name: "Generali Bank",
+                domains:
+                [
+                    "generalibank.at",
                 ]
             },
             {
@@ -817,6 +917,13 @@ var categories =
                 ]
             },
             {
+                name: "Hello bank",
+                domains:
+                [
+                    "hellobank.at",
+                ]
+            },
+            {
                 name: "HSBC",
                 domains:
                 [
@@ -1004,6 +1111,41 @@ var categories =
                 ]
             },
             {
+                name: "Kathrein Privatbank",
+                domains:
+                [
+                    "kathrein.at",
+                ]
+            },
+            {
+                name: "Kommunal Kredit",
+                domains:
+                [
+                    "kommunalkredit.at",
+                    "kommunalkreditdirekt.at",
+                ]
+            },
+            {
+                name: "LGT - Private Banking and Asset Management",
+                domains:
+                [
+                    "lgt.at",
+                    "lgt.ch",
+                    "lgt.com",
+                    "lgt.li",
+                    "lgtcp.com",
+                    "lgtvestra.com",
+                    "navconsulting.net",
+                ]
+            },
+            {
+                name: "Liechtensteinische Landesbank",
+                domains:
+                [
+                    "llb.at",
+                ]
+            },
+            {
                 name: "mBank",
                 domains:
                 [
@@ -1021,6 +1163,14 @@ var categories =
                 ]
             },
             {
+                name: "MONETA Money Bank",
+                domains:
+                [
+                    "internetbanka.cz",
+                    "moneta.cz",
+                ]
+            },
+            {
                 name: "MORABANC",
                 domains:
                 [
@@ -1033,13 +1183,6 @@ var categories =
                 [
                     "bankmufg.pl",
                     "mufg.jp",
-                ]
-            },
-            {
-                name: "ΕΤΕ - Αρχική Σελίδα",
-                domains:
-                [
-                    "nbg.gr",
                 ]
             },
             {
@@ -1070,6 +1213,14 @@ var categories =
                 [
                     "nykredit.com",
                     "nykredit.dk",
+                ]
+            },
+            {
+                name: "Oberbank",
+                domains:
+                [
+                    "banking-oberbank.at",
+                    "oberbank.com",
                 ]
             },
             {
@@ -1108,9 +1259,17 @@ var categories =
                 name: "Raiffeisen Bank International",
                 domains:
                 [
+                    "custody.a",
+                    "myraiffeisen.com",
                     "raiffeisen.al",
+                    "raiffeisen.at",
                     "raiffeisen.it",
+                    "rbinternational.com",
                     "rbinternational.com.pl",
+                    "raiffeisenresearch.com",
+                    "rcb.at",
+                    "rcm.at",
+                    "yellowe.com",
                 ]
             },
             {
@@ -1148,6 +1307,14 @@ var categories =
                     "seb.se",
                     "sebank.se",
                     "sebgroup.com",
+                ]
+            },
+            {
+                name: "Semper Constantia",
+                domains:
+                [
+                    "sc-immo.at",
+                    "semperconstantia.at",
                 ]
             },
             {
@@ -1384,6 +1551,36 @@ var categories =
                 ]
             },
             {
+                name: "Sparbanken Skåne AB",
+                domains:
+                [
+                    "sparbankenskane.se",
+                    "swedbank.se",
+                ]
+            },
+            {
+                name: "Sparda-Bank",
+                domains:
+                [
+                    "sparda.at",
+                    "sparda.de",
+                    "sparda-a.de",
+                    "sparda-b.de",
+                    "sparda-bank-hamburg.de",
+                    "sparda-bw.de",
+                    "sparda-h.de",
+                    "sparda-hessen.de",
+                    "sparda-m.de",
+                    "sparda-n.de",
+                    "sparda-ostbayern.de",
+                    "sparda-sw.de",
+                    "sparda-verband.de",
+                    "sparda-west.de",
+                    "spardawien.at",
+                    "goteo.de",
+                ]
+            },
+            {
                 name: "Svenska Handelsbanken AB",
                 domains:
                 [
@@ -1446,6 +1643,25 @@ var categories =
                 ]
             },
             {
+                name: "UniCredit",
+                domains:
+                [
+                    "bankaustria.at",
+                    "bulbank.bg",
+                    "bulbankonline.bg",
+                    "hypovereinsbank.de",
+                    "schoellerbank.at",
+                    "unicredit.eu",
+                    "unicredit.it",
+                    "unicredit.ru",
+                    "unicreditbanking.eu",
+                    "unicreditbanking.net",
+                    "unicreditgroup.eu",
+                    "unicreditleasing.hr",
+                    "zaba.hr",
+                ]
+            },
+            {
                 name: "UNIONBANK",
                 domains:
                 [
@@ -1453,10 +1669,35 @@ var categories =
                 ]
             },
             {
+                name: "VakifBank",
+                domains:
+                [
+                    "onlinebanking-vakif-bank.de",
+                    "vakif-bank.de",
+                    "vakifbank.at",
+                    "vakifbank.com.tr",
+                    "vakifbankusa.com",
+                ]
+            },
+            {
                 name: "Vallback",
                 domains:
                 [
                     "vallbanc.ad",
+                ]
+            },
+            {
+                name: "VKB|Bank",
+                domains:
+                [
+                    "vkb-bank.at",
+                ]
+            },
+            {
+                name: "Volksbank",
+                domains:
+                [
+                    "volksbank.at",
                 ]
             },
             {
@@ -1488,7 +1729,21 @@ var categories =
                     "vwleasing.pl",
                 ]
             },
-        
+            {
+                name: "Wiener Privatbank",
+                domains:
+                [
+                    "fundmanager-pro.com",
+                    "wienerprivatbank.com",
+                ]
+            },
+            {
+                name: "Zürcher Kantonalbank Österreich AG",
+                domains:
+                [
+                    "zkb-oe.at",
+                ]
+            },        
         ]
     },
     {
