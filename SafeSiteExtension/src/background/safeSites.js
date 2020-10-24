@@ -43,6 +43,13 @@ var categories =
                 ]
             },
             {
+                name: "Aion Bank",
+                domains:
+                [
+                    "aion.be",
+                ]
+            },
+            {
                 name: "Альфа-Банк (Alfa-Bank)",
                 domains:
                 [
@@ -124,6 +131,13 @@ var categories =
                 ]
             },
             {
+                name: "Argenta",
+                domains:
+                [
+                    "argenta.be",
+                ]
+            },
+            {
                 name: "Armbusinessbank",
                 domains:
                 [
@@ -175,6 +189,24 @@ var categories =
                 ]
             },
             {
+                name: "Attijariwafa bank",
+                domains:
+                [
+                    "attijaribank.mr",
+                    "attijariwafa.com",
+                    "attijariwafa.com.eg",
+                    "attijariwafabank.com",
+                    "attijariwafabank-europe.fr",
+                    "biat.tg",
+                    "creditducongo.com",
+                    "creditdusenegal.com",
+                    "e-attijari.com",
+                    "sib.ci",
+                    "ugb-ebank.ga",
+                    "webank.com.tn",
+                ]
+            },
+            {
                 name: "Austrian Anadi Bank AG",
                 domains:
                 [
@@ -186,6 +218,13 @@ var categories =
                 domains:
                 [
                     "aws.at",
+                ]
+            },
+            {
+                name: "AXA Bank",
+                domains:
+                [
+                    "axabank.be",
                 ]
             },
             {
@@ -343,10 +382,51 @@ var categories =
                 ]
             },
             {
+                name: "Banque Eni",
+                domains:
+                [
+                    "banqueenisa.be",
+                    "eni.com",
+                    "eni.it",
+                ]
+            },
+            {
+                name: "Banque Transatlantique",
+                domains:
+                [
+                    "banquetransatlantique.be",
+                    "banquetransatlantique.co.uk",
+                    "banquetransatlantique.com",
+                    "banquetransatlantique.lu",
+                ]
+            },
+            {
                 name: "BAWAG P.S.K.",
                 domains:
                 [
                     "bawagpsk.com",
+                ]
+            },
+            {
+                name: "BBVA",
+                domains:
+                [
+                    "bbva.be",
+                    "bbva.ch",
+                    "bbva.com",
+                    "bbva.com.ar",
+                    "bbva.com.co",
+                    "bbva.com.py",
+                    "bbva.com.uy",
+                    "bbva.es",
+                    "bbva.fr",
+                    "bbva.mx",
+                    "bbva.pe",
+                    "bbva.pt",
+                    "bbvanetcash.co.uk",
+                    "bbvauk.com",
+                    "bbvausa.com",
+                    "provincial.com",
                 ]
             },
             {
@@ -372,6 +452,13 @@ var categories =
                 ]
             },
             {
+                name: "Belfius",
+                domains:
+                [
+                    "belfius.be",
+                ]
+            },
+            {
                 name: "Белгазпромбанк (Belgazprombank)",
                 domains:
                 [
@@ -385,6 +472,13 @@ var categories =
                 domains:
                 [
                     "belinvestbank.by",
+                ]
+            },
+            {
+                name: "Beobank",
+                domains:
+                [
+                    "beobank.be",
                 ]
             },
             {
@@ -416,6 +510,8 @@ var categories =
                 [
                     "bnpparibas.com",
                     "bnpparibas.pl",
+                    "bnpparibasfortis.be",
+                    "bnpparibasfortis.com",
                     "group.bnpparibas",
                     "webmakler.pl",
                 ]
@@ -434,6 +530,13 @@ var categories =
                 domains:
                 [
                     "bpa.ad",
+                ]
+            },
+            {
+                name: "bpost banque",
+                domains:
+                [
+                    "bpostbanque.be",
                 ]
             },
             {
@@ -473,7 +576,9 @@ var categories =
                 name: "Byblos Bank",
                 domains:
                 [
+                    "byblosbank.com",
                     "byblosbankarmenia.am",
+                    "byblosonline.com",
                 ]
             },
             {
@@ -581,6 +686,13 @@ var categories =
                 ]
             },
             {
+                name: "Crelan",
+                domains:
+                [
+                    "crelan.be",
+                ]
+            },
+            {
                 name: "Danske Bank",
                 domains:
                 [
@@ -594,6 +706,21 @@ var categories =
                     "danskebank.pl",
                     "danskebank.se",
                     "danskeci.com",
+                ]
+            },
+            {
+                name: "Degroof Petercam",
+                domains:
+                [
+                    "degroofpetercam.be",
+                    "degroofpetercam.com",
+                ]
+            },
+            {
+                name: "Delta Lloyd Bank",
+                domains:
+                [
+                    "deltalloydbank.com",
                 ]
             },
             {
@@ -682,6 +809,14 @@ var categories =
                 domains:
                 [
                     "euroclear.com",
+                ]
+            },
+            {
+                name: "Europabank",
+                domains:
+                [
+                    "europabank.be",
+                    "ebonline.be",
                 ]
             },
             {
@@ -1229,9 +1364,10 @@ var categories =
                 ]
             },
             {
-                name: "ING Bank Śląski",
+                name: "ING",
                 domains:
                 [
+                    "ing.be",
                     "ing.pl",
                     "ingbank.pl",
                     "inghipoteczny.pl",
@@ -1304,6 +1440,37 @@ var categories =
                 ]
             },
             {
+                name: "KBC",
+                domains:
+                [
+                    "add.be",
+                    "cbc.be",
+                    "claim.bg",
+                    "csob.cz",
+                    "csob.sk",
+                    "csobam.cz",
+                    "csobleasing.cz",
+                    "csobleasing.sk",
+                    "csobpoj.cz",
+                    "dzi.bg",
+                    "insurance-architects.be",
+                    "kbc.be",
+                    "kbc.com",
+                    "kbc.ie",
+                    "kbc-group.com",
+                    "kbc2s.com",
+                    "kbcbrussels.be",
+                    "kbcgroupre.lu",
+                    "kbclease.lu",
+                    "kbcsecurities.com",
+                    "kh.hu",
+                    "khdirektbiztositas.hu",
+                    "origamirisk.com",
+                    "ubb.bg",
+                    "vab.be",
+                ]
+            },
+            {
                 name: "Kommunal Kredit",
                 domains:
                 [
@@ -1316,6 +1483,13 @@ var categories =
                 domains:
                 [
                     "kredobank.com.ua",
+                ]
+            },
+            {
+                name: "Keytrade Bank",
+                domains:
+                [
+                    "keytradebank.be",
                 ]
             },
             {
@@ -1345,6 +1519,14 @@ var categories =
                     "kompaktfinanse.pl",
                     "mbank.pl",
                     "mhipoteczny.pl",
+                ]
+            },
+            {
+                name: "MeDirect",
+                domains:
+                [
+                    "medirect.be",
+                    "medirect.com.mt",
                 ]
             },
             {
@@ -1506,6 +1688,23 @@ var categories =
                 ]
             },
             {
+                name: "Puilaetco",
+                domains:
+                [
+                    "puilaetco.be",
+                ]
+            },
+            {
+                name: "Rabobank",
+                domains:
+                [
+                    "rabobank.be",
+                    "rabobank.com",
+                    "rabobank.nl",
+                    "rabotransactasiav5.com",
+                ]
+            },
+             {
                 name: "Raiffeisen Bank International",
                 domains:
                 [
@@ -1542,7 +1741,11 @@ var categories =
                     "centrum24.pl",
                     "ibiznes24.pl",
                     "inwestoronline.pl",
+                    "monsantanderconsumerfinance.be",
+                    "santander.be",
+                    "santander.com",
                     "santander.pl",
+                    "santandercib.com",
                     "santanderconsumer.pl",
                 ]
             },
@@ -1892,6 +2095,19 @@ var categories =
                 ]
             },
             {
+                name: "Triodos Bank",
+                domains:
+                [
+                    "triodos.be",
+                    "triodos.co.uk",
+                    "triodos.com",
+                    "triodos.de",
+                    "triodos.es",
+                    "triodos.fr",
+                    "triodos.nl",
+                ]
+            },
+            {
                 name: "Turan Bank",
                 domains:
                 [
@@ -1970,6 +2186,21 @@ var categories =
                 domains:
                 [
                     "vallbanc.ad",
+                ]
+            },
+            {
+                name: "Van Lanschot",
+                domains:
+                [
+                    "vanlanschot.be",
+                    "vanlanschot.com",
+                ]
+            },
+            {
+                name: "VDK",
+                domains:
+                [
+                    "vdk.be",
                 ]
             },
             {
