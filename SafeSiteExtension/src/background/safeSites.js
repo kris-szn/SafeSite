@@ -21,6 +21,13 @@ var categories =
                 ]
             },
             {
+                name: "АБСОЛЮТБАНК (Absolutbank)",
+                domains:
+                [
+                    "absolutbank.by",
+                ]
+            },
+            {
                 name: "AccessBank",
                 domains:
                 [
@@ -33,6 +40,14 @@ var categories =
                 domains:
                 [
                     "afb.az",
+                ]
+            },
+            {
+                name: "Альфа-Банк (Alfa-Bank)",
+                domains:
+                [
+                    "alfa-biz.by",
+                    "alfabank.by",
                 ]
             },
             {
@@ -209,6 +224,13 @@ var categories =
                 ]
             },
             {
+                name: "Банк Дабрабыт (Bank Dobrabyt)",
+                domains:
+                [
+                    "bankdabrabyt.by",
+                ]
+            },
+            {
                 name: "Bank Gutmann",
                 domains:
                 [
@@ -307,6 +329,13 @@ var categories =
                 ]
             },
             {
+                name: "Банк РРБ (Bank RRB)",
+                domains:
+                [
+                    "rrb.by",
+                ]
+            },
+            {
                 name: "Bank Winter",
                 domains:
                 [
@@ -318,6 +347,44 @@ var categories =
                 domains:
                 [
                     "bawagpsk.com",
+                ]
+            },
+            {
+                name: "Белагропромбанк (Belagroprombank)",
+                domains:
+                [
+                    "belapb.by",
+                ]
+            },
+            {
+                name: "Беларусбанк (Belarusbank)",
+                domains:
+                [
+                    "belarusbank.by",
+                ]
+            },
+            {
+                name: "Белорусский народный банк (Belarusky Narodny Bank)",
+                domains:
+                [
+                    "bnb.by",
+                    "imbanking.by",
+                ]
+            },
+            {
+                name: "Белгазпромбанк (Belgazprombank)",
+                domains:
+                [
+                    "belgazprombank.by",
+                    "bgpb.by",
+                    "e-bgpb.by",
+                ]
+            },
+            {
+                name: "Белинвестбанк (Belinvestbank)",
+                domains:
+                [
+                    "belinvestbank.by",
                 ]
             },
             {
@@ -367,6 +434,28 @@ var categories =
                 domains:
                 [
                     "bpa.ad",
+                ]
+            },
+            {
+                name: "БПС-Сбербанк (BPS-Sberbank)",
+                domains:
+                [
+                    "bps-sberbank.by",
+                ]
+            },
+            {
+                name: "БСБ Банк (BSB Bank)",
+                domains:
+                [
+                    "bsb.by",
+                ]
+            },
+            {
+                name: "БТА Банк (BTA Bank)",
+                domains:
+                [
+                    "bta.by",
+                    "btabank.by",
                 ]
             },
             {
@@ -653,6 +742,13 @@ var categories =
                 domains:
                 [
                     "fibank.al",
+                ]
+            },
+            {
+                name: "Франсабанк (Fransabank)",
+                domains:
+                [
+                    "fransabank.by",
                 ]
             },
             {
@@ -1090,6 +1186,8 @@ var categories =
                 name: "Idea Bank",
                 domains:
                 [
+                    "ideabank.by",
+                    "ideabank24.by",
                     "ideabank.pl",
                 ]
             },
@@ -1273,6 +1371,14 @@ var categories =
                 ]
             },
             {
+                name: "МТБанк (MTBank)",
+                domains:
+                [
+                    "mtbank.by",
+                    "mybank.by",
+                ]
+            },
+            {
                 name: "MUFG Bank",
                 domains:
                 [
@@ -1346,6 +1452,13 @@ var categories =
                 ]
             },
             {
+                name: "МТБанк (Paritetbank)",
+                domains:
+                [
+                    "paritetbank.by",
+                ]
+            },
+            {
                 name: "PASHA Bank",
                 domains:
                 [
@@ -1398,6 +1511,7 @@ var categories =
                 [
                     "custody.a",
                     "myraiffeisen.com",
+                    "priorbank.by",
                     "raiffeisen.al",
                     "raiffeisen.at",
                     "raiffeisen.it",
@@ -1740,6 +1854,13 @@ var categories =
                 ]
             },
             {
+                name: "Технобанк (Tehnobank)",
+                domains:
+                [
+                    "tb.by",
+                ]
+            },
+            {
                 name: "TF Bank",
                 domains:
                 [
@@ -1753,6 +1874,13 @@ var categories =
                 domains:
                 [
                     "tiranabank.al",
+                ]
+            },
+            {
+                name: "ТК Банк (TK Bank)",
+                domains:
+                [
+                    "tcbank.by",
                 ]
             },
             {
@@ -1915,6 +2043,13 @@ var categories =
                 domains:
                 [
                     "yelo.az",
+                ]
+            },
+            {
+                name: "Zepterbank",
+                domains:
+                [
+                    "zepterbank.by",
                 ]
             },
             {
