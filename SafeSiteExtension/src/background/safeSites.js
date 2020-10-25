@@ -36,6 +36,15 @@ var categories =
                 ]
             },
             {
+                name: "Addiko Bank",
+                domains:
+                [
+                    "addiko.info",
+                    "addiko-fbih.ba",
+                    "addiko-rs.ba",
+                ]
+            },
+            {
                 name: "AFB Bank ASC",
                 domains:
                 [
@@ -171,6 +180,13 @@ var categories =
                 [
                     "artsakhbank.am",
                     "artsakhbank.com",
+                ]
+            },
+            {
+                name: "ASA Banka",
+                domains:
+                [
+                    "asabanka.ba",
                 ]
             },
             {
@@ -523,6 +539,13 @@ var categories =
                     "bosbank.pl",
                     "bosbank24.pl",
                     "iboss24.pl",
+                ]
+            },
+            {
+                name: "Bosna Bank International",
+                domains:
+                [
+                    "bbi.ba",
                 ]
             },
             {
@@ -1471,6 +1494,22 @@ var categories =
                 ]
             },
             {
+                name: "KIB BANKA",
+                domains:
+                [
+                    "kib-banka.com.ba",
+                ]
+            },
+            {
+                name: "Komercijalna banka",
+                domains:
+                [
+                    "kombank-bl.com",
+                    "kombank.com",
+                    "kombank.me",
+                ]
+            },
+            {
                 name: "Kommunal Kredit",
                 domains:
                 [
@@ -1538,6 +1577,13 @@ var categories =
                 ]
             },
             {
+                name: "MF banka",
+                domains:
+                [
+                    "mfbanka.com",
+                ]
+            },
+            {
                 name: "MONETA Money Bank",
                 domains:
                 [
@@ -1576,6 +1622,13 @@ var categories =
                 ]
             },
             {
+                name: "Naša Banka",
+                domains:
+                [
+                    "nasa-banka.com",
+                ]
+            },
+            {
                 name: "NBC",
                 domains:
                 [
@@ -1595,6 +1648,13 @@ var categories =
                 ]
             },
             {
+                name: "NLB Banka",
+                domains:
+                [
+                    "nlb-rs.ba",
+                ]
+            },
+            {
                 name: "Noble Bank",
                 domains:
                 [
@@ -1607,6 +1667,13 @@ var categories =
                 domains:
                 [
                     "nordea.com",
+                ]
+            },
+            {
+                name: "Nova Banka",
+                domains:
+                [
+                    "novabanka.com",
                 ]
             },
             {
@@ -1674,10 +1741,30 @@ var categories =
                 ]
             },
             {
+                name: "Privredna banka Sarajevo",
+                domains:
+                [
+                    "pbs.ba",
+                ]
+            },
+            {
                 name: "ProCredit Bank",
                 domains:
                 [
+                    "bancoprocredit.com.ec",
+                    "procreditbank.ba",
+                    "procreditbank.bg",
                     "procreditbank.com.al",
+                    "procreditbank.com.mk",
+                    "procreditbank.com.ua",
+                    "procreditbank.de",
+                    "procreditbank.ge",
+                    "procreditbank.gr",
+                    "procreditbank.md",
+                    "procreditbank.ro",
+                    "procreditbank.rs",
+                    "procreditbank-kos.com",
+                    "procredit-holding.com",
                 ]
             },
             {
@@ -1714,12 +1801,21 @@ var categories =
                     "raiffeisen.al",
                     "raiffeisen.at",
                     "raiffeisen.it",
+                    "raiffeisenbank.ba",
+                    "raiffeisenresearch.com",
+                    "rbbh.ba",
                     "rbinternational.com",
                     "rbinternational.com.pl",
-                    "raiffeisenresearch.com",
                     "rcb.at",
                     "rcm.at",
                     "yellowe.com",
+                ]
+            },
+            {
+                name: "RBFBIH - Razvojna banka Federacije BiH",
+                domains:
+                [
+                    "rbfbih.ba",
                 ]
             },
             {
@@ -1747,6 +1843,15 @@ var categories =
                     "santander.pl",
                     "santandercib.com",
                     "santanderconsumer.pl",
+                ]
+            },
+            {
+                name: "Sberbank",
+                domains:
+                [
+                    "ebanka.ba",
+                    "sberbank.ba",
+                    "sberbankbl.ba",
                 ]
             },
             {
@@ -2146,9 +2251,12 @@ var categories =
                     "bulbankonline.bg",
                     "hypovereinsbank.de",
                     "schoellerbank.at",
+                    "unicredit.ba",
                     "unicredit.eu",
                     "unicredit.it",
                     "unicredit.ru",
+                    "unicredit-bl.ba",
+                    "unicreditbank-bl.ba",
                     "unicreditbanking.eu",
                     "unicreditbanking.net",
                     "unicreditgroup.eu",
@@ -2161,6 +2269,13 @@ var categories =
                 domains:
                 [
                     "unionbank.al",
+                ]
+            },
+            {
+                name: "Union Banka",
+                domains:
+                [
+                    "unionbank.ba",
                 ]
             },
             {
@@ -2179,6 +2294,13 @@ var categories =
                     "vakifbank.at",
                     "vakifbank.com.tr",
                     "vakifbankusa.com",
+                ]
+            },
+            {
+                name: "Vakufska Banka",
+                domains:
+                [
+                    "vakuba.ba",
                 ]
             },
             {
@@ -2247,6 +2369,15 @@ var categories =
                 ]
             },
             {
+                name: "Web Bank - Bosnia and Herzegovina",
+                domains:
+                [
+                    "24x7.ba",
+                    "ebb.ba",
+                    "emon24.net",
+                ]
+            },
+            {
                 name: "Wiener Privatbank",
                 domains:
                 [
@@ -2281,6 +2412,14 @@ var categories =
                 domains:
                 [
                     "zepterbank.by",
+                ]
+            },
+            {
+                name: "Ziraat Bank",
+                domains:
+                [
+                    "ziraatbank.ba",
+                    "ziraatbank.com.tr",
                 ]
             },
             {
