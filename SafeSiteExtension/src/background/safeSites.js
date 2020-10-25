@@ -75,6 +75,13 @@ var categories =
                 ]
             },
             {
+                name: "Air Bank",
+                domains:
+                [
+                    "airbank.cz",
+                ]
+            },
+            {
                 name: "AJIB - Arab Jordan Investment Bank",
                 domains:
                 [
@@ -651,8 +658,31 @@ var categories =
                 domains:
                 [
                     "bnpparibas.bg",
+                    "bnpparibas.cz",
                     "bnpparibas.com",
                     "bnpparibas.pl",
+                    "bnpparibas-am.at",
+                    "bnpparibas-am.be",
+                    "bnpparibas-am.ch",
+                    "bnpparibas-am.co.uk",
+                    "bnpparibas-ip.com.ar",
+                    "bnpparibas-am.com.au",
+                    "bnpparibas-am.com.br",
+                    "bnpparibas-am.com.mx",
+                    "bnpparibas-am.cz",
+                    "bnpparibas-am.de",
+                    "bnpparibas-am.es",
+                    "bnpparibas-am.fr",
+                    "bnpparibas-am.gr",
+                    "bnpparibas-am.hk",
+                    "bnpparibas-am.it",
+                    "bnpparibas-am.lu",
+                    "bnpparibas-am.nl",
+                    "bnpparibas-am.pt",
+                    "bnpparibas-am.sg",
+                    "bnpparibas-am.sk",
+                    "bnpparibas-am.tw",
+                    "bnpparibas-am.us",
                     "bnpparibasfortis.be",
                     "bnpparibasfortis.com",
                     "group.bnpparibas",
@@ -763,6 +793,13 @@ var categories =
                 ]
             },
             {
+                name: "Česká exportní banka",
+                domains:
+                [
+                    "ceb.cz",
+                ]
+            },
+            {
                 name: "China Construction Bank",
                 domains:
                 [
@@ -788,6 +825,13 @@ var categories =
                     "citibankonline.pl",
                     "citidirect.com",
                     "dmbh.pl",
+                ]
+            },
+            {
+                name: "CMZRB - Českomoravská záruční a rozvojová banka",
+                domains:
+                [
+                    "cmzrb.cz",
                 ]
             },
             {
@@ -961,6 +1005,14 @@ var categories =
                 ]
             },
             {
+                name: "Equa bank",
+                domains:
+                [
+                    "equabank.cz",
+                    "equabanking.cz",
+                ]
+            },
+            {
                 name: "ERSTE Group",
                 domains:
                 [
@@ -992,6 +1044,7 @@ var categories =
                     "sparkasse.ba",
                     "sparkasse.mk",
                     "sparkasse.si",
+                    "wspk.cz",
                 ]
             },
             {
@@ -1031,10 +1084,12 @@ var categories =
                 ]
             },
             {
-                name: "Экспобанк (Expobank)",
+                name: "Expobank",
                 domains:
                 [
+                    "expobank.cz",
                     "expobank.ru",
+                    "expobanking.cz",
                     "faktura.ru",
                 ]
             },
@@ -1091,6 +1146,13 @@ var categories =
                     "fibank.al",
                     "fibank.bk",
                     "fibank.com.cy",
+                ]
+            },
+            {
+                name: "Fio banka",
+                domains:
+                [
+                    "fio.cz",
                 ]
             },
             {
@@ -1538,6 +1600,13 @@ var categories =
                 ]
             },
             {
+                name: "Hypoteční banka",
+                domains:
+                [
+                    "hypotecnibanka.cz",
+                ]
+            },
+            {
                 name: "IBL",
                 domains:
                 [
@@ -1550,6 +1619,23 @@ var categories =
                 [
                     "icbc.com.cn",
                     "icbc-ltd.com",
+                ]
+            },
+            {
+                name: "ICICI Bank",
+                domains:
+                [
+                    "icicibank.bh",
+                    "icicibank.ca",
+                    "icicibank.co.in",
+                    "icicibank.co.uk",
+                    "icicibank.com",
+                    "icicibank.com.sg",
+                    "icicibank.de",
+                    "icicibank.hk",
+                    "icicibank.us",
+                    "icicibankusa.com",
+                    "money2india.eu",
                 ]
             },
             {
@@ -1624,6 +1710,7 @@ var categories =
                 domains:
                 [
                     "ing.be",
+                    "ing.cz",
                     "ing.pl",
                     "ingbank.pl",
                     "inghipoteczny.pl",
@@ -1699,7 +1786,10 @@ var categories =
                 name: "J&T banka",
                 domains:
                 [
+                    "jtbank.cz",
+                    "jtbank.eu",
                     "jtbanka.hr",
+                    "jtbanka.sk",
                     "evaba.com.hr",
                 ]
             },
@@ -1740,6 +1830,7 @@ var categories =
                     "add.be",
                     "cbc.be",
                     "claim.bg",
+                    "cmss.cz",
                     "csob.cz",
                     "csob.sk",
                     "csobam.cz",
@@ -1785,6 +1876,14 @@ var categories =
                     "kombank-bl.com",
                     "kombank.com",
                     "kombank.me",
+                ]
+            },
+            {
+                name: "Komerční Banka",
+                domains:
+                [
+                    "kb.cz",
+                    "mojebanka.cz",
                 ]
             },
             {
@@ -1842,6 +1941,7 @@ var categories =
                 domains:
                 [
                     "kompaktfinanse.pl",
+                    "mbank.cz",
                     "mbank.pl",
                     "mhipoteczny.pl",
                 ]
@@ -1898,6 +1998,8 @@ var categories =
                 [
                     "bankmufg.pl",
                     "mufg.jp",
+                    "mufgamericas.com",
+                    "mufgemea.com",
                 ]
             },
             {
@@ -1990,7 +2092,9 @@ var categories =
                 domains:
                 [
                     "banking-oberbank.at",
+                    "banking-oberbank.cz",
                     "oberbank.com",
+                    "oberbank.cz",
                 ]
             },
             {
@@ -2071,6 +2175,13 @@ var categories =
                 ]
             },
             {
+                name: "PPF banka",
+                domains:
+                [
+                    "ppfbanka.cz",
+                ]
+            },
+            {
                 name: "Premium Bank",
                 domains:
                 [
@@ -2147,15 +2258,24 @@ var categories =
                 name: "Raiffeisen Bank International",
                 domains:
                 [
-                    "custody.a",
+                    "aval.us",
+                    "custody.at",
+                    "fwr.cz",
                     "myraiffeisen.com",
                     "priorbank.by",
                     "raiffeisen.al",
                     "raiffeisen.at",
+                    "raiffeisen.hu",
                     "raiffeisen.it",
+                    "raiffeisen.lu",
+                    "raiffeisen.ru",
+                    "raiffeisen.sk",
                     "raiffeisenbank.ba",
+                    "raiffeisenbank.rs",
+                    "raiffeisenonline.ro",
                     "raiffeisenresearch.com",
                     "raiffeisenstambena.hr",
+                    "rb.cz",
                     "rba.hr",
                     "rbb.bg",
                     "rbbh.ba",
@@ -2163,6 +2283,7 @@ var categories =
                     "rbinternational.com.pl",
                     "rcb.at",
                     "rcm.at",
+                    "rsts.cz",
                     "yellowe.com",
                 ]
             },
@@ -2190,6 +2311,14 @@ var categories =
                     "rcibanque.com.pl",
                     "rcibs.com",
                     "renaultfinansowanie.pl",
+                ]
+            },
+            {
+                name: "Royal Bank of Scotland",
+                domains:
+                [
+                    "rbs.co.uk",
+                    "rbsdigital.com",
                 ]
             },
             {
@@ -2227,8 +2356,10 @@ var categories =
                 [
                     "ebanka.ba",
                     "sberbank.ba",
+                    "sberbank.cz",
                     "sberbank.hr",
                     "sberbankbl.ba",
+                    "sberbankcz.cz",
                     "sbhr.hr",
                 ]
             },
@@ -2664,6 +2795,7 @@ var categories =
                     "unicredit.it",
                     "unicredit.ru",
                     "unicredit-bl.ba",
+                    "unicreditbank.cz",
                     "unicreditbank-bl.ba",
                     "unicreditbanking.eu",
                     "unicreditbanking.net",
@@ -2768,6 +2900,13 @@ var categories =
                 ]
             },
             {
+                name: "Volksbank Löbau-Zittau",
+                domains:
+                [
+                    "vb-loebau-zittau.de",
+                ]
+            },
+            {
                 name: "Volkswagen Bank",
                 domains:
                 [
@@ -2798,6 +2937,7 @@ var categories =
                 name: "Wüstenrot",
                 domains:
                 [
+                    "wuestenrot.cz",
                     "wuestenrot.hr",
                 ]
             },
