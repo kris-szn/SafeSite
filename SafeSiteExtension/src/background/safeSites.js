@@ -60,10 +60,25 @@ var categories =
                 ]
             },
             {
+                name: "ahli Bank",
+                domains:
+                [
+                    "ahli.com",
+                    "ahlionline.com.jo",
+                ]
+            },
+            {
                 name: "Aion Bank",
                 domains:
                 [
                     "aion.be",
+                ]
+            },
+            {
+                name: "AJIB - Arab Jordan Investment Bank",
+                domains:
+                [
+                    "ajib.com",
                 ]
             },
             {
@@ -102,6 +117,7 @@ var categories =
                 name: "ALPHA BANK",
                 domains:
                 [
+                    "alpha.gr",
                     "alphabank.al",
                 ]
             },
@@ -117,6 +133,13 @@ var categories =
                 domains:
                 [
                     "americanexpress.com",
+                ]
+            },
+            {
+                name: "Ancoria Bank",
+                domains:
+                [
+                    "ancoriabank.com",
                 ]
             },
             {
@@ -205,6 +228,14 @@ var categories =
                 [
                     "asb.az",
                     "asb.co.nz",
+                ]
+            },
+            {
+                name: "Astrobank",
+                domains:
+                [
+                    "astrobank.com",
+                    "piraeusbank.com",
                 ]
             },
             {
@@ -332,6 +363,72 @@ var categories =
                 ]
             },
             {
+                name: "Bank of Beirut",
+                domains:
+                [
+                    "bankofbeirut.co.om",
+                    "bankofbeirut.co.uk",
+                    "bankofbeirut.com",
+                    "bankofbeirut.com.cy",
+                    "banksyd.com.au",
+                ]
+            },
+            {
+                name: "Bank of Cyprus",
+                domains:
+                [
+                    "bankofcyprus.com",
+                ]
+            },
+            {
+                name: "BANK OF CHINA",
+                domains:
+                [
+                    "bankofchina.com",
+                ]
+            },
+            {
+                name: "Bank Pekao",
+                domains:
+                [
+                    "cdm24.pl",
+                    "pekao.com.pl",
+                    "pekao24.pl",
+                    "pekaobiznes24.pl",
+                    "pekaobh.pl",
+                ]
+            },
+            {
+                name: "Bank Pocztowy",
+                domains:
+                [
+                    "envelobank.pl",
+                    "pocztowy.pl",
+                    "pocztowy24.pl",
+                ]
+            },
+            {
+                name: "Банк РРБ (Bank RRB)",
+                domains:
+                [
+                    "rrb.by",
+                ]
+            },
+            {
+                name: "Bank Winter",
+                domains:
+                [
+                    "bankwinter.com",
+                ]
+            },
+            {
+                name: "Банк ЗЕНИТ (Bank Zenit)",
+                domains:
+                [
+                    "zenit.ru",
+                ]
+            },
+            {
                 name: "Banka Kovanica",
                 domains:
                 [
@@ -382,44 +479,10 @@ var categories =
                 ]
             },
             {
-                name: "BANK OF CHINA",
+                name: "Banque Bemo",
                 domains:
                 [
-                    "bankofchina.com",
-                ]
-            },
-            {
-                name: "Bank Pekao",
-                domains:
-                [
-                    "cdm24.pl",
-                    "pekao.com.pl",
-                    "pekao24.pl",
-                    "pekaobiznes24.pl",
-                    "pekaobh.pl",
-                ]
-            },
-            {
-                name: "Bank Pocztowy",
-                domains:
-                [
-                    "envelobank.pl",
-                    "pocztowy.pl",
-                    "pocztowy24.pl",
-                ]
-            },
-            {
-                name: "Банк РРБ (Bank RRB)",
-                domains:
-                [
-                    "rrb.by",
-                ]
-            },
-            {
-                name: "Bank Winter",
-                domains:
-                [
-                    "bankwinter.com",
+                    "bemobank.com",
                 ]
             },
             {
@@ -429,6 +492,15 @@ var categories =
                     "banqueenisa.be",
                     "eni.com",
                     "eni.it",
+                ]
+            },
+            {
+                name: "Banque SBA",
+                domains:
+                [
+                    "banque-sba.com",
+                    "eblf-sbacyprus.com",
+                    "eblf-sbaparis.com",
                 ]
             },
             {
@@ -442,10 +514,24 @@ var categories =
                 ]
             },
             {
+                name: "Barclays",
+                domains:
+                [
+                    "barclays.co.uk",
+                ]
+            },
+            {
                 name: "BAWAG P.S.K.",
                 domains:
                 [
                     "bawagpsk.com",
+                ]
+            },
+            {
+                name: "BBAC Bank",
+                domains:
+                [
+                    "bbacbank.com",
                 ]
             },
             {
@@ -554,6 +640,13 @@ var categories =
                 ]
             },
             {
+                name: "BLOM Bank",
+                domains:
+                [
+                    "blombank.com",
+                ]
+            },
+            {
                 name: "BNP PARIBAS",
                 domains:
                 [
@@ -654,6 +747,13 @@ var categories =
                 ]
             },
             {
+                name: "CDB bank",
+                domains:
+                [
+                    "cdb.com.cy",
+                ]
+            },
+            {
                 name: "Central Cooperative Bank",
                 domains:
                 [
@@ -749,6 +849,14 @@ var categories =
                 domains:
                 [
                     "e-credit.ad",
+                ]
+            },
+            {
+                name: "Credit Libanais",
+                domains:
+                [
+                    "creditlibanais.com.lb",
+                    "ecl.com.lb",
                 ]
             },
             {
@@ -894,6 +1002,13 @@ var categories =
                 ]
             },
             {
+                name: "Eurobank",
+                domains:
+                [
+                    "eurobank.gr",
+                ]
+            },
+            {
                 name: "Euroclear",
                 domains:
                 [
@@ -913,6 +1028,14 @@ var categories =
                 domains:
                 [
                     "evocabank.am",
+                ]
+            },
+            {
+                name: "Экспобанк (Expobank)",
+                domains:
+                [
+                    "expobank.ru",
+                    "faktura.ru",
                 ]
             },
             {
@@ -1327,10 +1450,24 @@ var categories =
                 ]
             },
             {
+                name: "Hellenic Bank",
+                domains:
+                [
+                    "hellenicbank.com",
+                ]
+            },
+            {
                 name: "Hello bank",
                 domains:
                 [
                     "hellobank.at",
+                ]
+            },
+            {
+                name: "HFC",
+                domains:
+                [
+                    "hfc.com.cy",
                 ]
             },
             {
@@ -1398,6 +1535,13 @@ var categories =
                     "hsbcsaudi.com",
                     "sabb.com",
                     "sabbnet.com",
+                ]
+            },
+            {
+                name: "IBL",
+                domains:
+                [
+                    "ibl.com.lb",
                 ]
             },
             {
@@ -1568,6 +1712,14 @@ var categories =
                 ]
             },
             {
+                name: "Jordan Kuwait Bank",
+                domains:
+                [
+                    "jkb.com",
+                    "jkb.com.jo",
+                ]
+            },
+            {
                 name: "Karlovačka banka",
                 domains:
                 [
@@ -1655,6 +1807,14 @@ var categories =
                 domains:
                 [
                     "keytradebank.be",
+                ]
+            },
+            {
+                name: "Lebanon & Gulf Bank",
+                domains:
+                [
+                    "lgbbank.com",
+                    "jkb.com.jo",
                 ]
             },
             {
@@ -1771,6 +1931,14 @@ var categories =
                     "secure-nbcok.com",
                     "secureinternetbank.com",
                     "thenbcbank.com",
+                ]
+            },
+            {
+                name: "NBG - National Bank of Greece",
+                domains:
+                [
+                    "nbg.com.cy",
+                    "nbg.gr",
                 ]
             },
             {
@@ -1910,6 +2078,14 @@ var categories =
                 ]
             },
             {
+                name: "PrivatBank",
+                domains:
+                [
+                    "privatbank.ua",
+                    "privat24.ua",
+                ]
+            },
+            {
                 name: "Privredna banka Sarajevo",
                 domains:
                 [
@@ -1937,7 +2113,14 @@ var categories =
                 ]
             },
             {
-                name: "BANQUE PSA FINANCE S.A.",
+                name: "Промсвязьбанк (Promsvyazbank)",
+                domains:
+                [
+                    "psbank.ru",
+                ]
+            },
+            {
+                name: "PSA FINANCE S.A.",
                 domains:
                 [
                     "e-psafinance.pl",
@@ -1991,6 +2174,13 @@ var categories =
                 ]
             },
             {
+                name: "RCB Bank",
+                domains:
+                [
+                    "rcbcy.com",
+                ]
+            },
+            {
                 name: "RCI Banque S.A.",
                 domains:
                 [
@@ -2022,6 +2212,13 @@ var categories =
                     "santander.pl",
                     "santandercib.com",
                     "santanderconsumer.pl",
+                ]
+            },
+            {
+                name: "Saxo Bank",
+                domains:
+                [
+                    "home.saxo",
                 ]
             },
             {
@@ -2288,13 +2485,15 @@ var categories =
                 [
                     "kleinworthambros.com",
                     "sgbt.lu",
+                    "sgcyprus.com",
+                    "sgmarkets.com",
                     "societegenerale.al",
                     "societegenerale.ch",
                     "societegenerale.com",
                     "societegenerale.fr",
                     "societegenerale.mc",
                     "societegenerale.pl",
-                    "sgmarkets.com",
+                    "websgbcy.com",
                 ]
             },
             {
