@@ -78,6 +78,8 @@ var categories =
                 name: "Allianz",
                 domains:
                 [
+                    "allianz.bg",
+                    "allianz.com",
                     "allianzinvest.at",
                 ]
             },
@@ -258,6 +260,14 @@ var categories =
                 ]
             },
             {
+                name: "BACB - Bulgarian American Credit Bank",
+                domains:
+                [
+                    "bacb.bg",
+                    "bacbplus.bg",
+                ]
+            },
+            {
                 name: "Banking Austria",
                 domains:
                 [
@@ -424,6 +434,14 @@ var categories =
                 ]
             },
             {
+                name: "BBR - Bulgarian Development Bank",
+                domains:
+                [
+                    "bbr.bg",
+                    "nasbank.bg",
+                ]
+            },
+            {
                 name: "BBVA",
                 domains:
                 [
@@ -524,6 +542,7 @@ var categories =
                 name: "BNP PARIBAS",
                 domains:
                 [
+                    "bnpparibas.bg",
                     "bnpparibas.com",
                     "bnpparibas.pl",
                     "bnpparibasfortis.be",
@@ -617,6 +636,15 @@ var categories =
                 domains:
                 [
                     "capitalbank.at",
+                ]
+            },
+            {
+                name: "Central Cooperative Bank",
+                domains:
+                [
+                    "ccb-club.bg",
+                    "ccb-emotion.bg",
+                    "ccbank.bg",
                 ]
             },
             {
@@ -716,6 +744,13 @@ var categories =
                 ]
             },
             {
+                name: "D Commerce Bank",
+                domains:
+                [
+                    "dbank.bg",
+                ]
+            },
+            {
                 name: "Danske Bank",
                 domains:
                 [
@@ -777,6 +812,15 @@ var categories =
                 [
                     "dnb.pl",
                     "dnbon.pl",
+                ]
+            },
+            {
+                name: "DSK Bank",
+                domains:
+                [
+                    "dskbank.bg",
+                    "dskdirect.bg",
+                    "dskdirect.mobi",
                 ]
             },
             {
@@ -896,10 +940,12 @@ var categories =
                 ]
             },
             {
-                name: "Fibank - Cilësia  vjen e para",
+                name: "Fibank - First Investment Bank",
                 domains:
                 [
                     "fibank.al",
+                    "fibank.bk",
+                    "fibank.com.cy",
                 ]
             },
             {
@@ -1394,6 +1440,14 @@ var categories =
                     "ing.pl",
                     "ingbank.pl",
                     "inghipoteczny.pl",
+                    "ingwb.bg",
+                ]
+            },
+            {
+                name: "International Asset Bank",
+                domains:
+                [
+                    "iabank.bg",
                 ]
             },
             {
@@ -1436,6 +1490,13 @@ var categories =
                     "pravex.ua",
                     "sirefiduciaria.it",
                     "vub.sk",
+                ]
+            },
+            {
+                name: "Investbank",
+                domains:
+                [
+                    "ibank.bg",
                 ]
             },
             {
@@ -1622,6 +1683,13 @@ var categories =
                 ]
             },
             {
+                name: "Municipal Bank PLC",
+                domains:
+                [
+                    "municipalbank.bg",
+                ]
+            },
+            {
                 name: "Naša Banka",
                 domains:
                 [
@@ -1734,6 +1802,14 @@ var categories =
                 ]
             },
             {
+                name: "Postbank",
+                domains:
+                [
+                    "e-postbank.bg",
+                    "postbank.bg",
+                ]
+            },
+            {
                 name: "Premium Bank",
                 domains:
                 [
@@ -1803,6 +1879,7 @@ var categories =
                     "raiffeisen.it",
                     "raiffeisenbank.ba",
                     "raiffeisenresearch.com",
+                    "rbb.bg",
                     "rbbh.ba",
                     "rbinternational.com",
                     "rbinternational.com.pl",
@@ -2155,6 +2232,20 @@ var categories =
                 ]
             },
             {
+                name: "TBI Bank",
+                domains:
+                [
+                    "tbibank.bg",
+                ]
+            },
+            {
+                name: "Texim Bank",
+                domains:
+                [
+                    "teximbank.bg",
+                ]
+            },
+            {
                 name: "Texnikabank",
                 domains:
                 [
@@ -2189,6 +2280,13 @@ var categories =
                 domains:
                 [
                     "tcbank.by",
+                ]
+            },
+            {
+                name: "Tokuda Bank",
+                domains:
+                [
+                    "tokudabank.bg",
                 ]
             },
             {
@@ -2259,6 +2357,7 @@ var categories =
                     "unicreditbank-bl.ba",
                     "unicreditbanking.eu",
                     "unicreditbanking.net",
+                    "unicreditbulbank.bg",
                     "unicreditgroup.eu",
                     "unicreditleasing.hr",
                     "zaba.hr",
@@ -2419,6 +2518,7 @@ var categories =
                 domains:
                 [
                     "ziraatbank.ba",
+                    "ziraatbank.bg",
                     "ziraatbank.com.tr",
                 ]
             },
