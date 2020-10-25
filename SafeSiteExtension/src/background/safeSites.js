@@ -39,6 +39,7 @@ var categories =
                 name: "Addiko Bank",
                 domains:
                 [
+                    "addiko.hr",
                     "addiko.info",
                     "addiko-fbih.ba",
                     "addiko-rs.ba",
@@ -49,6 +50,13 @@ var categories =
                 domains:
                 [
                     "afb.az",
+                ]
+            },
+            {
+                name: "Agram Banka",
+                domains:
+                [
+                    "agrambanka.hr",
                 ]
             },
             {
@@ -268,13 +276,6 @@ var categories =
                 ]
             },
             {
-                name: "Banking Austria",
-                domains:
-                [
-                    "banking.co.at",
-                ]
-            },
-            {
                 name: "Bank Avrasiya",
                 domains:
                 [
@@ -303,27 +304,6 @@ var categories =
                 ]
             },
             {
-                name: "Bankhaus Krentschker & Co. AG",
-                domains:
-                [
-                    "krentschker.at",
-                ]
-            },
-            {
-                name: "Bankhaus Schelhammer & Schattera",
-                domains:
-                [
-                    "schelhammer.at",
-                ]
-            },
-            {
-                name: "Bankhaus Spängler",
-                domains:
-                [
-                    "spaengler.at",
-                ]
-            },
-            {
                 name: "bank mellat",
                 domains:
                 [
@@ -349,6 +329,41 @@ var categories =
                 domains:
                 [
                     "pbsbank.pl",
+                ]
+            },
+            {
+                name: "Banka Kovanica",
+                domains:
+                [
+                    "kovanica.hr",
+                ]
+            },
+            {
+                name: "Bankhaus Krentschker & Co. AG",
+                domains:
+                [
+                    "krentschker.at",
+                ]
+            },
+            {
+                name: "Bankhaus Schelhammer & Schattera",
+                domains:
+                [
+                    "schelhammer.at",
+                ]
+            },
+            {
+                name: "Bankhaus Spängler",
+                domains:
+                [
+                    "spaengler.at",
+                ]
+            },
+            {
+                name: "Banking Austria",
+                domains:
+                [
+                    "banking.co.at",
                 ]
             },
             {
@@ -741,6 +756,13 @@ var categories =
                 domains:
                 [
                     "crelan.be",
+                ]
+            },
+            {
+                name: "Croatia banka",
+                domains:
+                [
+                    "croatiabanka.hr",
                 ]
             },
             {
@@ -1312,6 +1334,13 @@ var categories =
                 ]
             },
             {
+                name: "HPB - Hrvatska poštanska banka",
+                domains:
+                [
+                    "hpb.hr",
+                ]
+            },
+            {
                 name: "HSBC",
                 domains:
                 [
@@ -1419,6 +1448,20 @@ var categories =
                 ]
             },
             {
+                name: "IKB - Istarska kreditna banka",
+                domains:
+                [
+                    "ikb.hr",
+                ]
+            },
+            {
+                name: "Imex banka",
+                domains:
+                [
+                    "imexbanka.hr",
+                ]
+            },
+            {
                 name: "Inbank",
                 domains:
                 [
@@ -1500,6 +1543,23 @@ var categories =
                 ]
             },
             {
+                name: "J.P. Morgan",
+                domains:
+                [
+                    "chase.com",
+                    "jpmorgan.com",
+                    "paymentech.net",
+                ]
+            },
+            {
+                name: "J&T banka",
+                domains:
+                [
+                    "jtbanka.hr",
+                    "evaba.com.hr",
+                ]
+            },
+            {
                 name: "John Deere Bank",
                 domains:
                 [
@@ -1508,12 +1568,10 @@ var categories =
                 ]
             },
             {
-                name: "J.P. Morgan",
+                name: "Karlovačka banka",
                 domains:
                 [
-                    "chase.com",
-                    "jpmorgan.com",
-                    "paymentech.net",
+                    "kaba.hr",
                 ]
             },
             {
@@ -1552,6 +1610,13 @@ var categories =
                     "origamirisk.com",
                     "ubb.bg",
                     "vab.be",
+                ]
+            },
+            {
+                name: "KentBank",
+                domains:
+                [
+                    "kentbank.hr",
                 ]
             },
             {
@@ -1761,6 +1826,13 @@ var categories =
                 ]
             },
             {
+                name: "OTP banka",
+                domains:
+                [
+                    "otpbanka.hr",
+                ]
+            },
+            {
                 name: "Parabokt",
                 domains:
                 [
@@ -1776,11 +1848,25 @@ var categories =
                 ]
             },
             {
+                name: "Partner banka",
+                domains:
+                [
+                    "paba.hr",
+                ]
+            },
+            {
                 name: "PASHA Bank",
                 domains:
                 [
                     "pashabank.az",
                     "pashabank.digital",
+                ]
+            },
+            {
+                name: "PBZ stambena štedionica",
+                domains:
+                [
+                    "pbz-stambena.hr",
                 ]
             },
             {
@@ -1799,6 +1885,13 @@ var categories =
                 [
                     "plusbank.pl",
                     "plusbank24.pl",
+                ]
+            },
+            {
+                name: "Podravska banka",
+                domains:
+                [
+                    "poba.hr",
                 ]
             },
             {
@@ -1879,6 +1972,8 @@ var categories =
                     "raiffeisen.it",
                     "raiffeisenbank.ba",
                     "raiffeisenresearch.com",
+                    "raiffeisenstambena.hr",
+                    "rba.hr",
                     "rbb.bg",
                     "rbbh.ba",
                     "rbinternational.com",
@@ -1908,6 +2003,13 @@ var categories =
                 ]
             },
             {
+                name: "Samoborska Banka",
+                domains:
+                [
+                    "sabank.hr",
+                ]
+            },
+            {
                 name: "Santander",
                 domains:
                 [
@@ -1928,7 +2030,9 @@ var categories =
                 [
                     "ebanka.ba",
                     "sberbank.ba",
+                    "sberbank.hr",
                     "sberbankbl.ba",
+                    "sbhr.hr",
                 ]
             },
             {
@@ -2169,6 +2273,13 @@ var categories =
                     "sgb.pl",
                     "sgb24.pl",
                     "zulawskibs.pl",
+                ]
+            },
+            {
+                name: "Samoborska banka",
+                domains:
+                [
+                    "slatinska-banka.hr",
                 ]
             },
             {
@@ -2482,6 +2593,13 @@ var categories =
                 [
                     "fundmanager-pro.com",
                     "wienerprivatbank.com",
+                ]
+            },
+            {
+                name: "Wüstenrot",
+                domains:
+                [
+                    "wuestenrot.hr",
                 ]
             },
             {
