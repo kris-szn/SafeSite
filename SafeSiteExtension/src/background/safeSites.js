@@ -114,6 +114,13 @@ var categories =
                 ]
             },
             {
+                name: "Alm. Brand - Bank",
+                domains:
+                [
+                    "almbrand.dk",
+                ]
+            },
+            {
                 name: "AlpenBank",
                 domains:
                 [
@@ -159,6 +166,13 @@ var categories =
                 ]
             },
             {
+                name: "Andelskassen",
+                domains:
+                [
+                    "andelskassen.dk",
+                ]
+            },
+            {
                 name: "APO - Österreichische Ärzte & Apotheker Bank AG",
                 domains:
                 [
@@ -170,6 +184,13 @@ var categories =
                 domains:
                 [
                     "araratbank.am",
+                ]
+            },
+            {
+                name: "Arbejdernes Landsbank",
+                domains:
+                [
+                    "al-bank.dk",
                 ]
             },
             {
@@ -363,6 +384,23 @@ var categories =
                 ]
             },
             {
+                name: "BankNordik",
+                domains:
+                [
+                    "banknordik.com",
+                    "banknordik.dk",
+                    "banknordik.fo",
+                    "banknordik.gl",
+                ]
+            },
+            {
+                name: "Bank Norwegian",
+                domains:
+                [
+                    "banknorwegian.dk",
+                ]
+            },
+            {
                 name: "Bank Nowy BGF S.A.",
                 domains:
                 [
@@ -528,6 +566,21 @@ var categories =
                 ]
             },
             {
+                name: "Basisbank",
+                domains:
+                [
+                    "basisbank.dk",
+                ]
+            },
+            {
+                name: "BasisBank - Useful Bank",
+                domains:
+                [
+                    "bankonline.ge",
+                    "basisbank.ge",
+                ]
+            },
+            {
                 name: "BAWAG P.S.K.",
                 domains:
                 [
@@ -624,11 +677,25 @@ var categories =
                 ]
             },
             {
+                name: "Betri",
+                domains:
+                [
+                    "betri.fo",
+                ]
+            },
+            {
                 name: "BGK",
                 domains:
                 [
                     "bgk.pl",
                     "bgk24.pl",
+                ]
+            },
+            {
+                name: "BIL - Banque Internationale à Luxembourg",
+                domains:
+                [
+                    "bil.com",
                 ]
             },
             {
@@ -657,10 +724,56 @@ var categories =
                 name: "BNP PARIBAS",
                 domains:
                 [
+                    "antilles-guyane.bnpparibas",
+                    "apac.bnpparibas",
+                    "biciabnet.net",
+                    "bicici.com",
+                    "bicigui.org",
+                    "bicim.ml",
+                    "bicis.sn",
+                    "bmci.ma",
+                    "bnpparibas.at",
+                    "bnpparibas.be",
                     "bnpparibas.bg",
-                    "bnpparibas.cz",
+                    "bnpparibas.ca",
+                    "bnpparibas.ch",
+                    "bnpparibas.co.id",
+                    "bnpparibas.co.il",
+                    "bnpparibas.co.in",
+                    "bnpparibas.co.kr",
+                    "bnpparibas.co.th",
+                    "bnpparibas.co.uk",
                     "bnpparibas.com",
+                    "bnpparibas.com.ar",
+                    "bnpparibas.com.au",
+                    "bnpparibas.com.br",
+                    "bnpparibas.com.co",
+                    "bnpparibas.com.hk",
+                    "bnpparibas.com.mx",
+                    "bnpparibas.com.my",
+                    "bnpparibas.com.sg",
+                    "bnpparibas.com.tr",
+                    "bnpparibas.com.tw",
+                    "bnpparibas.cz",
+                    "bnpparibas.de",
+                    "bnpparibas.dk",
+                    "bnpparibas.dz",
+                    "bnpparibas.es",
+                    "bnpparibas.hu",
+                    "bnpparibas.ie",
+                    "bnpparibas.it",
+                    "bnpparibas.je",
+                    "bnpparibas.jp",
+                    "bnpparibas.lu",
+                    "bnpparibas.nc",
+                    "bnpparibas.nl",
+                    "bnpparibas.no",
                     "bnpparibas.pl",
+                    "bnpparibas.pt",
+                    "bnpparibas.re",
+                    "bnpparibas.ru",
+                    "bnpparibas.sk",
+                    "bnpparibas.ua",
                     "bnpparibas-am.at",
                     "bnpparibas-am.be",
                     "bnpparibas-am.ch",
@@ -686,7 +799,16 @@ var categories =
                     "bnpparibasfortis.be",
                     "bnpparibasfortis.com",
                     "group.bnpparibas",
+                    "ubci.tn",
+                    "usa.bnpparibas",
                     "webmakler.pl",
+                ]
+            },
+            {
+                name: "Borbjerg Sparekasse",
+                domains:
+                [
+                    "borbjergsparekasse.dk",
                 ]
             },
             {
@@ -724,6 +846,13 @@ var categories =
                 domains:
                 [
                     "bps-sberbank.by",
+                ]
+            },
+            {
+                name: "Broager Sparekasse",
+                domains:
+                [
+                    "broagersparekasse.dk",
                 ]
             },
             {
@@ -866,6 +995,13 @@ var categories =
                 ]
             },
             {
+                name: "Coop Bank",
+                domains:
+                [
+                    "coopbank.dk",
+                ]
+            },
+            {
                 name: "Credins Bank",
                 domains:
                 [
@@ -925,6 +1061,16 @@ var categories =
                 ]
             },
             {
+                name: "Danish Bank Portal",
+                domains:
+                [
+                    "bec.dk",
+                    "computershare.dk",
+                    "portalbank.dk",
+                    "portalbank.fo",
+                ]
+            },
+            {
                 name: "Danske Bank",
                 domains:
                 [
@@ -963,6 +1109,13 @@ var categories =
                 ]
             },
             {
+                name: "Den Jyske Sparekasse",
+                domains:
+                [
+                    "djs.dk",
+                ]
+            },
+            {
                 name: "DenizBank",
                 domains:
                 [
@@ -981,11 +1134,27 @@ var categories =
                 ]
             },
             {
-                name: "DNB Bank Polska S.A.",
+                name: "Djurslands Bank",
                 domains:
                 [
+                    "djurslandsbank.dk",
+                ]
+            },
+            {
+                name: "DNB Bank",
+                domains:
+                [
+                    "dnb.no",
                     "dnb.pl",
+                    "dnb.se",
                     "dnbon.pl",
+                ]
+            },
+            {
+                name: "Dragsholm Sparekasse",
+                domains:
+                [
+                    "dragsholmsparekasse.dk",
                 ]
             },
             {
@@ -1109,6 +1278,20 @@ var categories =
                 ]
             },
             {
+                name: "Fælleskassen",
+                domains:
+                [
+                    "faelleskassen.dk",
+                ]
+            },
+            {
+                name: "Faster",
+                domains:
+                [
+                    "faster.dk",
+                ]
+            },
+            {
                 name: "FCA Bank",
                 domains:
                 [
@@ -1156,10 +1339,45 @@ var categories =
                 ]
             },
             {
+                name: "Folke Sparekassen",
+                domains:
+                [
+                    "folkesparekassen.dk",
+                ]
+            },
+            {
                 name: "Франсабанк (Fransabank)",
                 domains:
                 [
                     "fransabank.by",
+                ]
+            },
+            {
+                name: "Frørup Andelskasse",
+                domains:
+                [
+                    "froerupandelskasse.dk",
+                ]
+            },
+            {
+                name: "Frøs Sparekasse",
+                domains:
+                [
+                    "froes.dk",
+                ]
+            },
+            {
+                name: "Frøslev-Mollerup Sparekasse",
+                domains:
+                [
+                    "fmspks.dk",
+                ]
+            },
+            {
+                name: "Fynske Bank",
+                domains:
+                [
+                    "fynskebank.dk",
                 ]
             },
             {
@@ -1175,6 +1393,13 @@ var categories =
                 [
                     "getinbank.pl",
                     "gnb.pl",
+                ]
+            },
+            {
+                name: "GrønlandsBANKEN",
+                domains:
+                [
+                    "banken.gl",
                 ]
             },
             {
@@ -1505,6 +1730,15 @@ var categories =
                 ]
             },
             {
+                name: "Handelsbanken",
+                domains:
+                [
+                    "handelsbanken.com",
+                    "handelsbanken.no",
+                    "handelsbanken.se",
+                ]
+            },
+            {
                 name: "Haitong",
                 domains:
                 [
@@ -1600,6 +1834,13 @@ var categories =
                 ]
             },
             {
+                name: "Hvidbjerg Bank",
+                domains:
+                [
+                    "hvidbjergbank.dk",
+                ]
+            },
+            {
                 name: "Hypoteční banka",
                 domains:
                 [
@@ -1674,7 +1915,6 @@ var categories =
                     "my.ikano",
                     "onlinebanking.ikea-kreditkarte.de",
                     "onlinebanking-ikanobank.de",
-                    "portalbank.dk",
                 ]
             },
             {
@@ -1810,6 +2050,22 @@ var categories =
                 ]
             },
             {
+                name: "Jutlander",
+                domains:
+                [
+                    "jutlander.dk",
+                    "jutlander-netbank.dk",
+                ]
+            },
+            {
+                name: "Jyske Bank",
+                domains:
+                [
+                    "jyskebank.dk",
+                    "jyskebank.com",
+                ]
+            },
+            {
                 name: "Karlovačka banka",
                 domains:
                 [
@@ -1863,10 +2119,24 @@ var categories =
                 ]
             },
             {
+                name: "Keytrade Bank",
+                domains:
+                [
+                    "keytradebank.be",
+                ]
+            },
+            {
                 name: "KIB BANKA",
                 domains:
                 [
                     "kib-banka.com.ba",
+                ]
+            },
+            {
+                name: "Klim Sparekasse",
+                domains:
+                [
+                    "klimsparekasse.dk",
                 ]
             },
             {
@@ -1895,6 +2165,13 @@ var categories =
                 ]
             },
             {
+                name: "Kreditbanken",
+                domains:
+                [
+                    "kreditbanken.dk",
+                ]
+            },
+            {
                 name: "KredoBank",
                 domains:
                 [
@@ -1902,10 +2179,25 @@ var categories =
                 ]
             },
             {
-                name: "Keytrade Bank",
+                name: "Lån & Spar Bank",
                 domains:
                 [
-                    "keytradebank.be",
+                    "lsb.dk",
+                    "lsb.se",
+                ]
+            },
+            {
+                name: "Lægernes Pension & Bank",
+                domains:
+                [
+                    "lpb.dk",
+                ]
+            },
+            {
+                name: "Langå Sparekasse",
+                domains:
+                [
+                    "langspar.dk",
                 ]
             },
             {
@@ -1937,6 +2229,20 @@ var categories =
                 ]
             },
             {
+                name: "Leasing Fyn",
+                domains:
+                [
+                    "leasingfyn.dk",
+                ]
+            },
+            {
+                name: "Lollands Bank",
+                domains:
+                [
+                    "lollandsbank.dk",
+                ]
+            },
+            {
                 name: "mBank",
                 domains:
                 [
@@ -1963,10 +2269,25 @@ var categories =
                 ]
             },
             {
+                name: "MERKUR PRIVATBANK",
+                domains:
+                [
+                    "merkur-privatbank.de",
+                    "merkur-privatbank.finance",
+                ]
+            },
+            {
                 name: "MF banka",
                 domains:
                 [
                     "mfbanka.com",
+                ]
+            },
+            {
+                name: "Middelfart Sparekasse",
+                domains:
+                [
+                    "midspar.dk",
                 ]
             },
             {
@@ -1975,6 +2296,13 @@ var categories =
                 [
                     "internetbanka.cz",
                     "moneta.cz",
+                ]
+            },
+            {
+                name: "Møns Bank",
+                domains:
+                [
+                    "moensbank.dk",
                 ]
             },
             {
@@ -2069,7 +2397,25 @@ var categories =
                 name: "Nordea",
                 domains:
                 [
+                    "nordea.dk",
                     "nordea.com",
+                ]
+            },
+            {
+                name: "Nordfyns Bank",
+                domains:
+                [
+                    "nordfynsbank.dk",
+                ]
+            },
+            {
+                name: "Nordnet",
+                domains:
+                [
+                    "nordnet.dk",
+                    "nordnet.no",
+                    "nordnet.se",
+                    "nordnetab.com",
                 ]
             },
             {
@@ -2095,6 +2441,13 @@ var categories =
                     "banking-oberbank.cz",
                     "oberbank.com",
                     "oberbank.cz",
+                ]
+            },
+            {
+                name: "Oikos",
+                domains:
+                [
+                    "oikos.dk",
                 ]
             },
             {
@@ -2139,6 +2492,25 @@ var categories =
                 domains:
                 [
                     "pbz-stambena.hr",
+                ]
+            },
+            {
+                name: "PenSam Bank",
+                domains:
+                [
+                    "pensam.dk",
+                ]
+            },
+            {
+                name: "PFA",
+                domains:
+                [
+                    "pfa.dk",
+                    "pfaassetmanagement.dk",
+                    "pfabank.dk",
+                    "pfabruglivetfonden.dk",
+                    "pfaejendomme.dk",
+                    "pfainvest.dk",
                 ]
             },
             {
@@ -2314,11 +2686,52 @@ var categories =
                 ]
             },
             {
+                name: "Resurs Bank",
+                domains:
+                [
+                    "resurs.com",
+                    "resurs.se",
+                    "resursbank.dk",
+                    "resursbank.fi",
+                    "resursbank.no",
+                    "resursbank.se",
+                ]
+            },
+            {
+                name: "Ringkøbing Landbobank",
+                domains:
+                [
+                    "landbobanken.dk",
+                    "nordjyskebank.dk",
+                ]
+            },
+            {
+                name: "Rise Flemløse Sparekasse",
+                domains:
+                [
+                    "sparekassen.dk",
+                ]
+            },
+            {
+                name: "Rønde Sparekasse",
+                domains:
+                [
+                    "roendespar.dk",
+                ]
+            },
+            {
                 name: "Royal Bank of Scotland",
                 domains:
                 [
                     "rbs.co.uk",
                     "rbsdigital.com",
+                ]
+            },
+            {
+                name: "Salling Bank",
+                domains:
+                [
+                    "sallingbank.dk",
                 ]
             },
             {
@@ -2340,6 +2753,8 @@ var categories =
                     "santander.com",
                     "santander.pl",
                     "santandercib.com",
+                    "santanderconsumer.dk",
+                    "santanderconsumer.no",
                     "santanderconsumer.pl",
                 ]
             },
@@ -2348,6 +2763,7 @@ var categories =
                 domains:
                 [
                     "home.saxo",
+                    "privatbank.saxo",
                 ]
             },
             {
@@ -2368,6 +2784,7 @@ var categories =
                 domains:
                 [
                     "seb.de",
+                    "seb.dk",
                     "seb.ee",
                     "seb.lt",
                     "seb.lv",
@@ -2604,7 +3021,14 @@ var categories =
                 ]
             },
             {
-                name: "Samoborska banka",
+                name: "Skjern Bank",
+                domains:
+                [
+                    "skjernbank.dk",
+                ]
+            },
+            {
+                name: "Slatinska banka",
                 domains:
                 [
                     "slatinska-banka.hr",
@@ -2625,6 +3049,27 @@ var categories =
                     "societegenerale.mc",
                     "societegenerale.pl",
                     "websgbcy.com",
+                ]
+            },
+            {
+                name: "Sønderhå-Hørsted Sparekasse",
+                domains:
+                [
+                    "sdrhaa.dk",
+                ]
+            },
+            {
+                name: "Spar Bredebro",
+                domains:
+                [
+                    "sparbredebro.dk",
+                ]
+            },
+            {
+                name: "Spar Nord",
+                domains:
+                [
+                    "sparnord.se",
                 ]
             },
             {
@@ -2658,6 +3103,62 @@ var categories =
                 ]
             },
             {
+                name: "Spardjurs",
+                domains:
+                [
+                    "spardjurs.dk",
+                ]
+            },
+            {
+                name: "Sparekassen Balling",
+                domains:
+                [
+                    "skjernbank.dk",
+                ]
+            },
+            {
+                name: "Sparekassen For Nørre Nebel og Omegn",
+                domains:
+                [
+                    "sparnebel.dk",
+                ]
+            },
+            {
+                name: "Sparekassen Kronjylland",
+                domains:
+                [
+                    "sparkron.dk",
+                ]
+            },
+            {
+                name: "Sparekassen Sjælland",
+                domains:
+                [
+                    "spks.dk",
+                ]
+            },
+            {
+                name: "Sparekassen Thy",
+                domains:
+                [
+                    "sparthy.dk",
+                ]
+            },
+            {
+                name: "Sparekassen Vendsyssel",
+                domains:
+                [
+                    "sparv.dk",
+                ]
+            },
+            {
+                name: "Stadil Sparekasse",
+                domains:
+                [
+                    "stadil-sparekasse.dk",
+                ]
+            },
+            {
                 name: "Svenska Handelsbanken AB",
                 domains:
                 [
@@ -2670,6 +3171,24 @@ var categories =
                     "handelsbanken.se",
                     "nets.no",
                     "shb.dk",
+                ]
+            },
+            {
+                name: "Swedbank",
+                domains:
+                [
+                    "swedbank.com",
+                    "swedbank.ee",
+                    "swedbank.lt",
+                    "swedbank.lv",
+                    "swedbank.se",
+                ]
+            },
+            {
+                name: "Sydbank",
+                domains:
+                [
+                    "sydbank.com",
                 ]
             },
             {
@@ -2728,6 +3247,13 @@ var categories =
                 domains:
                 [
                     "tokudabank.bg",
+                ]
+            },
+            {
+                name: "Totalbanken",
+                domains:
+                [
+                    "totalbanken.dk",
                 ]
             },
             {
@@ -2864,6 +3390,13 @@ var categories =
                 domains:
                 [
                     "vdk.be",
+                ]
+            },
+            {
+                name: "Vestjysk Bank",
+                domains:
+                [
+                    "vestjyskbank.dk",
                 ]
             },
             {
