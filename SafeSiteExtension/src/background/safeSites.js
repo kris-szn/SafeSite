@@ -73,6 +73,7 @@ var categories =
             { name: "AZkreditbank", domains: [ "azkreditbank.com" ] },
             { name: "Baader Bank AG", domains: [ "baaderbank.de" ] },
             { name: "BACB - Bulgarian American Credit Bank", domains: [ "bacb.bg", "bacbplus.bg" ] },
+            { name: "Banco Safra", domains: [ "safra.com.br" ] },
             { name: "Bank Avrasiya", domains: [ "bankavrasiya.az" ] },
             { name: "Bank BPH", domains: [ "bph.pl" ] },
             { name: "Банк Дабрабыт (Bank Dobrabyt)", domains: [ "bankdabrabyt.by" ] },
@@ -160,6 +161,7 @@ var categories =
                     "bbvausa.com",
                     "provincial.com",
             ] },
+            { name: "BCV - Banque Cantonale Vaudoise", domains: [ "bcv.ch" ] },
             { name: "Белагропромбанк (Belagroprombank)", domains: [ "belapb.by" ] },
             { name: "Беларусбанк (Belarusbank)", domains: [ "belarusbank.by" ] },
             { name: "Белорусский народный банк (Belarusky Narodny Bank)", domains: [ "bnb.by", "imbanking.by" ] },
@@ -283,6 +285,7 @@ var categories =
                     "btv3banken.ch",
                     "meinebtv.at",
             ] },
+            { name: "Butterfield", domains: [ "butterfieldgroup.com", "butterfieldonline.com" ] },
             { name: "Byblos Bank", domains: [ "byblosbank.com", "byblosbankarmenia.am", "byblosonline.com" ] },
             { name: "Caisses d'Epargne", domains: [ "caisse-epargne.fr" ] },
             { name: "CaixaBank", domains: [ "caixabank.pl", "lacaixa.pl" ] },
@@ -1004,6 +1007,7 @@ var categories =
                     "vub.sk",
             ] },
             { name: "Investbank", domains: [ "ibank.bg" ] },
+            { name: "Investec Bank", domains: [ "investec.com" ] },
             { name: "Isbank", domains: [ "isbank.ge" ] },
             { name: "J.P. Morgan", domains: [ "chase.com", "jpmorgan.com", "paymentech.net" ] },
             { name: "J&T banka", domains: [
@@ -1154,6 +1158,7 @@ var categories =
                     "nordnetab.com",
             ] },
             { name: "norisbank", domains: [ "norisbank.de" ] },
+            { name: "Northern Trust", domains: [ "northerntrust.com" ] },
             { name: "NRW.BANK", domains: [ "nrwbank.com", "nrwbank.de" ] },
             { name: "Nykredit", domains: [ "nykredit.com", "nykredit.dk" ] },
             { name: "Oberbank", domains: [
@@ -1290,6 +1295,7 @@ var categories =
                     "rsts.cz",
                     "yellowe.com",
             ] },
+            { name: "RBC Royal Bank", domains: [ "rbc.com", "rbcroyalbank.com", "royalbank.com" ] },
             { name: "RBFBIH - Razvojna banka Federacije BiH", domains: [ "rbfbih.ba" ] },
             { name: "RCB Bank", domains: [ "rcbcy.com" ] },
             { name: "RCI Banque S.A.", domains: [
@@ -1573,6 +1579,7 @@ var categories =
                     "zulawskibs.pl",
             ] },
             { name: "Silkroad Bank", domains: [ "silkonline.ge", "silkroadbank.ge" ] },
+            { name: "Skipton", domains: [ "skipton.co.uk" ] },
             { name: "Skjern Bank", domains: [ "skjernbank.dk" ] },
             { name: "Slatinska banka", domains: [ "slatinska-banka.hr" ] },
             { name: "Société Générale", domains: [
