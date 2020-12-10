@@ -7,6 +7,7 @@ var categories =
         [
             { name: "Aareal Bank", domains: [ "aareal.com", "aareal-bank.com" ] },
             { name: "ABI Bank", domains: [ "abi.al" ] },
+            { name: "ABN AMRO Bank", domains: [ "abnamro.com", "abnamro.nl" ] },
             { name: "АБСОЛЮТБАНК (Absolutbank)", domains: [ "absolutbank.by" ] },
             { name: "AccessBank", domains: [ "accessbank.az", "myaccess.az" ] },
             { name: "Addiko Bank", domains: [
@@ -15,6 +16,7 @@ var categories =
                     "addiko-fbih.ba",
                     "addiko-rs.ba",
             ] },
+            { name: "Aegean Baltic Bank", domains: [ "ab-bank.com", "aegeanbalticbank.com" ] },
             { name: "AFB Bank ASC", domains: [ "afb.az" ] },
             { name: "Agram Banka", domains: [ "agrambanka.hr" ] },
             { name: "ahli Bank", domains: [ "ahli.com", "ahlionline.com.jo" ] },
@@ -49,6 +51,7 @@ var categories =
             { name: "ASB Bank", domains: [ "asb.az", "asb.co.nz" ] },
             { name: "Astrobank", domains: [ "astrobank.com", "piraeusbank.com" ] },
             { name: "AtaBank", domains: [ "atabank.com" ] },
+            { name: "Attica Bank", domains: [ "atticabank.gr" ] },
             { name: "Attijariwafa bank", domains: [
                     "attijaribank.mr",
                     "attijariwafa.com",
@@ -86,6 +89,7 @@ var categories =
             ] },
             { name: "Bank Norwegian", domains: [ "banknorwegian.dk" ] },
             { name: "Bank Nowy BGF S.A.", domains: [ "pbsbank.pl" ] },
+            { name: "Bank of America", domains: [ "bankofamerica.com" ] },
             { name: "Bank of Beirut", domains: [
                     "bankofbeirut.co.om",
                     "bankofbeirut.co.uk",
@@ -94,8 +98,8 @@ var categories =
                     "banksyd.com.au",
             ] },
             { name: "Bank of Communications", domains: [ "bankcomm.com" ] },
+            { name: "BANK OF CHINA", domains: [ "bankofchina.com", "boc.cn" ] },
             { name: "Bank of Cyprus", domains: [ "bankofcyprus.com" ] },
-            { name: "BANK OF CHINA", domains: [ "bankofchina.com" ] },
             { name: "Bank of Georgia", domains: [ "bankofgeorgia.ge", "bankofgeorgiagroup.com", "bog.ge" ] },
             { name: "Bank of Scotland", domains: [ "bankofscotland.co.uk" ] },
             { name: "Bank Pekao", domains: [
@@ -331,6 +335,12 @@ var categories =
             { name: "ConverseBank", domains: [ "conversebank.am" ] },
             { name: "Coop Bank", domains: [ "coopbank.dk" ] },
             { name: "Coop Pank", domains: [ "cooppank.ee" ] },
+            { name: "Cooperative Bank of Chania", domains: [ "chaniabank.gr" ] },
+            { name: "Cooperative Bank of Drama", domains: [ "dramabank.gr" ] },
+            { name: "Cooperative Bank of Epirus", domains: [ "epirusbank.com" ] },
+            { name: "Cooperative Bank of Karditsa", domains: [ "bankofkarditsa.com", "bankofkarditsa.gr" ] },
+            { name: "Cooperative Bank of Serres", domains: [ "serresbank.gr", "serrescoopbank.gr" ] },
+            { name: "Cooperative Bank of Thessaly", domains: [ "bankofthessaly.gr", "e-thesbank.gr" ] },
             { name: "Credins Bank", domains: [ "bankacredins.com" ] },
             { name: "Crédit Agricole", domains: [ 
                 "acba.am", 
@@ -415,6 +425,7 @@ var categories =
             { name: "DZ Bank", domains: [ "dzbank.com", "dzbank.de" ] },
             { name: "easybank", domains: [ "easybank.at" ] },
             { name: "ebase", domains: [ "ebase.com" ] },
+            { name: "EFG Bank", domains: [ "efginternational.com" ] },
             { name: "eQ", domains: [ "eq.fi" ] },
             { name: "Equa bank", domains: [ "equabank.cz", "equabanking.cz" ] },
             { name: "ERSTE Group", domains: [
@@ -485,6 +496,7 @@ var categories =
             ] },
             { name: "FCE Bank - Ford Credit", domains: [ "fcebank.com", "fcebank.pl", "ford.pl" ] },
             { name: "Fibank - First Investment Bank", domains: [ "fibank.al", "fibank.bk", "fibank.com.cy" ] },
+            { name: "FIMBank", domains: [ "fimbank.com" ] },
             { name: "FINCA Bank", domains: [ "ifinca.ge", "finca.ge" ] },
             { name: "Fio banka", domains: [ "fio.cz" ] },
             { name: "Folke Sparekassen", domains: [ "folkesparekassen.dk" ] },
@@ -1113,6 +1125,7 @@ var categories =
             { name: "N26", domains: [ "n26.com" ] },
             { name: "Naša Banka", domains: [ "nasa-banka.com" ] },
             { name: "NATIONAL-BANK", domains: [ "bv-activebanking.de", "national-bank.de" ] },
+            { name: "National Bank of Greece", domains: [ "nbg.gr" ] },
             { name: "Natixis", domains: [ "natixis.com" ] },
             { name: "NBC", domains: [
                     "bnc.ca",
@@ -1152,7 +1165,15 @@ var categories =
             { name: "Oikos", domains: [ "oikos.dk" ] },
             { name: "Oney", domains: [ "oney.com" ] },
             { name: "OP", domains: [ "op.fi", "opbank.ee" ] },
+            { name: "Opel Bank", domains: [ 
+                    "moncompte-ofs.fr", 
+                    "opelbank.at", 
+                    "opelbank.de", 
+                    "opelbank.fr" 
+                ] },
+            { name: "Optima Bank", domains: [ "optimabank.gr" ] },
             { name: "OTP banka", domains: [ "otpbanka.hr" ] },
+            { name: "Pancreta Bank", domains: [ "pancretabank.gr", "pancretaonline.gr" ] },
             { name: "Parabokt", domains: [ "parabank.az", "parabokt.az" ] },
             { name: "МТБанк (Paritetbank)", domains: [ "paritetbank.by" ] },
             { name: "Partner banka", domains: [ "paba.hr" ] },
@@ -1172,6 +1193,7 @@ var categories =
                     "pfaejendomme.dk",
                     "pfainvest.dk",
             ] },
+            { name: "Piraeus Bank", domains: [ "piraeusbank.gr", "winbank.gr" ] },
             { name: "PKO Bank Polski S.A.", domains: [
                     "inteligo.pl",
                     "ipko.pl",
@@ -1294,6 +1316,7 @@ var categories =
             { name: "Rothschild Martin Maurel", domains: [ "edibanque.com.fr", "espace-prive.com", "rothschildandco.com" ] },
             { name: "Royal Bank of Scotland", domains: [ "rbs.co.uk", "rbsdigital.com" ] },
             { name: "S-Pankki", domains: [ "s-pankki.fi" ] },
+            { name: "Saderat Bank", domains: [ "bsi.ir" ] },
             { name: "Salling Bank", domains: [ "sallingbank.dk" ] },
             { name: "Samoborska Banka", domains: [ "sabank.hr" ] },
             { name: "Santander", domains: [
@@ -2056,6 +2079,7 @@ var categories =
             { name: "Varengold Bank", domains: [ "varengold.de" ] },
             { name: "VDK", domains: [ "vdk.be" ] },
             { name: "Vestjysk Bank", domains: [ "vestjyskbank.dk" ] },
+            { name: "Vivabank", domains: [ "praxiabank.com", "viva.bank" ] },
             { name: "VKB|Bank", domains: [ "vkb-bank.at" ] },
             { name: "Volksbank", domains: [ "volksbank.at" ] },
             { name: "Vontobel", domains: [ "deritrade.com", "vontobel.com" ] },
@@ -2897,7 +2921,9 @@ var categories =
             { name: "Ziraat Bank", domains: [ 
                 "ziraatbank.ba", 
                 "ziraatbank.bg", 
+                "ziraatbank.com.gr",
                 "ziraatbank.com.tr",
+                "ziraatbank.de", 
                 "ziraatbank.ge", 
             ] },
             { name: "Zürcher Kantonalbank Österreich AG", domains: [ "zkb-oe.at" ] },        
