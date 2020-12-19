@@ -42,6 +42,7 @@ var categories =
             { name: "Arbejdernes Landsbank", domains: [ "al-bank.dk" ] },
             { name: "Ardshinbank", domains: [ "ardshinbank.am" ] },
             { name: "Argenta", domains: [ "argenta.be" ] },
+            { name: "Arion banki", domains: [ "arionbanki.is" ] },
             { name: "Armbusinessbank", domains: [ "armbusinessbank.am" ] },
             { name: "Armeconombank", domains: [ "aeb.am" ] },
             { name: "ArmedForcesBank", domains: [ "afbank.com" ] },
@@ -1014,6 +1015,7 @@ var categories =
             { name: "Investbank", domains: [ "ibank.bg" ] },
             { name: "Investec Bank", domains: [ "investec.com" ] },
             { name: "Isbank", domains: [ "isbank.ge" ] },
+            { name: "Íslandsbanki", domains: [ "isb.is", "islandsbanki.is" ] },
             { name: "J.P. Morgan", domains: [ "chase.com", "jpmorgan.com", "paymentech.net" ] },
             { name: "J&T banka", domains: [
                     "jtbank.cz",
@@ -1072,8 +1074,10 @@ var categories =
             { name: "Kommunal Kredit", domains: [ "kommunalkredit.at", "kommunalkreditdirekt.at" ] },
             { name: "Kreditbanken", domains: [ "kreditbanken.dk" ] },
             { name: "KredoBank", domains: [ "kredobank.com.ua" ] },
+            { name: "Kvika", domains: [ "kvika.is", "netbankinn.is" ] },
             { name: "La Banque Postale", domains: [ "labanquepostale.com", "labanquepostale.fr" ] },
             { name: "Landesbank Berlin", domains: [ "lbb.de" ] },
+            { name: "Landsbankinn", domains: [ "landsbankinn.is" ] },
             { name: "LähiTapiola", domains: [ "lahitapiola.fi" ] },
             { name: "Lån & Spar Bank", domains: [ "lsb.dk", "lsb.se" ] },
             { name: "LBBW", domains: [ 
