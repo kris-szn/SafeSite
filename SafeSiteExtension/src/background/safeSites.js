@@ -103,6 +103,7 @@ var categories =
             { name: "BANK OF CHINA", domains: [ "bankofchina.com", "boc.cn" ] },
             { name: "Bank of Cyprus", domains: [ "bankofcyprus.com" ] },
             { name: "Bank of Georgia", domains: [ "bankofgeorgia.ge", "bankofgeorgiagroup.com", "bog.ge" ] },
+            { name: "Bank of Ireland", domains: [ "365online.com", "bankofireland.com", "businessonline-boi.com" ] },
             { name: "Bank of Scotland", domains: [ "bankofscotland.co.uk" ] },
             { name: "Bank Pekao", domains: [
                     "cdm24.pl",
@@ -188,6 +189,15 @@ var categories =
             { name: "BKS Bank", domains: [ "bks.at", "bksbank-online.at" ] },
             { name: "BKT", domains: [ "bkt.com.al" ] },
             { name: "BLOM Bank", domains: [ "blombank.com" ] },
+            { name: "BMO - Bank of Montreal", domains: [ 
+                    "bmo.com", 
+                    "bmocapitalmarkets.com",
+                    "bmocm.com", 
+                    "bmoharris.com", 
+                    "bmoinvestorline.com",
+                    "bmoprivatebankinginvestments.com", 
+                    "bmosmartfolio.com",
+                ] },
             { name: "BMW Bank", domains: [ "bmwbank.de" ] },
             { name: "BNP PARIBAS", domains: [
                     "antilles-guyane.bnpparibas",
@@ -403,6 +413,7 @@ var categories =
             { name: "Deka", domains: [ "deka.de", "deka-institutionell.de", "deka-privatebanking.de" ] },
             { name: "Delta Lloyd Bank", domains: [ "deltalloydbank.com" ] },
             { name: "DemirBank", domains: [ "demirbank.kg" ] },
+            { name: "Depfa", domains: [ "depfa.com" ] },
             { name: "Den Jyske Sparekasse", domains: [ "djs.dk" ] },
             { name: "DenizBank", domains: [ "denizbank.com" ] },
             { name: "Deutsche Apotheker- und Ärztebank", domains: [ "apobank.de" ] },
@@ -432,6 +443,7 @@ var categories =
             { name: "DZ Bank", domains: [ "dzbank.com", "dzbank.de" ] },
             { name: "easybank", domains: [ "easybank.at" ] },
             { name: "ebase", domains: [ "ebase.com" ] },
+            { name: "EBS", domains: [ "ebs.ie" ] },
             { name: "EFG Bank", domains: [ "efginternational.com" ] },
             { name: "eQ", domains: [ "eq.fi" ] },
             { name: "Equa bank", domains: [ "equabank.cz", "equabanking.cz" ] },
@@ -1108,6 +1120,7 @@ var categories =
             { name: "Lollands Bank", domains: [ "lollandsbank.dk" ] },
             { name: "Luminor", domains: [ "luminor.ee" ] },
             { name: "M.M.Warburg & CO", domains: [ "mmwarburg.de", "warburg-bank.de" ] },
+            { name: "Macquarie Bank", domains: [ "macquarie.com", "macquarie.com.au", "macquarieconnections.com" ] },
             { name: "MagNet Bank", domains: [ "magnetbank.hu" ] },
             { name: "Magyar Cetelem Zrt", domains: [ "cetelem.hu" ] },
             { name: "mBank", domains: [
@@ -1208,6 +1221,7 @@ var categories =
             ] },
             { name: "PBZ stambena štedionica", domains: [ "pbz-stambena.hr" ] },
             { name: "PenSam Bank", domains: [ "pensam.dk" ] },
+            { name: "Permanent TSB", domains: [ "open24.ie", "permanenttsb.ie", "permanenttsbgroup.ie" ] },
             { name: "PFA", domains: [
                     "pfa.dk",
                     "pfaassetmanagement.dk",
@@ -1372,6 +1386,7 @@ var categories =
                     "sbhr.hr",
             ] },
             { name: "SBI", domains: [ "bank.sbi", "onlinesbi.com", "yonobusiness.sbi" ] },
+            { name: "Scotiabank", domains: [ "scotiabank.com" ] },
             { name: "S|E|B", domains: [
                     "seb.de",
                     "seb.dk",
@@ -2071,6 +2086,12 @@ var categories =
             { name: "Turan Bank", domains: [ "turanbank.az" ] },
             { name: "Turon Bank", domains: [ "turonbank.uz" ] },
             { name: "UBS Group AG", domains: [ "ubs.com" ] },
+            { name: "Ulster Bank", domains: [ 
+                    "ulsterbank.co.uk", 
+                    "ulsterbank.ie", 
+                    "ulsterbankanytimebanking.co.uk", 
+                    "ulsterbankanytimebanking.ie",
+                ] },
             { name: "UmweltBank", domains: [ "umweltbank.de" ] },
             { name: "Unibank", domains: [ "unibank.am", "unibank.az", "unibank.com" ] },
             { name: "UniCredit", domains: [
@@ -2087,6 +2108,7 @@ var categories =
                     "unicredit-bl.ba",
                     "unicreditbank.cz",
                     "unicreditbank.hu",
+                    "unicreditbank.ie",
                     "unicreditbank-bl.ba",
                     "unicreditbanking.eu",
                     "unicreditbanking.net",
@@ -2942,6 +2964,7 @@ var categories =
                     "vwfs.pl",
                     "vwleasing.pl",
             ] },
+            { name: "Walls Fargo", domains: [ "wellsfargo.com" ] },
             { name: "Walser Privatbank", domains: [ "walserprivatbank.com" ] },
             { name: "Web Bank - Bosnia and Herzegovina", domains: [ "24x7.ba", "ebb.ba", "emon24.net" ] },
             { name: "Wiener Privatbank", domains: [ "fundmanager-pro.com", "wienerprivatbank.com" ] },
