@@ -1162,6 +1162,7 @@ var categories =
                     "mbank.pl",
                     "mhipoteczny.pl",
             ] },
+            { name: "Medicinos Bankas", domains: [ "medbank.lt" ] },
             { name: "Mediobanca", domains: [ 
                     "chebanca.it", 
                     "cmb.mc", 
@@ -1682,6 +1683,7 @@ var categories =
                     "sgb24.pl",
                     "zulawskibs.pl",
             ] },
+            { name: "Šiaulių bankas", domains: [ "sb.lt" ] },
             { name: "Sigma Bank", domains: [ "sigmabank.com" ] },
             { name: "Signet Bank", domains: [ "signetbank.com" ] },
             { name: "Silkroad Bank", domains: [ "silkonline.ge", "silkroadbank.ge" ] },
