@@ -32,6 +32,7 @@ var categories =
             { name: "Aion Bank", domains: [ "aion.be" ] },
             { name: "Air Bank", domains: [ "airbank.cz" ] },
             { name: "AJIB - Arab Jordan Investment Bank", domains: [ "ajib.com" ] },
+            { name: "Akbank", domains: [ "akbank.com" ] },
             { name: "Aktia", domains: [ "aktia.com", "aktia.fi" ] },
             { name: "Ålandsbanken", domains: [ "alandsbanken.ax", "alandsbanken.com", "alandsbanken.fi", "alandsbanken.se" ] },
             { name: "Альфа-Банк (Alfa-Bank)", domains: [ "alfa-biz.by", "alfabank.by" ] },
@@ -46,6 +47,7 @@ var categories =
             { name: "Andbank", domains: [ "andbank.com", "andbank.com.br", "inversis.com" ] },
             { name: "Andelskassen", domains: [ "andelskassen.dk" ] },
             { name: "APO - Österreichische Ärzte & Apotheker Bank AG", domains: [ "apobank.at" ] },
+            { name: "APS Bank", domains: [ "apsbank.com.mt" ] },
             { name: "Araratbank", domains: [ "araratbank.am" ] },
             { name: "Arbejdernes Landsbank", domains: [ "al-bank.dk" ] },
             { name: "Ardshinbank", domains: [ "ardshinbank.am" ] },
@@ -128,6 +130,7 @@ var categories =
             { name: "Bank of Georgia", domains: [ "bankofgeorgia.ge", "bankofgeorgiagroup.com", "bog.ge" ] },
             { name: "Bank of Ireland", domains: [ "365online.com", "bankofireland.com", "businessonline-boi.com" ] },
             { name: "Bank of Scotland", domains: [ "bankofscotland.co.uk" ] },
+            { name: "Bank of Valletta", domains: [ "bov.com" ] },
             { name: "Bank Pekao", domains: [
                     "cdm24.pl",
                     "pekao.com.pl",
@@ -364,6 +367,7 @@ var categories =
             { name: "CMZRB - Českomoravská záruční a rozvojová banka", domains: [ "cmzrb.cz" ] },
             { name: "Cofidis Magyarország", domains: [ "cofidis.hu" ] },
             { name: "comdirect", domains: [ "comdirect.de" ] },
+            { name: "CommBank", domains: [ "commbank.com.au" ] },
             { name: "Commercial EU Bank", domains: [ "c-e-u-bank.com" ] },
             { name: "Commerzbank AG", domains: [
                     "commerzbank.ae",
@@ -429,6 +433,7 @@ var categories =
             { name: "Crédit Mutuel", domains: [ "creditmutuel.com", "creditmutuel.fr" ] },
             { name: "Credit Suisse", domains: [ "credit-suisse.com" ] },
             { name: "Credito Emiliano", domains: [ "credem.it" ] },
+            { name: "Credorax", domains: [ "credorax.com" ] },
             { name: "Crelan", domains: [ "crelan.be" ] },
             { name: "Creval", domains: [ "creval.it", "nexi.it" ] },
             { name: "Croatia banka", domains: [ "croatiabanka.hr" ] },
@@ -558,6 +563,7 @@ var categories =
                     "leasys.com",
             ] },
             { name: "FCE Bank - Ford Credit", domains: [ "fcebank.com", "fcebank.pl", "ford.pl" ] },
+            { name: "FCM Bank", domains: [ "fcmbank.com.mt" ] },
             { name: "Fibank - First Investment Bank", domains: [ "fibank.al", "fibank.bk", "fibank.com.cy" ] },
             { name: "FIMBank", domains: [ "fimbank.com" ] },
             { name: "FINCA Bank", domains: [ "ifinca.ge", "finca.ge" ] },
@@ -569,6 +575,7 @@ var categories =
             { name: "Frøslev-Mollerup Sparekasse", domains: [ "fmspks.dk" ] },
             { name: "Fundamenta", domains: [ "fundamenta.hu" ] },
             { name: "Fynske Bank", domains: [ "fynskebank.dk" ] },
+            { name: "Garanti BBVA", domains: [ "garantibbva.com.tr" ] },
             { name: "GEFA BANK", domains: [ 
                     "banking-gefa-bank.de",
                     "gefa.de",
@@ -578,6 +585,7 @@ var categories =
             { name: "Generali Bank", domains: [ "generalibank.at" ] },
             { name: "Getin Bank", domains: [ "getinbank.pl", "gnb.pl" ] },
             { name: "GLS Bank", domains: [ "gls.de", "gls-online-filiale.de" ] },
+            { name: "GoBank", domains: [ "gobank.com" ] },
             { name: "Goldman Sachs", domains: [ 
                     "goldman.com", 
                     "goldmansachs.com", 
@@ -1000,6 +1008,7 @@ var categories =
             { name: "ICS - Istituto per il Credito Sportivo", domains: [ "cedacri.it", "creditosportivo.it" ] },
             { name: "IDBank", domains: [ "idbank.am" ] },
             { name: "Idea Bank", domains: [ "ideabank.by", "ideabank24.by", "ideabank.pl" ] },
+            { name: "IIG Bank", domains: [ "iigbank-malta.com" ] },
             { name: "Ikano Bank", domains: [
                     "bank.ikano",
                     "ikano.co.uk",
@@ -1077,6 +1086,7 @@ var categories =
             { name: "Isbank", domains: [ "isbank.ge" ] },
             { name: "Íslandsbanki", domains: [ "isb.is", "islandsbanki.is" ] },
             { name: "Isle of Man Bank", domains: [ "iombank.com" ] },
+            { name: "Izola Bank", domains: [ "izolabank.com" ] },
             { name: "J.P. Morgan", domains: [ "chase.com", "jpmorgan.com", "paymentech.net" ] },
             { name: "J&T banka", domains: [
                     "jtbank.cz",
@@ -1169,6 +1179,7 @@ var categories =
             { name: "Liechtensteinische Landesbank", domains: [ "llb.at", "llb.li" ] },
             { name: "Lloyds Bank", domains: [ "lloydsbank.co.uk", "lloydsbank.com" ] },
             { name: "Lollands Bank", domains: [ "lollandsbank.dk" ] },
+            { name: "Lombard Bank", domains: [ "lombardmalta.com" ] },
             { name: "LPB Bank", domains: [ "lpb.lv" ] },
             { name: "Luminor", domains: [ "luminor.ee" ] },
             { name: "M.M.Warburg & CO", domains: [ "mmwarburg.de", "warburg-bank.de" ] },
@@ -1233,7 +1244,7 @@ var categories =
                     "secureinternetbank.com",
                     "thenbcbank.com",
             ] },
-            { name: "NBG - National Bank of Greece", domains: [ "nbg.com.cy", "nbg.gr" ] },
+            { name: "NBG - National Bank of Greece", domains: [ "nbg.com.cy", "nbg.com.mt", "nbg.gr" ] },
             { name: "Nedbank", domains: [ 
                     "nedbank.co.za", 
                     "nedbankprivatewealth.com", 
@@ -1266,6 +1277,7 @@ var categories =
             ] },
             { name: "norisbank", domains: [ "norisbank.de" ] },
             { name: "Northern Trust", domains: [ "northerntrust.com" ] },
+            { name: "Novum Bank", domains: [ "novumbankgroup.com" ] },
             { name: "NRW.BANK", domains: [ "nrwbank.com", "nrwbank.de" ] },
             { name: "Nykredit", domains: [ "nykredit.com", "nykredit.dk" ] },
             { name: "Oberbank", domains: [
@@ -2136,6 +2148,7 @@ var categories =
                 "wartburg-sparkasse.de",
                 "wespa.de",            
             ] },
+            { name: "Sparkasse Bank Malta", domains: [ "sbm.services", "sparkasse-bank-malta.com" ] },
             { name: "Spuerkeess", domains: [ "snet.lu", "spuerkeess.lu" ] },
             { name: "Stadil Sparekasse", domains: [ "stadil-sparekasse.dk" ] },
             { name: "Standard Bank", domains: [ 
