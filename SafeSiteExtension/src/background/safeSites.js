@@ -16,6 +16,7 @@ var categories =
                     "addiko-fbih.ba",
                     "addiko-rs.ba",
             ] },
+            { name: "Adriatic Bank", domains: [ "adriaticbank.com" ] },
             { name: "Advanzia Bank", domains: [ 
                     "advanzia.com",
                     "cartezero.fr",
@@ -957,6 +958,7 @@ var categories =
             { name: "Hellenic Bank", domains: [ "hellenicbank.com" ] },
             { name: "Hello bank", domains: [ "hellobank.at" ] },
             { name: "HFC", domains: [ "hfc.com.cy" ] },
+            { name: "Hipotekarna banka", domains: [ "hbklik.me", "hipotekarnabanka.com" ] },
             { name: "HPB - Hrvatska poštanska banka", domains: [ "hpb.hr" ] },
             { name: "HSBC", domains: [
                     "hangseng.com",
@@ -1207,6 +1209,7 @@ var categories =
             { name: "Liberty Bank", domains: [ "libertybank.ge" ] },
             { name: "Liechtensteinische Landesbank", domains: [ "llb.at", "llb.li" ] },
             { name: "Lloyds Bank", domains: [ "lloydsbank.co.uk", "lloydsbank.com" ] },
+            { name: "Lovćen Banka", domains: [ "lovcenbanka.me" ] },
             { name: "Lollands Bank", domains: [ "lollandsbank.dk" ] },
             { name: "Lombard Bank", domains: [ "lombardmalta.com" ] },
             { name: "LPB Bank", domains: [ "lpb.lv" ] },
@@ -1292,6 +1295,7 @@ var categories =
                     "nlbklik.com.mk", 
                     "nlbtb.mk", 
                 ] },
+            { name: "NLB Group", domains: [ "nlb.si", "nlbgroup.si", "nlbskupina.si" ] },
             { name: "Noble Bank", domains: [ "noblebank.pl", "noblesecurities.pl" ] },
             { name: "Nord/LB", domains: [ "nordlb.com" ] },
             { name: "Nordea", domains: [ 
@@ -1336,7 +1340,7 @@ var categories =
                 ] },
             { name: "Optima Bank", domains: [ "optimabank.gr" ] },
             { name: "Ohridska Banka", domains: [ "obsgnet.com.mk", "ohridskabanka.mk" ] },
-            { name: "OTP Bank", domains: [ "otpbank.hu" ] },
+            { name: "OTP Bank", domains: [ "ckb.me", "ckbgobank.me", "otpbank.hu" ] },
             { name: "OTP banka", domains: [ "otpbanka.hr" ] },
             { name: "Pancreta Bank", domains: [ "pancretabank.gr", "pancretaonline.gr" ] },
             { name: "Parabokt", domains: [ "parabank.az", "parabokt.az" ] },
@@ -1395,6 +1399,7 @@ var categories =
                     "procredit-holding.com",
             ] },
             { name: "Промсвязьбанк (Promsvyazbank)", domains: [ "psbank.ru" ] },
+            { name: "Prva banka Crne Gore", domains: [ "prvabankacg.com" ] },
             { name: "PSA FINANCE S.A.", domains: [ "e-psafinance.pl" ] },
             { name: "PSD Bank", domains: [
                 "onlinebanking-psd-braunschweig.de",
@@ -2302,6 +2307,7 @@ var categories =
             { name: "UNIONBANK", domains: [ "unionbank.al" ] },
             { name: "Union Banka", domains: [ "unionbank.ba" ] },
             { name: "United Bank of Albania", domains: [ "uba.com.al" ] },
+            { name: "Universal Capital Bank", domains: [ "ucbank.me" ] },
             { name: "VakifBank", domains: [
                     "onlinebanking-vakif-bank.de",
                     "vakif-bank.de",
@@ -3156,6 +3162,7 @@ var categories =
             { name: "Xalq Bank", domains: [ "xalqbank.az", "xalqonline.az" ] },
             { name: "Yapi Kredi Bank Azərbaycan", domains: [ "yapikredi.com.az" ] },
             { name: "Yelo Bank", domains: [ "yelo.az" ] },
+            { name: "Zapad Banka", domains: [ "zapadbanka.me" ] },
             { name: "Zepterbank", domains: [ "zepterbank.by" ] },
             { name: "Ziraat Bank", domains: [ 
                 "ziraatbank.ba", 
@@ -3164,6 +3171,7 @@ var categories =
                 "ziraatbank.com.tr",
                 "ziraatbank.de", 
                 "ziraatbank.ge", 
+                "ziraatbank.me", 
             ] },
             { name: "Zürcher Kantonalbank Österreich AG", domains: [ "zkb-oe.at" ] },        
         ]
