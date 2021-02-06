@@ -8,6 +8,18 @@
     "page_action": {
         "default_title": "Safe Site",
         "default_icon": "img/safeSite48.png",
-        "default_popup": "popup.html"
-    }
+        "default_popup": "html/popup.html"
+    },
+    "background": {
+        "scripts": [
+            "src/background/safeSites.js",
+            "src/background/safeSitesUtils.js",
+            "src/background/backgroundEventsHandlers.js",
+            "src/background/popupEventsHandlers.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "storage"
+    ]
 }
