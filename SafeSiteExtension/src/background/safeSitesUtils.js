@@ -24,19 +24,6 @@ function PopulateSafeSitesDictionary()
     chrome.storage.local.set({storageKey: safeSitesDictionary}, function() {});
 }
 
-function Private_HandleStorageResult(result)
-{
-    if (storageKey in result)
-    {
-        safeSitesDictionary = result[storageKey];
-        safeSitesLoaded = true;
-    }
-    else
-    {
-        PopulateSafeSitesDictionary();
-    }
-}
-
 function LoadSafeSites()
 {
     if (!safeSitesLoaded)
@@ -46,11 +33,6 @@ function LoadSafeSites()
             Private_HandleStorageResult(result);
         })
     }
-}
-
-function Private_FindLoadedDomainInfo(domain, callback)
-{
-    callback(domain in safeSitesDictionary, safeSitesDictionary[domain]);
 }
 
 function FindDomainInfo(domain, callback)
@@ -67,4 +49,23 @@ function FindDomainInfo(domain, callback)
             Private_FindLoadedDomainInfo(domain, callback);
         })
     }
+}
+
+
+function Private_HandleStorageResult(result)
+{
+    if (storageKey in result)
+    {
+        safeSitesDictionary = result[storageKey];
+        safeSitesLoaded = true;
+    }
+    else
+    {
+        PopulateSafeSitesDictionary();
+    }
+}
+
+function Private_FindLoadedDomainInfo(domain, callback)
+{
+    callback(domain in safeSitesDictionary, safeSitesDictionary[domain]);
 }

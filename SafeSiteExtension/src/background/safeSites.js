@@ -2,7 +2,7 @@ var categories =
 [
     {
         name: "bank", 
-        icon: "/img/category/bank/default.png",
+        icon: "img/category/bank/default",
         groups: 
         [
             { name: "365 Bank", domains: [ "365.bank" ] },
@@ -4418,7 +4418,7 @@ var categories =
     },
     {
         name: "payment", 
-        icon: "/img/category/payment/default.png",
+        icon: "img/category/payment/default",
         groups: 
         [
             { name: "Elavon", domains: [ "elavon.pl", "elavonconnect.com", "elavonpayment.com" ] },
