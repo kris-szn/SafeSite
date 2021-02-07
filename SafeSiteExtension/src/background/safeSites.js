@@ -1,4 +1,4 @@
-var categories = 
+export var categories = 
 [
     {
         name: "bank", 

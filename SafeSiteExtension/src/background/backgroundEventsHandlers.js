@@ -1,16 +1,25 @@
+import 
+{ 
+    PopulateSafeSitesDictionary, 
+    FindDomainInfo,
+    LoadSafeSites
+} from "/src/background/safeSitesUtils.js";
+
 chrome.runtime.onInstalled.addListener(function() 
 {
     PopulateSafeSitesDictionary();
 });
 
-chorme.tabs.onUpdated.addListener(function(tabId, changeInfo, tab)
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab)
 {
     if (changeInfo.url)
     {
-        FindDomainInfo(GetDomain(change.url), function(isFound, domainInfo) 
+        console.log("Looking for domain: " + new URL(changeInfo.url).hostname + " (url: " + changeInfo.url + ")");
+        FindDomainInfo(new URL(changeInfo.url).hostname, function(isFound, domainInfo) 
         {
             if (isFound)
             {
+                console.log("Domain found: " + domainInfo);
                 chrome.pageAction.setTitle({tabId: tabId, title: domainInfo.name}, function() {});
                 chrome.pageAction.setIcon(
                     {
@@ -25,6 +34,7 @@ chorme.tabs.onUpdated.addListener(function(tabId, changeInfo, tab)
             }
             else
             {
+                console.log("Domain not found.");
                 chrome.pageAction.hide(tabId);
             }
         });

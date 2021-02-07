@@ -13,18 +13,13 @@
     "page_action": {
         "default_title": "Safe Site",
         "default_icon": {
-            "19": "img/unknown/default19.png",
-            "38": "img/unknown/default38.png",
+            "19": "img/category/unknown/default19.png",
+            "38": "img/category/unknown/default38.png"
         },
         "default_popup": "html/popup.html"
     },
     "background": {
-        "scripts": [
-            "src/background/safeSites.js",
-            "src/background/safeSitesUtils.js",
-            "src/background/backgroundEventsHandlers.js",
-            "src/background/popupEventsHandlers.js"
-        ],
+        "page": "html/background.html",
         "persistent": false
     },
     "permissions": [
