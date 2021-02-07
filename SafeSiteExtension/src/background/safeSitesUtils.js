@@ -24,7 +24,7 @@ function PopulateSafeSitesDictionary()
     chrome.storage.local.set({storageKey: safeSitesDictionary}, function() {});
 }
 
-function HandleStorageResult(result)
+function Private_HandleStorageResult(result)
 {
     if (storageKey in result)
     {
@@ -39,13 +39,16 @@ function HandleStorageResult(result)
 
 function LoadSafeSites()
 {
-    chrome.storage.local.get(storageKey, function(result)
+    if (!safeSitesLoaded)
     {
-        HandleStorageResult(result);
-    })
+        chrome.storage.local.get(storageKey, function(result)
+        {
+            Private_HandleStorageResult(result);
+        })
+    }
 }
 
-function FindLoadedDomainInfo(domain, callback)
+function Private_FindLoadedDomainInfo(domain, callback)
 {
     callback(domain in safeSitesDictionary, safeSitesDictionary[domain]);
 }
@@ -54,14 +57,14 @@ function FindDomainInfo(domain, callback)
 {
     if (safeSitesLoaded)
     {
-        FindLoadedDomainInfo(domain, callback);
+        Private_FindLoadedDomainInfo(domain, callback);
     }
     else
     {
         chrome.storage.local.get(storageKey, function(result)
         {
-            HandleStorageResult(result);
-            FindLoadedDomainInfo(domain, callback);
+            Private_HandleStorageResult(result);
+            Private_FindLoadedDomainInfo(domain, callback);
         })
     }
 }
