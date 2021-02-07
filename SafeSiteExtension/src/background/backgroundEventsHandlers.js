@@ -34,12 +34,12 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab)
                         }
                     }, 
                     function() {});
-                chrome.pageAction.show(tabId);
+                chrome.pageAction.show(tabId, function() {});
             }
             else
             {
                 console.log("Domain not found.");
-                chrome.pageAction.hide(tabId);
+                chrome.pageAction.hide(tabId, function() {});
             }
         });
     }
