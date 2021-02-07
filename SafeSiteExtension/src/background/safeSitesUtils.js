@@ -9,16 +9,15 @@ var safeSitesLoaded = false;
 
 export function PopulateSafeSitesDictionary()
 {
-    console.log("PopulateSafeSitesDictionary: " + categories);
-    for (var category in categories)
+    for (var categoryIndex = 0; categoryIndex < categories.length; categoryIndex++)
     {
-        console.log("Category: " + category);
-        for (var group in category.groups)
+        var category = categories[categoryIndex];
+        for (var groupIndex = 0; groupIndex < category.groups.length; groupIndex++)
         {
-            console.log("Group: " + group);
-            for (var domain in group.domains)
+            var group = category.groups[groupIndex];
+            for (var domainIndex = 0; domainIndex < group.domains.length; domainIndex++)
             {
-                console.log("Domain: " + domain);
+                var domain = group.domains[domainIndex];
                 safeSitesDictionary[domain] = 
                 {
                     domain: domain,
@@ -29,7 +28,6 @@ export function PopulateSafeSitesDictionary()
             }
         }
     }
-    console.log("Popupated dictionary: " + safeSitesDictionary);
     safeSitesLoaded = true;
     chrome.storage.local.set({storageKey: safeSitesDictionary}, function() {});
 }
@@ -45,18 +43,18 @@ export function LoadSafeSites()
     }
 }
 
-export function FindDomainInfo(domain, callback)
+export function FindDomainInfo(hostname, callback)
 {
     if (safeSitesLoaded)
     {
-        FindLoadedDomainInfo(domain, callback);
+        FindLoadedDomainInfo(hostname, callback);
     }
     else
     {
         chrome.storage.local.get(storageKey, function(result)
         {
             HandleStorageResult(result);
-            FindLoadedDomainInfo(domain, callback);
+            FindLoadedDomainInfo(hostname, callback);
         })
     }
 }
@@ -75,7 +73,11 @@ function HandleStorageResult(result)
     }
 }
 
-function FindLoadedDomainInfo(domain, callback)
+function FindLoadedDomainInfo(hostname, callback)
 {
-    callback(domain in safeSitesDictionary, safeSitesDictionary[domain]);
+    while (!(hostname in safeSitesDictionary) && hostname.indexOf(".") >= 0)
+    {
+        hostname = hostname.substring(hostname.indexOf(".") + 1);
+    }
+    callback(hostname in safeSitesDictionary, safeSitesDictionary[hostname]);
 }
