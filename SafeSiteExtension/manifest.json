@@ -6,20 +6,20 @@
     "content_security_policy": "default-src 'self'",
     "default_locale": "en",
     "icons": {
-        "16": "img/safeSite16.png",
-        "48": "img/safeSite48.png",
-        "128": "img/safeSite128.png"
+        "16": "/img/safeSite16.png",
+        "48": "/img/safeSite48.png",
+        "128": "/img/safeSite128.png"
     },
     "page_action": {
         "default_title": "Safe Site",
         "default_icon": {
-            "19": "img/category/unknown/default19.png",
-            "38": "img/category/unknown/default38.png"
+            "19": "/img/category/unknown/default19.png",
+            "38": "/img/category/unknown/default38.png"
         },
-        "default_popup": "html/popup.html"
+        "default_popup": "/html/popup.html"
     },
     "background": {
-        "page": "html/background.html",
+        "page": "/html/background.html",
         "persistent": false
     },
     "permissions": [
