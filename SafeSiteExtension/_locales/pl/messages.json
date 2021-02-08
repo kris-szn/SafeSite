@@ -1,5 +1,8 @@
 {
     "ExtensionDescription" : {
         "message" : "Safe Site wspiera korzystanie z internetu w krytycznych dla bezpieczeństwa obszarach typu bankowość: wskazuje, czy to na pewno strona banku."
+    },
+    "PageActionDefaultTitle" : {
+        "message" : "Nieznana strona!\n\rNIGDY nie podawaj tu danych logowania do twojego banku!"
     }
 }

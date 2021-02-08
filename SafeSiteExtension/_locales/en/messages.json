@@ -4,5 +4,8 @@
     },
     "ExtensionDescription" : {
         "message" : "Safe Site extension supports browsing in the security critical areas like banking: indicates whether it is really a banking site."
+    },
+    "PageActionDefaultTitle" : {
+        "message" : "Site NOT recognized!\n\rNEVER provide your bank account credentials here!"
     }
 }
