@@ -4,5 +4,14 @@
     },
     "ActionDefaultTitle" : {
         "message" : "Nieznana strona!\n\rNIGDY nie podawaj tu danych logowania do twojego banku!"
+    },
+    "PopupHeaderNotRecognized" : {
+        "message" : "Nieznana strona!"
+    },
+    "PopupContentNotRecognized" : {
+        "message" : "NIGDY nie podawaj tu danych logowania do twojego banku!"
+    },
+    "PopupContentRecognized" : {
+        "message" : "Możesz się zalogować."
     }
 }

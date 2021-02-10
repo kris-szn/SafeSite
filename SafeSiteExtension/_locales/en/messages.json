@@ -7,5 +7,14 @@
     },
     "ActionDefaultTitle" : {
         "message" : "Site NOT recognized!\n\rNEVER provide your bank account credentials here!"
+    },
+    "PopupHeaderNotRecognized" : {
+        "message" : "Site NOT recognized!"
+    },
+    "PopupContentNotRecognized" : {
+        "message" : "NEVER provide your bank account credentials here!"
+    },
+    "PopupContentRecognized" : {
+        "message" : "You can log in here."
     }
 }
