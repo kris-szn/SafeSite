@@ -10,8 +10,8 @@
         "48": "/img/safeSite48.png",
         "128": "/img/safeSite128.png"
     },
-    "page_action": {
-        "default_title": "__MSG_PageActionDefaultTitle__",
+    "browser_action": {
+        "default_title": "__MSG_ActionDefaultTitle__",
         "default_icon": {
             "19": "/img/category/unknown/default19.png",
             "38": "/img/category/unknown/default38.png"

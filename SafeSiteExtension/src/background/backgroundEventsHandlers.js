@@ -18,8 +18,8 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab)
         {
             if (isFound)
             {
-                chrome.pageAction.setTitle({tabId: tabId, title: domainInfo.name}, function() {});
-                chrome.pageAction.setIcon(
+                chrome.browserAction.setTitle({tabId: tabId, title: domainInfo.name}, function() {});
+                chrome.browserAction.setIcon(
                     {
                         tabId: tabId, 
                         path: {
@@ -28,11 +28,19 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab)
                         }
                     }, 
                     function() {});
-                chrome.pageAction.show(tabId, function() {});
             }
             else
             {
-                chrome.pageAction.hide(tabId, function() {});
+                chrome.browserAction.setTitle({tabId: tabId, title: chrome.i18n.getMessage("ActionDefaultTitle")}, function() {});
+                chrome.browserAction.setIcon(
+                    {
+                        tabId: tabId, 
+                        path: {
+                            "19": "/img/category/unknown/default19.png",
+                            "38": "/img/category/unknown/default38.png"
+                        }
+                    }, 
+                    function() {});
             }
         });
     }
