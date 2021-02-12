@@ -4,5 +4,9 @@
             "/manifest.json"
         ],
         "url": "http://json.schemastore.org/chrome-manifest"
-    }]
+    }
+],
+"telemetry.enableTelemetry": false,
+"telemetry.enableCrashReporter": false,
+"githubPullRequests.telemetry.enabled": false
 }
