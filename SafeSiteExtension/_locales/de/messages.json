@@ -1,2 +1,17 @@
 {
+    "ExtensionDescription" : {
+        "message" : "Die Safe-Site-Erweiterung unterstützt das Surfen in sicherheitskritischen Bereichen wie Banking: zeigt an, ob es sich wirklich um eine Banking-Site handelt."
+    },
+    "ActionDefaultTitle" : {
+        "message" : "Site NICHT anerkannt!\n\rGeben Sie hier niemals Ihre Bankverbindung an!"
+    },
+    "PopupHeaderNotRecognized" : {
+        "message" : "Site NICHT anerkannt!"
+    },
+    "PopupContentNotRecognized" : {
+        "message" : "Geben Sie hier niemals Ihre Bankverbindung an!"
+    },
+    "PopupContentRecognized" : {
+        "message" : "Sie können sich hier anmelden."
+    }
 }

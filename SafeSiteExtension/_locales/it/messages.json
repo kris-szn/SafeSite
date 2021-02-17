@@ -1,0 +1,17 @@
+{
+    "ExtensionDescription" : {
+        "message" : "L'estensione Safe Site supporta la navigazione nelle aree critiche per la sicurezza come le banche: indica se si tratta davvero di un sito bancario."
+    },
+    "ActionDefaultTitle" : {
+        "message" : "Sito NON riconosciuto!\n\rNON fornire mai le credenziali del tuo conto bancario qui!"
+    },
+    "PopupHeaderNotRecognized" : {
+        "message" : "Sito NON riconosciuto!"
+    },
+    "PopupContentNotRecognized" : {
+        "message" : "NON fornire mai le credenziali del tuo conto bancario qui!"
+    },
+    "PopupContentRecognized" : {
+        "message" : "Puoi accedere qui."
+    }
+}

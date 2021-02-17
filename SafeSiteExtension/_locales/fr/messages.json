@@ -1,0 +1,17 @@
+{
+    "ExtensionDescription" : {
+        "message" : "L'extension Safe Site prend en charge la navigation dans les zones critiques pour la sécurité comme la banque : elle indique s'il s'agit réellement d'un site bancaire."
+    },
+    "ActionDefaultTitle" : {
+        "message" : "Site NON reconnu !\n\rN'indiquez JAMAIS les références de votre compte bancaire ici !"
+    },
+    "PopupHeaderNotRecognized" : {
+        "message" : "Site NON reconnu !"
+    },
+    "PopupContentNotRecognized" : {
+        "message" : "N'indiquez JAMAIS les références de votre compte bancaire ici !"
+    },
+    "PopupContentRecognized" : {
+        "message" : "Vous pouvez vous connecter ici."
+    }
+}

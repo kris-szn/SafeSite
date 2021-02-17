@@ -1,0 +1,17 @@
+{
+    "ExtensionDescription" : {
+        "message" : "La extensión Safe Site ayuda a la navegación en las áreas críticas de seguridad como la banca: indica si es realmente un sitio bancario."
+    },
+    "ActionDefaultTitle" : {
+        "message" : "Sitio NO reconocido!\n\rNunca proporcione las credenciales de su cuenta bancaria aquí!"
+    },
+    "PopupHeaderNotRecognized" : {
+        "message" : "Sitio NO reconocido!"
+    },
+    "PopupContentNotRecognized" : {
+        "message" : "Nunca proporcione las credenciales de su cuenta bancaria aquí!"
+    },
+    "PopupContentRecognized" : {
+        "message" : "Puede conectarse aquí."
+    }
+}
